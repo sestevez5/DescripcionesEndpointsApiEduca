@@ -2,9 +2,6 @@
 
 Este endpoint devuelve los datos de los docentes a partir del código del centro.
 
-# Parámetros
-Pueden ser comunes o específicos de cada opción.
-
 ## Parámetros comunes
 * **opcion**: 1, 2. Se deberá escoger uno obligatoriamente
 * **codigoCentro**: Obligatorio (Ej. 38010773)
