@@ -2,9 +2,6 @@
 
 Este endpoint proporciona datos personales del alumnado registrado en los centros educativos así como de sus responsables.
 
-# Parámetros
-Pueden ser comunes o específicos de cada opción.
-
 ## Parámetros comunes
 
 * **opcion**: 1, 2, 3. Se deberá escoger uno obligatoriamente.
