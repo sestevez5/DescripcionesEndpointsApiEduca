@@ -1,63 +1,53 @@
 # Descripción general
 
-Este endpoint está dirigido a ofrecer información del alumnado registrado en los distintos centros educativos:
+Este endpoint proporciona datos personales del alumnado registrado en los centros educativos así como de sus responsables.
 
 # Parámetros
-Dispondremos de tres paquetes de parametrización.
+Pueden ser comunes o específicos de cada opción.
 
 ## Parámetros comunes
-### Parámetros:
-Los parámetros comunes a todas las opciones son:
-* **opcion**  (obligatorio)
-* **nivelDetalle** 
-* **tieneMatriculaEnElCentro** (booleano no obligatorio, false por defecto)
-* **conMatriculaEnElCurso** (entero no obligatorio. Ej.: 2022, 2023,...)
-* **tieneMatriculaActiva** (booleano no obligatorio, false por defecto)
-* **codigoCentro** (opcional, por defecto. Ej.: 38102345 )
 
+* **opcion**: 1, 2, 3. Se deberá escoger uno obligatoriamente.
+* **tieneMatriculaEnElCentro**: selecciona al alumnado que está matriculado al menos en un curso escolar.
+* **conMatriculaEnElCurso**: selecciona al alumnado que está matriculado en el curso escolar indicado (Ej. 2024).
+* **nivelDetalle**: r, m, e (reducido, medio, extendido). Si no se indica, su valor por defecto será r.
+* **tieneMatriculaActiva**: selecciona al alumnado con matrícula sin fecha de finalización en el curso escolar indicado.
 
-### Observaciones:
-* El parámetro "opcion" es obligatorio y podrá tomar los valores: 1, 2, 3.
-> * Opción 1: Devolverá el alumnado de un centro educativo.
-> * Opción 2: Devolverá el alumnado identificado a partir de un documento identificativo.
-> * Opción 3: Devolverá el alumnado tutelado por un responsable identificado a partir de un documento identificativo.
+**Observaciones**:
+>* Opción 1: Devuelve los datos personales de todo el alumnado a partir del codigoCentro (obligatorio).
+>* Opción 2: Devuelve los datos personales del alumnado a partir de su cial, nifnie o pasaporte, siendo obligatorio uno solo de los mismos.
+>* Opción 3: Devuelve los datos del alumnado tutelado y de sus responsables a partir del nifnie o pasaporte del responsable, siempre que tenga derecho a información.
 
-* El parámetro "nivelDetalle" nos habilita la posibilidad de elgir la cantidad de información a obtener: r (reducido), m (medio), e (extendido). El valor por defecto es r
+## Parámetros específicos
 
-## Parámetros específicos de la opción 1
-Se trata de una opción que no incluye parámetros específicos, aunque obliga a definir el parámetro común "codigoCentro" que, por defecto, no tiene carácter obligatorio.
+### Opción 1
+* **codigoCentro**: Obligatorio (Ej. 38010773)
 
-## Parámetros específicos de la opción 2
-Esta opción nos ofrece la posibilidad de obtener todos los registros de alumnado en los distintos centros educativos a partir de un documento identificativo de un alumno/a.
+**Observaciones**: Los campos cial, nifNie, pasaporte, nifNieResponsable y pasaporteResponsable no están permitidos en esta opción.
 
-### Parámetros:
-* **nifNieAlumnado**: 
-* **cialAlumnado**: 
-* **pasaporteAlumnado**: 
+### Opción 2
+* **cial**: CIAL del alumnado.
+* **nifnie**: NIF o NIE del alumnado.
+* **pasaporte**: Pasaporte del alumnado.
 
-### Observaciones:
-* Ninguno de los tres parámetros es obligatorio, pero debe cumplimentarse, al menos, uno.
+**Observaciones**: Sólo se debe proporcionar uno de los datos identificativos del alumnado (cial, nifNie o pasaporte). Los campos nifNieResponsable y pasaporteResponsable no están permitidos en esta opción.
 
-## Parámetros específicos de la opción 3
-Esta opción nos ofrece la posibilidad de obtener todos los registros de alumnado tutelado por un responsable identificado como parámetro.
+### Opción 3
+* **nifNieResponsable**: NIF o NIE del responsable del alumnado.
+* **pasaporteResponsable**: Pasaporte del responsable del alumnado.
 
-### Parámetros:
-* **nifNieResponsable**
-* **pasaporteResponsable**
-
-### Observaciones:
-* Niguno de los parámetros es obligatorio pero debe cumplimentarse, al menos, uno.
-
+**Observaciones**: Sólo es necesario indicar uno de los datos identificativos del responsable. Los campos cial, nifNie y pasaporte no están permitidos en esta opción.
 
 # Ejemplos.
+### A) Solicitud de datos con nivelDetalle extendido del alumno con cial B00P08015J.
+> * ?opcion=2 & cial=B00P08015J & nivelDetalle=e
 
-A) Solicitud de los registros de alumnado que no tengan matricula activa tutelado por el responsable con nifnie "12345678X"
-> * ?opcion=3 & nifNieResponsable=12345678X & tieneMatriculaActiva=false 
+### B) Solicitud de datos con nivelDetalle reducido de todo el alumnado del centro con código "35010488".
+> * ?opcion=1 & codigoCentro=35010488
 
+### C) Solicitud de datos con nivelDetalle medio del alumnado del centro con código "35010488" y matrícula en el curso 2023.
+> * ?opcion=1 & codigoCentro=35010488 & conMatriculaEnElCurso=2023 & nivelDetalle=m
 
-
-** Notas: 
-
-1) Solo se devolverán las relacienes tutelado-responsables cuando el responsable tenga derecho a información.
-2) Una matrícula activa es una matrícula sin fecha de finalización correspondiente al curso escolar que contenga la fecha del sistema en su periodo administrativo.
+### D) Solicitud de datos con nivelDetalle extendido del alumnado tutelado por el responsable con pasaporte "DWM669980P".
+> * ?opcion=3 & tieneMatriculaActiva=true & pasaporteResponsable=DWM669980P & nivelDetalle=e
 
