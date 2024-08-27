@@ -2,9 +2,6 @@
 
 Este endpoint devuelve información de los grupos clase de un centro educativo.
 
-# Parámetros
-Pueden ser comunes o específicos de cada opción.
-
 ## Parámetros comunes
 * **opcion**: 1, 2. Se deberá escoger uno obligatoriamente.
 * **nivelDetalle**: r, m (reducido, medio). Si no se indica, su valor por defecto será r.
