@@ -2,9 +2,6 @@
 
 Este endpoint proporciona información de las áreas de las diferentes enseñanzas y estudios de un centro educativo.
 
-# Parámetros
-Pueden ser comunes o específicos de cada opción.
-
 ## Parámetros comunes
 
 * **opcion**: 1, 2. Se deberá escoger uno obligatoriamente.
