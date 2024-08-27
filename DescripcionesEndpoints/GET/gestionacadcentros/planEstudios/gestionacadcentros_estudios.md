@@ -11,7 +11,6 @@ Pueden ser comunes o específicos de cada opción.
 * **incluirNoOFertados**: Si se selecciona, incluye los estudios no ofertados por el centro educativo.
 
 **Observaciones**:
->* Si no se indican posicionInicial ni tamanyoBloque, el número máximo de páginas a recuperar es 100 (posicionInicial = 0, tamanyoBloque = 100).
 >* Opción 1: Los campos obligatorios son el cursoEscolar y el codigoCentro.
 >* Opción 2: El campo idCursoCentro es obligatorio.
 
