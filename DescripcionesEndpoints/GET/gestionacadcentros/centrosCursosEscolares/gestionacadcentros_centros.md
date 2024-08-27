@@ -2,9 +2,6 @@
 
 Este endpoint proporciona información de los centros educativos.
 
-# Parámetros
-Pueden ser comunes o específicos de cada opción.
-
 ## Parámetros comunes
 * **codigoCentro**: Si no se indica, se muestran todos los centros (Ej. 38010773)
 * **idCentroSC**: Si no se indica, se muestran todos los centros (Ej. 2250)
