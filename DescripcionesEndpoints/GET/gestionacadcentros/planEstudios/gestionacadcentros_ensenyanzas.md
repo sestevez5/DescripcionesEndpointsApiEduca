@@ -2,9 +2,6 @@
 
 Este endpoint devuelve las enseñanzas impartidas en los centros educativos.
 
-# Parámetros
-Pueden ser comunes o específicos de cada opción.
-
 ## Parámetros comunes
 * **opcion**: 1, 2. Se deberá escoger uno obligatoriamente.
 * **incluirNoVigentes**: Si se selecciona, incluye las enseñanzas no vigentes.
