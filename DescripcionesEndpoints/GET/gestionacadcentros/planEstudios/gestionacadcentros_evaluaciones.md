@@ -2,9 +2,6 @@
 
 Este endpoint devuelve las evaluaciones de un centro educativo.
 
-# Parámetros
-Pueden ser comunes o específicos de cada opción.
-
 ## Parámetros comunes
 * **opcion**: 1, 2. Se deberá escoger uno obligatoriamente.
 * **idEnsenyanza**: Si no se indica, se muestran las evaluaciones de todas las enseñanzas.
