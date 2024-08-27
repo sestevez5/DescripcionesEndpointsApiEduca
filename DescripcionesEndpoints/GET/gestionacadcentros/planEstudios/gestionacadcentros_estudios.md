@@ -2,9 +2,6 @@
 
 Este endpoint devuelve los estudios impartidos en los centros educativos.
 
-# Parámetros
-Pueden ser comunes o específicos de cada opción.
-
 ## Parámetros comunes
 * **opcion**: 1, 2. Se deberá escoger uno obligatoriamente.
 * **incluirNoVigentes**: Si se selecciona, incluye los estudios no vigentes.
