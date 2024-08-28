@@ -16,9 +16,9 @@ Este endpoint proporciona datos de actividades susceptibles de disponer de horar
 
 **Observaciones**:
 >* En todas las opciones los campos _cursoEscolar_ y _codigoCentro_ son obligatorios.
->* Opción 1: Proporciona las actividades del alumnado. Además del cursoEscolar y codigoCentro, será necesario indicar nifNieAlumnado o cialAlumnado (uno solo de los dos) e idEstudioSC.
->* Opción 2: Proporciona las actividades del docente. Además del cursoEscolar y codigoCentro, será necesario indicar el nifNieDocente.
->* Opción 3: Proporciona las actividades del personal de administración y servicios. Además del cursoEscolar y codigoCentro, será necesario indicar el nifNiePas.
+>* Opción 1: Proporciona las actividades de una matrícula. Además del cursoEscolar y codigoCentro, será necesario indicar nifNieAlumnado o cialAlumnado (uno solo de los dos) e idEstudioSC.
+>* Opción 2: Proporciona las actividades de un docente-servicio. Además del cursoEscolar y codigoCentro, será necesario indicar el nifNieDocente.
+>* Opción 3: Proporciona las actividades de un pas-servicio. Además del cursoEscolar y codigoCentro, será necesario indicar el nifNiePas.
 >* Opción 4: Proporciona las actividades de un grupo. Además del cursoEscolar y codigoCentro, será necesario indicar el codigoGrupo.
 >* Opción 5: Proporciona las actividades de una dependencia. Además del cursoEscolar y codigoCentro, será necesario indicar el codigoDependencia.
 
