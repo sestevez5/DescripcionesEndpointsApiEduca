@@ -11,8 +11,8 @@ Este endpoint proporciona datos de actividades susceptibles de disponer de horar
 * **opcion**: 1, 2, 3, 4, 5. Se deberá escoger uno obligatoriamente.
 * **cursoEscolar**: Obligatorio (Ej. 2023).
 * **codigoCentro**: Obligatorio (Ej. 38010773).
-* **fechaReferenciaHorario**: Si se especifica, se muestran las actividades semanales en la fecha indicada.
-* **horarioCompleto**: Si se selecciona, se muestran todas las actividades, tanto para cualquier periodo de vigencia como para una colección de fechas.
+* **fechaReferenciaHorario**: Si se especifica, se muestran las actividades vigentes en la fecha indicada. Si no, se considerará la fecha del sistema si está en el intervalo del curso escolar indicado; en caso contrario, será la última fecha del periodo administrativo del curso escolar especificado.
+* **horarioCompleto**: Si se selecciona, se muestran todas las actividades, tanto para cualquier periodo de vigencia como para una colección de fechas, por lo que no se tendrá en cuenta el parámetro _fechaReferenciaHorario_.
 
 **Observaciones**:
 >* En todas las opciones los campos _cursoEscolar_ y _codigoCentro_ son obligatorios.
