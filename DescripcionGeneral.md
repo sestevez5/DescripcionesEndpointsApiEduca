@@ -2,7 +2,6 @@
 ApiEduca es un API REST que expone las entidades que se gestionan en la Herramienta de Gestión Académica y Administrativa de los centros educativos (Pincel Ekade). No obstante, de forma temporal, también se han incluidos entidades externas como, por ejemplo, algunas de las gestionadas en el Directorio de Centros o el Plan de Estudios de Canarias.
 
 # Seguridad
-
 ApiEduca es un Api de carácter interno y su consumo solo puede realizarse a través de la Intranet corporativa . Además, es condición necesaria disponer de un ApiKey para su acceso. Este ApiKey tendrá asociado unos niveles de autorización que, en buena parte, marcarán los privilegios de acceso y manipulación de los recursos expuestos.
 
 Existen determinados endpoints en los que disponer de un ApiKey con los privilegios necesarios no nos aporta el acceso a los mismos. Dichos endpoints requieren de una autenticación personal. ApiEduca provee de diferentes endpoints para realizar la autenticación cubriendo las diferentes casuísticas. Ver [Anexo I](#AnexoI)
@@ -13,21 +12,17 @@ Se ha intentado imprimir la máxima regularidad en la implementación de los end
 
 
 ## Estructura de las respuestas.
-
 Las respuestas a las peticiones a cualquier petición de ApiEduca siempre tiene la misma estructrura JSON. Se trata de un objeto que actúa como envoltura (wrap) ante cualquier petición. Este objeto unificado de respuesta tiene 3 campos: datos, mensajes y metadatos.
 
 ### Datos.
-
 Este campo devuelve los datos solicitados (generalmente, ante peticiones GET). Distinguiremos entre colecciones (devolución de un array) y entregas simples (devolución de un objeto). En el desarrollo de ApiEduca hemos creado un catálogo de DTO's (Data Tranfer Object) que representa la interfaz al exterior de las entidades que gestionamos y cuyo objetivo es dar legibilidad, desacoplar las respuestas a las estructuras internas y ocultar aspectos irrelevantes a los consumidores.
 En el apartado "colecciones" veremos cómo, en ocasiones, disponemos de representaciones polimórficas de estas entidades a través de la definición de múltiples DTO's, permitiéndonos equilibrar la necesidad de información con el rendimiento de las respuestas y también con niveles de seguridad en base al contenido expuesto.
-
 
 ### Mensajes.
 Este campo devuelve una colección de mensajes (potencialmente vacío). En muchas ocasiones es necesario acompañar las respuestas con mensajes que aporten información adicional a los consumidores, los cuales pueden ir desde meros avisos hasta notificaciones de errores. Por ejemplo, el sistema, ante una petición incorrectamente formada, notificará de este hecho al peticionario. También es el mecanismo habitual cuando se realiza una petición que incumple reglas de negocio establecidas (Ej. "La fecha de finalización de una matrícula no puede ser anterior a la fecha de matrícula").
 
 ### Metadatos.
 Este campo es, precisamente, el que nos ha llevado a optar por el uso de envolvente a las respuestas. Se trata de un objeto que nos permite aportar información sobre la propia gestión de la petición. A nivel básico, aporta, entre otros datos, la fecha/hora de la petición, usuario autenticado, url de la solicitud, etc. En determinadas ocaciones estos medadatos se enriquecen con informacióin adicional. Tal es el caso de las respuestas de peticiones que devuelven colecciones. En estos casos se aporta información adicional como, por ejemplo, datos de paginación, filtro y orden.
-
 
 ## Códigos de respuesta.
 En función de la naturaleza de las peticiones o del resultado obtenido al procesar una petición nos podemos encontrar con múltiples casuísticas. Hemos intentado ajustarnos a la semántica establecida en el protocolo HTTP en lo relativo a los códigos de respuestas. Con carácter general se devuelve un subconjunto de códigos que intentamos describir a continuación.
