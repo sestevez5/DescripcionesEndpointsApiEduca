@@ -27,20 +27,20 @@ Este endpoint proporciona datos de actividades susceptibles de disponer de horar
 ### Opción 1
 * **nifNieAlumnado**: NIF o NIE del alumnado.
 * **cialAlumnado**: CIAL del alumnado.
-* **fechaReferenciaMatricula**:
+* **fechaReferenciaMatricula**: Si no se especifica, se considera la fecha del sistema.
 * **idEstudioSC**: Obligatorio (Ej. 3206).
 
 **Observaciones**: No están permitidos en esta opción los campos _nifNieDocente_, _fechaReferenciaServicioDocente_, _nifNiePas_, _fechaReferenciaServicioPas_, _codigoGrupo_, _codigoDependencia_.
 
 ### Opción 2
 * **nifNieDocente**: NIF o NIE del docente.
-* **fechaReferenciaServicioDocente**:
+* **fechaReferenciaServicioDocente**: Si no se especifica, se considera la fecha del sistema.
 
 **Observaciones**: No están permitidos en esta opción los campos _nifNieAlumnado_, _cialAlumnado_, _fechaReferenciaMatricula_, _idEstudioSC_, _nifNiePas_, _fechaReferenciaServicioPas_, _codigoGrupo_, _codigoDependencia_.
 
 ### Opción 3
 * **nifNiePas**: NIF o NIE del personal de administración y servicios.
-* **fechaReferenciaServicioPas**:
+* **fechaReferenciaServicioPas**: Si no se especifica, se considera la fecha del sistema.
 
 **Observaciones**: No están permitidos en esta opción los campos _nifNieAlumnado_, _cialAlumnado_, _fechaReferenciaMatricula_, _idEstudioSC_, _nifNieDocente_, _fechaReferenciaServicioDocente_, _codigoGrupo_, _codigoDependencia_.
 
