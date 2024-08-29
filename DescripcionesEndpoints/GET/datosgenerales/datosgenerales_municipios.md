@@ -6,11 +6,13 @@ Este endpoint devuelve los municipios de las Islas Canarias.
 
 ## Parámetros específicos.
 
-* **codigoIsla**:
+* **codigoIsla**: 
 * **codigoProvincia**:
 * **fechaReferencia**:
 * **denominacionContiene**:
 * **soloMunicipiosCanarias**:
+
+* 
 
 # Ejemplos.
 ### A) Solicitud de los responsables de las zonas de inspección para el curso "2024".
