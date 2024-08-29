@@ -1,4 +1,4 @@
-# Descripción general
+# Descripción general.
 
 Este endpoint proporciona los diferentes tipos de centros educativos existentes.
 
