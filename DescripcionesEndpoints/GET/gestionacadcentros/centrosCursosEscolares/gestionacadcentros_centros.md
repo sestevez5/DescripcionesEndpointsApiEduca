@@ -13,14 +13,14 @@ Este endpoint proporciona información de los centros educativos.
 * **codigoMunicipio**: Si no se indica, se muestran los centros de todos los municipio (Ej. 38005, ofrece los centros con ese código)
 
 **Observaciones**:
->* Todos los parámetros son opcionales.
+* Todos los parámetros son opcionales.
 
 # Ejemplos.
 ### A) Solicitud de datos del centro con código "38011108".
-> * ?codigoCentro=38011108
+* ?codigoCentro=38011108
 
 ### B) Solicitud de los centros públicos de la isla de Tenerife.
-> * ?isla=7 & naturaleza=1
+* ?isla=7 & naturaleza=1
 
 ### C) Solicitud de los centros de la zona de inspección 401 en el curso 2021. 
-> * ?zonaInspeccion=401 & cursoEscolarZonaInspeccion=2021
+* ?zonaInspeccion=401 & cursoEscolarZonaInspeccion=2021
