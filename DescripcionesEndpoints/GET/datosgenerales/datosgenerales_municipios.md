@@ -6,13 +6,14 @@ Este endpoint devuelve los municipios de las Islas Canarias.
 
 ## Parámetros específicos.
 
-* **codigoIsla**: 
+* **codigoIsla**: 1(Fuerteventura), 2(Lanzarote), 3(Gran Canaria), 4(La Gomera), 5(El Hierro), 6(La Palma), 7(Tenerife).
 * **codigoProvincia**:
 * **fechaReferencia**:
 * **denominacionContiene**:
 * **soloMunicipiosCanarias**:
 
-* 
+* **Observaciones**: Todos los parámetros específicos son opcionales, de modo que si no se indica ninguno, se devuelven todos los municipios canarios.
+* * 
 
 # Ejemplos.
 ### A) Solicitud de los responsables de las zonas de inspección para el curso "2024".
