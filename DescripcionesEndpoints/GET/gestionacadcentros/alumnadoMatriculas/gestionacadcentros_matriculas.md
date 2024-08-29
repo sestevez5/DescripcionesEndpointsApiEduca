@@ -68,7 +68,6 @@ Esta opción está dirigida a la obtención de una colección de matrículas de 
 * Los parámetros "cial", "nifNie" y "pasaporte" son opcionales, aunque se exige cumplimentar, al menos, uno de ellos.
 * Puesto que los parámetros "codigoCentro" y "cursoEscolar" son opcionales, cabe la posibilidad de obtener todas las matrículas de un/a alumno/a en el sistema
 
-
 ## Parámetros específicos de la opción 5
 Esta opción nos permite obtener la colección de matrículas de tutelados de un responsable identificado a partir de su nif, nie o pasaporte.
 
@@ -85,3 +84,9 @@ Esta opción nos permite obtener la colección de matrículas de tutelados de un
 * El parámetro "cursoescolar" es opcional
 * Los parámetros "nifNieResponsable" y "pasaporteResponsable" son opcionales, aunque se exige cumplimentar, al menos, uno de ellos.
 
+# Ejemplos.
+### A) Solicitud de matrículas del centro con código "35010488" en Educación Infantil 6º ( 5 años ) (LOMLOE) (idestudio=8429) en el curso escolar 2024
+* ?opcion=1 & cursoEscolar=2024 & codigoCentro=35010488 & idEstudioSC=8429
+
+### B) Solicitud de todas las matrículas del alumno con nif "45398140G" registradas en el sistema.
+* ?opcion=4 & nifNie=45398140G
