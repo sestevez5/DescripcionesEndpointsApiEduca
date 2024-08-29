@@ -11,9 +11,9 @@ Este endpoint proporciona datos personales del alumnado registrado en los centro
 * **tieneMatriculaActiva**: selecciona al alumnado con matrícula sin fecha de finalización en el curso escolar indicado.
 
 **Observaciones**:
->* Opción 1: Devuelve los datos personales de todo el alumnado a partir del codigoCentro (obligatorio).
->* Opción 2: Devuelve los datos personales del alumnado a partir de su cial, nifnie o pasaporte, siendo obligatorio uno solo de los mismos.
->* Opción 3: Devuelve los datos del alumnado tutelado y de sus responsables a partir del nifnie o pasaporte del responsable, siempre que tenga derecho a información.
+* Opción 1: Devuelve los datos personales de todo el alumnado a partir del codigoCentro (obligatorio).
+* Opción 2: Devuelve los datos personales del alumnado a partir de su cial, nifnie o pasaporte, siendo obligatorio uno solo de los mismos.
+* Opción 3: Devuelve los datos del alumnado tutelado y de sus responsables a partir del nifnie o pasaporte del responsable, siempre que tenga derecho a información.
 
 ## Parámetros específicos
 
