@@ -13,7 +13,6 @@ Este endpoint devuelve los municipios de las Islas Canarias.
 * **soloMunicipiosCanarias**:
 
 **Observaciones**: Todos los parámetros específicos son opcionales, de modo que si no se indica ninguno, se devuelven todos los municipios canarios.
-* 
 
 # Ejemplos.
 
