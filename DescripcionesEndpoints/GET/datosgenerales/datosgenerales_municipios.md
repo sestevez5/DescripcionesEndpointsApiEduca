@@ -13,9 +13,10 @@ Este endpoint devuelve los municipios de las Islas Canarias.
 * **soloMunicipiosCanarias**:
 
 **Observaciones**: Todos los parámetros específicos son opcionales, de modo que si no se indica ninguno, se devuelven todos los municipios canarios.
-* Prueba
+* 
 
 # Ejemplos.
-### A) Solicitud de los responsables de las zonas de inspección para el curso "2024".
-* ?cursoEscolar=2024
+
+### A) Solicitud de los municipios de la isla de La Palma.
+* ?codigoIsla=6
 
