@@ -15,12 +15,12 @@ Este endpoint proporciona datos de actividades susceptibles de disponer de horar
 * **horarioCompleto**: Si se selecciona, se muestran todas las actividades, tanto para cualquier periodo de vigencia como para una colección de fechas, por lo que no se tendrá en cuenta el parámetro _fechaReferenciaHorario_.
 
 **Observaciones**:
->* En todas las opciones los campos _cursoEscolar_ y _codigoCentro_ son obligatorios.
->* Opción 1: Proporciona las actividades de una matrícula. Además del cursoEscolar y codigoCentro, será necesario indicar nifNieAlumnado o cialAlumnado (uno solo de los dos) e idEstudioSC.
->* Opción 2: Proporciona las actividades de un docente-servicio. Además del cursoEscolar y codigoCentro, será necesario indicar el nifNieDocente.
->* Opción 3: Proporciona las actividades de un pas-servicio. Además del cursoEscolar y codigoCentro, será necesario indicar el nifNiePas.
->* Opción 4: Proporciona las actividades de un grupo. Además del cursoEscolar y codigoCentro, será necesario indicar el codigoGrupo.
->* Opción 5: Proporciona las actividades de una dependencia. Además del cursoEscolar y codigoCentro, será necesario indicar el codigoDependencia.
+* En todas las opciones los campos _cursoEscolar_ y _codigoCentro_ son obligatorios.
+* Opción 1: Proporciona las actividades de una matrícula. Además del cursoEscolar y codigoCentro, será necesario indicar nifNieAlumnado o cialAlumnado (uno solo de los dos) e idEstudioSC.
+* Opción 2: Proporciona las actividades de un docente-servicio. Además del cursoEscolar y codigoCentro, será necesario indicar el nifNieDocente.
+* Opción 3: Proporciona las actividades de un pas-servicio. Además del cursoEscolar y codigoCentro, será necesario indicar el nifNiePas.
+* Opción 4: Proporciona las actividades de un grupo. Además del cursoEscolar y codigoCentro, será necesario indicar el codigoGrupo.
+* Opción 5: Proporciona las actividades de una dependencia. Además del cursoEscolar y codigoCentro, será necesario indicar el codigoDependencia.
 
 ## Parámetros específicos
 
@@ -56,16 +56,16 @@ Este endpoint proporciona datos de actividades susceptibles de disponer de horar
 
 # Ejemplos.
 ### A) Solicitud del horario completo de una matrícula para un estudio concreto y un curso escolar determinado.
-> * ?opcion=1 & cursoEscolar=2023 & codigoCentro=35010488 & horarioCompleto=true & cialAlumnado=A95F0610K & idEstudioSC=3206
+* ?opcion=1 & cursoEscolar=2023 & codigoCentro=35010488 & horarioCompleto=true & cialAlumnado=A95F0610K & idEstudioSC=3206
 
 ### B) Solicitud del horario de un docente-servicio para un curso escolar determinado.
-> * ?opcion=2 & cursoEscolar=2023 & codigoCentro=35010488 & nifNieDocente=00000001R
+* ?opcion=2 & cursoEscolar=2023 & codigoCentro=35010488 & nifNieDocente=00000001R
 
 ### C) Solicitud del horario completo de un pas-servicio en la fecha "30/03/2024". 
-> * ?opcion=3 & cursoEscolar=2023 & codigoCentro=35010488 & nifNiePas=Y3003352A & fechaReferenciaServicioPas=2024-03-30
+* ?opcion=3 & cursoEscolar=2023 & codigoCentro=35010488 & nifNiePas=Y3003352A & fechaReferenciaServicioPas=2024-03-30
 
 ### D) Solicitud del horario completo del grupo "2ESOA" para el curso 2023. 
-> * ?opcion=4 & cursoEscolar=2023 & codigoCentro=35010488 & horarioCompleto=true & codigoGrupo=2ESOA
+* ?opcion=4 & cursoEscolar=2023 & codigoCentro=35010488 & horarioCompleto=true & codigoGrupo=2ESOA
 
 ### E) Solicitud del horario de actividades en la dependencia "A10" en la fecha "30/05/2024". 
-> * ?opcion=5 & cursoEscolar=2023 & codigoCentro=35010488 & fechaReferenciaHorario=2024-05-30 & codigoDependencia=A10
+* ?opcion=5 & cursoEscolar=2023 & codigoCentro=35010488 & fechaReferenciaHorario=2024-05-30 & codigoDependencia=A10
