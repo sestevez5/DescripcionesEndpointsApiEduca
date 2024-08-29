@@ -8,8 +8,8 @@ Este endpoint devuelve los datos de los docentes a partir del código del centro
 * **nivelDetalle**: r, m, e (reducido, medio, extendido). Si no se indica, su valor por defecto será r.
 
 **Observaciones**:
->* Opción 1: Además del codigoCentro, será necesario indicar nifnie o pasaporte.
->* Opción 2: Además del codigoCentro, opcionalmente se podrá seleccionar tieneServicioEnElCentro y/o tieneServicioEnElCurso.
+* Opción 1: Además del codigoCentro, será necesario indicar nifnie o pasaporte.
+* Opción 2: Además del codigoCentro, opcionalmente se podrá seleccionar tieneServicioEnElCentro y/o tieneServicioEnElCurso.
 
 ## Parámetros específicos
 
@@ -27,12 +27,12 @@ Este endpoint devuelve los datos de los docentes a partir del código del centro
 
 # Ejemplos.
 ### A) Solicitud de datos extendidos del docente con nif = 00000001R en el centro con código "35010488".
-> * ?opcion=1 & codigoCentro=35010488 & nifnie=00000001R & nivelDetalle=e
+* ?opcion=1 & codigoCentro=35010488 & nifnie=00000001R & nivelDetalle=e
 
 ### B) Solicitud de datos reducidos de todos los docentes del centro con código "35010488".
-> * ?opcion=2 & codigoCentro=35010488
+* ?opcion=2 & codigoCentro=35010488
 
 ### C) Solicitud de datos con nivel de detalle medio de los docentes del centro con código "35010488" y servicio en el curso 2023. 
-> * ?opcion=2 & codigoCentro=35010488 & tieneServicioEnElCentro=true & tieneServicioEnElCurso=2023 & nivelDetalle=m
+* ?opcion=2 & codigoCentro=35010488 & tieneServicioEnElCentro=true & tieneServicioEnElCurso=2023 & nivelDetalle=m
 
 
