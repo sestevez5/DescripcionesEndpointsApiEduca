@@ -6,8 +6,8 @@ Este endpoint devuelve los municipios de las Islas Canarias.
 
 ## Parámetros específicos.
 
-* **codigoIsla**: 1(Fuerteventura), 2(Lanzarote), 3(Gran Canaria), 4(La Gomera), 5(El Hierro), 6(La Palma), 7(Tenerife).
-* **codigoProvincia**:
+* **codigoIsla**: 1 (*Fuerteventura*), 2 (*Lanzarote*), 3 (*Gran Canaria*), 4 (*La Gomera*), 5 (*El Hierro*), 6 (*La Palma*), 7 (*Tenerife*).
+* **codigoProvincia**: 35 (*Las Palmas de Gran Canaria*), 38 (*Santa Cruz de Tenerife*).
 * **fechaReferencia**:
 * **denominacionContiene**:
 * **soloMunicipiosCanarias**:
