@@ -37,14 +37,14 @@ Este endpoint proporciona datos personales del alumnado registrado en los centro
 
 # Ejemplos.
 ### A) Solicitud de datos con nivelDetalle extendido del alumno con cial B00P08015J.
-> * ?opcion=2 & cial=B00P08015J & nivelDetalle=e
+* ?opcion=2 & cial=B00P08015J & nivelDetalle=e
 
 ### B) Solicitud de datos con nivelDetalle reducido de todo el alumnado del centro con código "35010488".
-> * ?opcion=1 & codigoCentro=35010488
+* ?opcion=1 & codigoCentro=35010488
 
 ### C) Solicitud de datos con nivelDetalle medio del alumnado del centro con código "35010488" y matrícula en el curso 2023.
-> * ?opcion=1 & codigoCentro=35010488 & conMatriculaEnElCurso=2023 & nivelDetalle=m
+* ?opcion=1 & codigoCentro=35010488 & conMatriculaEnElCurso=2023 & nivelDetalle=m
 
 ### D) Solicitud de datos con nivelDetalle extendido del alumnado tutelado por el responsable con pasaporte "DWM669980P".
-> * ?opcion=3 & tieneMatriculaActiva=true & pasaporteResponsable=DWM669980P & nivelDetalle=e
+* ?opcion=3 & tieneMatriculaActiva=true & pasaporteResponsable=DWM669980P & nivelDetalle=e
 
