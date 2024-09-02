@@ -27,7 +27,7 @@ Este endpoint proporciona las fotos del alumnado que figuran en su expediente.
 **Observaciones**: Solo se debe indicar uno de los parámetros. Los campos codigoCentro, cial, nifNie y pasaporte no están permitidos en esta opción.
 
 # Ejemplos.
-### A) Solicitud de todas las fotos del alumnado del centro con código "35010488" y pasaporte "119227796".
+### A) Solicitud de todas las fotos del alumnado con pasaporte "119227796" del centro con código "35010488".
 * ?opcion=1 & codigoCentro=35010488 & pasaporte=119227796 & todasLasFotos=true
 
 ### B) Solicitud de la foto más reciente del alumnado con idAlumnadoCentro = "EA1EF2E1-E86B-42F5-A659-1152F745EF37".
