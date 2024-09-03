@@ -2,7 +2,7 @@
 
 Este endpoint devuelve la colección de alumnado con NEAE. Nótese que una NEAE se establece sobre una matrícula y no sobre un/a alumno/a.
 Es importante destacar que las NEAE tienen un periodo de vigencia que, por defecto, coincide con el curso escolar completo, pero el rango de vigencia puede ser más reducido. 
-Por otro lado, es importante destacar que pueden establecerse múltiples NEAE sobre una misma matrícula, siempre y cuando estas no se solapen en el tiempo. Esto ocurre cuando, por ejemplo, hay una revisión de una NEAE y se considera oportuno alterar las condiciones. No debe modificarse la NEAE original, puesto que afecta al pasado formativo del alumnado y podría tener concecuencias indeseables en materia de evaluación.
+Por otro lado, es importante destacar que pueden establecerse múltiples NEAE sobre una misma matrícula, siempre y cuando estas no se solapen en el tiempo. Esto ocurre cuando, por ejemplo, hay una revisión de una NEAE y se considera oportuno alterar las condiciones. No debe modificarse la NEAE original, puesto que afecta al pasado formativo del alumnado y podría tener consecuencias indeseables en materia de evaluación.
 
 
 
