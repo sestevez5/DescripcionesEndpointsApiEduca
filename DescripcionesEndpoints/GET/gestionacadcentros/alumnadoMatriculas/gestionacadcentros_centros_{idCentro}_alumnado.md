@@ -12,9 +12,7 @@ Este endpoint proporciona los datos personales de todo el alumnado de un centro 
   * No establecido: Devuelve todo el alumnado.
   * Sí: Devuelve al alumnado con matrícula en el centro.
   * No: Devuelve al alumnado que no tiene matrícula en el centro.
-* **tieneMatriculaEnCurso**: selecciona al alumnado que está matriculado en el curso escolar indicado (Ej. 2023).
-
-* **Observaciones**:
+* **tieneMatriculaEnCurso**: selecciona al alumnado que está matriculado en el curso escolar indicado (Ej. 2023). Cuando se indica, no es posible elegir la opción "No" del parámetro _tieneMatriculaCentro_.
 
 # Ejemplos.
 ### A) Solicitud de datos reducidos de todo el alumnado con matrícula en un centro para un idCentro concreto.
