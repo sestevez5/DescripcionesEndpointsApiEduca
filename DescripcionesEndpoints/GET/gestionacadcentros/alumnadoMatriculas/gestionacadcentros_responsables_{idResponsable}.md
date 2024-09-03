@@ -1,6 +1,6 @@
 # Descripción general
 
-Este endpoint proporciona datos de los responsables y las matrículas asociadas a partir del parámetro _idResponsable_.
+Este endpoint proporciona datos de los responsables y las matrículas asociadas a partir del parámetro _idResponsable_, por lo que está orientado a aplicaciones consumidoras que conocen identificadores internos de Pincel de las entidades que representan los parámetros.
 
 ## Parámetros específicos
 
