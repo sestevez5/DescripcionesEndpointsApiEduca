@@ -18,5 +18,5 @@ Este endpoint proporciona los datos personales de todo el alumnado de un centro 
 ### A) Solicitud de datos reducidos de todo el alumnado con matrícula en un centro para un idCentro concreto.
 * 561EBA45-51E5-4E3F-BA6B-C4CBB8363079/alumnado?tieneMatriculaCentro=true
    
-### A) Solicitud de datos extendidos del alumnado con matrícula en el curso 2023 para un idCentro concreto.
+### B) Solicitud de datos extendidos del alumnado con matrícula en el curso 2023 para un idCentro concreto.
 * 561EBA45-51E5-4E3F-BA6B-C4CBB8363079/alumnado?tieneMatriculaCentro=true & tieneMatriculaEnCurso=2023 & nivelDetalle=e
