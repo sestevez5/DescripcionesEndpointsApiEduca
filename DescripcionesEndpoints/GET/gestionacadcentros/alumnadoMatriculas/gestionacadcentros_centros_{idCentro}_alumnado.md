@@ -10,7 +10,8 @@ Este endpoint proporciona los datos personales de todo el alumnado de un centro 
 * **idCentro**: Obligatorio (Ej. 561EBA45-51E5-4E3F-BA6B-C4CBB8363079)
 * **tieneMatriculaCentro**: permite seleccionar al alumnado que está matriculado.
   * No establecido: Devuelve todo el alumnado.
-  * 
+  * Sí: Devuelve al alumnado con matrícula en el centro.
+  * No: Devuelve al alumnado que no tiene matrícula en el centro.
 * **tieneMatriculaEnCurso**: selecciona al alumnado que está matriculado en el curso escolar indicado (Ej. 2023).
 
 # Ejemplos.
