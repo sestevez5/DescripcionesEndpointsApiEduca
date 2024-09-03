@@ -1,6 +1,6 @@
 # Descripción general.
 
-Este endpoint devuelve los responsables de las diferentes zonas de inspección.
+Este endpoint devuelve información relativa a las zonas de inspección en materia educativa en las que está dividida la Comunidad Educativa.
 
 **Observaciones**: Aparte de los parámetros optativos de caracter general de paginación (_posicionInicial_ y _tamanyoBloque_), el campo *cursoEscolar* es obligatorio.
 
@@ -9,6 +9,6 @@ Este endpoint devuelve los responsables de las diferentes zonas de inspección.
 * **cursoEscolar**: Obligatorio (Ej. 2023).
 
 # Ejemplos.
-### A) Solicitud de los responsables de las zonas de inspección para el curso "2024".
+### A) Solicitud de las zonas de inspección para el curso "2024".
 * ?cursoEscolar=2024
 

@@ -2,13 +2,24 @@
 ApiEduca es un API REST que expone las entidades que se gestionan en la Herramienta de Gestión Académica y Administrativa de los centros educativos (Pincel Ekade). No obstante, de forma temporal, también se han incluidos entidades externas como, por ejemplo, algunas de las gestionadas en el Directorio de Centros o el Plan de Estudios de Canarias.
 
 # Seguridad.
-ApiEduca es un Api de carácter interno y su consumo solo puede realizarse a través de la Intranet corporativa . Además, es condición necesaria disponer de un ApiKey para su acceso. Este ApiKey tendrá asociado unos niveles de autorización que, en buena parte, marcarán los privilegios de acceso y manipulación de los recursos expuestos.
+ApiEduca es un Api de carácter interno y su consumo solo puede realizarse a través de la Intranet Corporativa . Además, es condición necesaria disponer de un ApiKey para su acceso. Este ApiKey tendrá asociado unos niveles de autorización que, en buena parte, marcarán los privilegios de acceso y manipulación de los recursos expuestos.
 
 Existen determinados endpoints en los que disponer de un ApiKey con los privilegios necesarios no nos aporta el acceso a los mismos. Dichos endpoints requieren de una autenticación personal. ApiEduca provee de diferentes endpoints para realizar la autenticación cubriendo las diferentes casuísticas. Ver [Anexo I](#AnexoI)
 
-
 # Generalidades.
-Se ha intentado imprimir la máxima regularidad en la implementación de los endpoints que conforman este Api con el objetivo de normalizar su desarrollo y, a la par, simplificar su consumo.  En este apartado describiremos lo que, a nuestro juicio, en conveniente conocer por su carácter transversal.
+Se ha intentado imprimir la máxima regularidad en la implementación de los endpoints que conforman este Api con el objetivo de normalizar su desarrollo y, a la par, simplificar su consumo.  En este apartado describiremos lo que, a nuestro juicio, en conveniente conocer por su carácter transversal, evitando, así, reiterar las mismas especificaciónes en diferentes Endpoints.
+
+# Estructura de los endpoints.
+
+Podemos distinguir tres unidades de información en los endpoints: servidor, sistema y segmentos propios del endpoint.
+
+* Disponemos de dos entornos: preproducción y producción. El segmento unicial de las uris correspondientes a los endpoints en cada entorno serán: https://wwwpre.educacion.org/educacion/bussed/apieduca y https://www.gobiernodecanarias.org/educacion/bussed/apieduca.
+* Los endpoints estarán dentro de un sistema y dicho sistema se identificará en el primer segmento. Justo el segmento que sigur al indicado en el punto anterior.
+
+Veamos algunos ejemplos:
+
+Ejemplo 1: https://www.gobiernodecanarias.org/educacion/bussed/apieduca/centros/zonas-inspeccion: endpoint que devuelve las diferentes zonas de inspección que se han establecidos en materia de educación en la Comunidad Canarias. Es una gestión correspondiente al Directorio de Centros y, por tanto, el "sistema" es "centros". En este caso, atendiendo al comienzo de la uri podemos ver que se trata de un endpoint del entornod e producción.
+Ejemplo 2: https://wwwpre.educacion.org/educacion/bussed/apieduca/gestionacadcentros/matriculas: endpoint de que devuelve una colección de matrículas del entorno de preproducción. Se trata de información proveniente de Pincel Ekade. La sección del endpoint que sistema que representa a todas las entidades provenientes de Pincel Ekade es  "gestionacadcentros" (Gestión académica y administrativa de centros).
 
 
 ## Estructura de las respuestas.
@@ -42,12 +53,12 @@ Es importante destacar que la intención primera de codificación del segundo ca
 ## Colecciones.
 
 ### Parámetros de carácter general.
-Los endpoints de tipo GET que devuelven colecciones de datos conforman el conjunto más representativo de endpoints de ApiEduca y, probablemente, el más demandado. Es muy importante, por tanto, aportarle la suficiente flexibilidad para que cubra las necesidades de la mayoría de los consumidores, aunque evitando dar respuestas sobreajustadas que provoquen un exceso de configuraciones que compliquen su uso e implementación. Como respuesta a la flexibilidad requerida hemos modelado de forma transversal, tanto en lo referente a la información devuelta como en la oferta de parámetros. La mayoría de los endpoints que devuelven colecciones disponen de, al menos, uno de los siguientes parámetros.
+Los endpoints de tipo GET que devuelven colecciones de datos conforman el conjunto más representativo de endpoints de ApiEduca y, probablemente, el más demandado. Es muy importante, por tanto, aportarle la suficiente flexibilidad para que cubra las necesidades de la mayoría de los consumidores, aunque evitando dar respuestas sobreajustadas que provoquen un exceso de configuraciones que compliquen su uso e implementación. Como respuesta a la flexibilidad hemos uniformado los parámetros que establecen especificaciones de carácter general, tanto en lo referente a la información devuelta como en la oferta de parámetros. Son los siguientes:
 
-- **Nivel de detalle**: este parámetro nos permite especificar la cantidad de información que vamos a recibir en la colección de cada uno de los objetos. Los valores posibles son "r"(reducido), "m"(medio) y "e"(extendido), aunque puede que algunos endpoints no ofrezcan todos los niveles. Es obvio que el uso del nivel reducido redundará en una mejora del rendimiento. En general, se aconseja usar siempre el nivel mínimo que aporte la información requerida.
+- **Nivel de detalle**: muchos de los endpoints que devuelven colecciones de objetos nos permite establecer el nivel de información devuelta en estos objetos. Es decir, nos permiten establecer la estructura de los objetos devueltos. El parámetro es "nivelDetalle" y sus valores posibles son "r"(reducido), "m"(medio) y "e"(extendido), aunque puede que algunos endpoints no ofrezcan todos los niveles. Es obvio que el uso del nivel reducido redundará en una mejora del rendimiento. En general, se aconseja usar siempre el nivel mínimo que aporte la información requerida.
 En este punto hay otro aspecto a destacar y es el relacionado con la seguridad. Puede que a determinados usuarios solo se les permita hacer uso de niveles reducidos de contenido debido a que los extendidos exponen información a la que dichos usuarios no están autorizados a acceder.
 
-- **Opción**:  este parámetro podrá tomar como valor un número natural: 1, 2, 3, ... Cada una de las opciones tiene establecido un conjunto de parámetros "query" validos. Es decir, puede que el endpoint disponga de un nutrido conjunto de parámetros query establecido, pero cada opción establecerá qué subconjunto de los mismos es válido ante dicha opción.
+- **Opcion**: en algunos de los endpoints que devuelven colecciones se permite aplicar filtros de diferentes formas. Cada una de esas formas es lo que denominamos "opción". En la descripción de cada endpoint de especifica los parámetros que conforman cada una de las opciones.
 
 - **Paginación**: posicionInicial y tamanyoBloque: como es obvio, debemos establecer un sistema de paginación ante endpoints que devuelven colecciones de entidades. Hemos definido dos parámetros para establecer la página requerida en la respuesta a través de la posición inicial del paquete solicitado y el número de datos requerido. Por ejemplo, si indicamos en el parámetro "posicionInicial" el valor 4 y al parámetro "tamanyoBloque" el valor 70, el sistema devolverá la cuarta página de un sistema de bloques de 70 registros.
 En caso de omisión de estos parámetros se devolverá la primera página de una paginación de bloques de tamaño 100. (posicionIniciao=0 y tamanyoBloque=100).
@@ -55,3 +66,29 @@ En caso de omisión de estos parámetros se devolverá la primera página de una
 ### Orden <pendiente>
 
 ## [Anexo I]{#AnexoI} 
+
+La autenticación en ApiEduca, como la mayoría de Apis de tipo ApiREST, está basada en tokens. En concreto, en el modelo JWT Bearer. Por tanto, como paso previo a cualquier invocación de endpoints necesitamos obtener un token váldio.
+
+Para la obtención del token disponemos de varias opciones (endpoints). Estos endpoint son los siguientes:
+
+* /seguridad/autenticacion-por-aplicacion
+* /seguridad/autenticacion-por-guidsesion
+* /seguridad/autenticacion-por-usuario
+
+Los tres endpoints tienen en común que requieren como parámetro la ApiKey que representa a la aplicación consumidora.  El primero de ellos (por aplicación) no requiere ningún otro parámetro y, por tanto, no se le traslada información relativa a ningún usuario. Obviamente, haciendo uso de este endpoint para generar el token de autenticación vamos a tener restricciones en el consumo de determinados endpoints: aquellos que requieren de un usuario para su consumo.
+
+
+Los otros dos endpoint ( por guidsesion y usuario ) requerirán información de un usuario. 
+
+El primero hará uso de un guissesion proveniente del sistema de Autenticación SUA. Es interesante cuando el consumo de los endpoints se realice a través de una aplicación que ya ha requerido la autenticación SUA y dispone, por tanto, de un guidsesion, evitando pasar por un nuevo proceso de autenticación para el consumo de ApiEduca. 
+
+En cuanto al segundo endpoint vamos a tener que suministrarle las credenciales SUA como parámetros adicionales del endpoint y será el endpoint quien realice la autenticación a través del Sistema SUA.
+
+
+
+
+
+
+
+
+
