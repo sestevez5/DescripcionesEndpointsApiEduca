@@ -1,6 +1,6 @@
 # Descripción general
 
-Este endpoint proporciona datos personales del alumnado y de sus responsables a partir del parámetro *idAlumnoCentro*.
+Este endpoint proporciona datos personales del alumnado y de sus responsables a partir del parámetro *idAlumnoCentro*, por lo que está orientado a aplicaciones consumidoras que conocen identificadores internos de Pincel de las entidades que representan los parámetros.
 
 ## Parámetros específicos
 
