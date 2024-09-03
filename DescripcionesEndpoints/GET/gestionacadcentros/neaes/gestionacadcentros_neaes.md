@@ -11,7 +11,7 @@ Por otro lado, es importante señalar que pueden establecerse múltiples NEAE so
 ## Parámetros comunes
 * **opcion**: 1, 2. Se deberá escoger una obligatoriamente.
 * **nivelDetalle**: r, m, e (reducido, medio, extendido). Si no se indica, su valor por defecto será r.
-* **fechaReferencia**: Es un parámetro no obligatorio y, en caso de que se omita, se considerará la fecha del sistema. Solo se devolverán las neaes vigentes a la fecha indicada ( o del sistema si no se especifica )
+* **fechaReferencia**: Es un parámetro no obligatorio y, en caso de que se omita, se considerará la fecha del sistema. Solo se devolverán las neae vigentes a la fecha indicada (o del sistema si no se especifica )
 
 ## Parámetros específicos
 
@@ -24,18 +24,18 @@ Por otro lado, es importante señalar que pueden establecerse múltiples NEAE so
 
 ### Opción 2
 * **idCursoCentro**: Campo obligatorio. Debe corresponderse con un valor GUID de la entidad "CursoCentro" en Pincel Ekade.
-* **idGrupo**: Campo no obligatorio. Debe corresponderse con un valor GUID de la entidad "Grupo". Solo se tendrán en cuentas los grupos clase
+* **idGrupo**: Campo no obligatorio. Debe corresponderse con un valor GUID de la entidad "Grupo". Solo se tendrán en cuentas los grupos clase.
 * **idEstudio**: Campo no obligatorio. Debe corresponderse con un valor GUID de la entidad "Estudio" en Pincel Ekade. 
 
 **Observaciones**: Esta opción está orientada a aplicaciones consumidoras que conocen identificadores internos de Pincel de las entidades que representan los parámetros. 
 
 
 # Ejemplos.
-### A) Obtener todas las NEAES registradas en el centro con código 35010488 en el curso escolar 2024 activas en la fecha de la ejecución.
+### A) Obtener todas las NEAE registradas en el centro con código 35010488 en el curso escolar 2024 activas en la fecha de la ejecución.
 * ?opcion=1 & cursoEscolar=2024 & codigoCentro=35010488
 
-### B) Obtener todas las NEAES registradas en el centro con código 35010488 en el curso escolar 2024 que estén activas el 25/12/2024
+### B) Obtener todas las NEAE registradas en el centro con código 35010488 en el curso escolar 2024 que estén activas el 25/12/2024.
 * ?opcion=1 & cursoEscolar=2024 & codigoCentro=35010488 & fechaReferencia=2024-03-30
 
-### C) Obtener todas las NEAES registradas en el cursoCentro con identificador interno "561EBA45-51E5-4E3F-BA6B-C4CBB8363079".
+### C) Obtener todas las NEAE registradas en el cursoCentro con identificador interno "561EBA45-51E5-4E3F-BA6B-C4CBB8363079".
 * ?opcion=2 & idCursoCentro=44C3D926-9D68-4D2B-9D34-8BDEA9344703
