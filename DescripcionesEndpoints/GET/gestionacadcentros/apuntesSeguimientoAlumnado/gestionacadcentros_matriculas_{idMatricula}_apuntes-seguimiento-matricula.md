@@ -2,7 +2,7 @@
 
 Este endpoint proporciona información detallada de todos los apuntes de seguimiento (fecha, hora, motivo, tipo, etc.) asociados a una matrícula a partir del parámetro *idMatricula*, por lo que está orientado a aplicaciones consumidoras que conocen identificadores internos de Pincel de las entidades que representan los parámetros.  
 
-## Parámetros específicos
+## Parámetros específicos.
 
 * **idMatricula**: Obligatorio (Ej. ef1e4d24-f728-4c69-9b95-91668ba2c4fd)
 * **soloFaltas**:
