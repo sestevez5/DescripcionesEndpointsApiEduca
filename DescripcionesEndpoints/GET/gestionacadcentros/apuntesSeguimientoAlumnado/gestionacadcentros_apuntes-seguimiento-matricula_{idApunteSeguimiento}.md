@@ -1,6 +1,6 @@
 # Descripción general.
 
-Este endpoint proporciona información detallada de un apunte de seguimiento a partir del parámetro *idApunteSeguimiento*, por lo que está orientado a aplicaciones consumidoras que conocen identificadores internos de Pincel de las entidades que representan los parámetros.  
+Este endpoint proporciona información detallada de un apunte de seguimiento (fecha, hora, motivo, tipo, etc.) a partir del parámetro *idApunteSeguimiento*, por lo que está orientado a aplicaciones consumidoras que conocen identificadores internos de Pincel de las entidades que representan los parámetros.  
 
 ## Parámetros específicos
 
