@@ -1,6 +1,6 @@
 # Descripción general.
 
-Este endpoint devuelve los municipios de las Islas Canarias.
+Este endpoint devuelve los nombres de todos los municipios de las Islas Canarias.
 
 **Observaciones**: Aparte de los parámetros optativos de caracter general de paginación (_posicionInicial_ y _tamanyoBloque_), existen otros, también opcionales, que modulan la respuesta.
 
