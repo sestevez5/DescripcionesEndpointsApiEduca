@@ -14,8 +14,8 @@ Este endpoint proporciona información detallada de todos los apuntes de seguimi
 * **soloUltimosApuntes**: Si se indica un valor (entero positivo), devolverá únicamente los últimos apuntes especificados por dicho número (Ej. 10 devolverá los últimos diez apuntes de seguimiento).
 * **tipoApunte**: Si se establece, se devolverán únicamente los apuntes cuyo código se haya especificado en este campo (Ej. FI proporciona solo las faltas sin justificar).
 
-
-Los códigos provienen de la tabla XFA_TTiposApuntesSeguimiento
+**Observaciones**:
+Los valores de los códigos del parámetro **tipoApunte** son los correspondientes al campo *Codigo* de la tabla XFA_TTiposApuntesSeguimiento (ND, FJ, FI, AP, etc.).
 
 # Ejemplos.
 ### A) Solicitud de datos del apunte de seguimiento para el idApunteSeguimiento = "ba8edd81-01b5-4fc1-8741-67954cc83ea9".
