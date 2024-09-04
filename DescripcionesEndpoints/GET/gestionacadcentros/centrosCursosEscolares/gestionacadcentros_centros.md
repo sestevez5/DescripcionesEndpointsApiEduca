@@ -1,8 +1,8 @@
-# Descripción general
+# Descripción general.
 
 Este endpoint proporciona información de los centros educativos.
 
-## Parámetros comunes
+## Parámetros comunes.
 * **codigoCentro**: Si no se indica, se muestran todos los centros (Ej. 38010773)
 * **idCentroSC**: Si no se indica, se muestran todos los centros (Ej. 2250)
 * **codEtapaCentro**: Si no se indica, se muestran todos los tipos de centros (Ej. IES).
