@@ -12,11 +12,20 @@ Este endpoint proporciona información detallada de todos los apuntes de seguimi
 * **fechaHoraHasta**: Si se indica, solamente se devolverán los apuntes cuya fecha y horaInicio sea igual o anterior a la especificada (Ej. 2024-05-06T10:45:00)
 * **codigoArea**: Si se establece, devolverá únicamente los apuntes asociados a la matrícula correspondientes al área con el código especificado (Ej. FCT).
 * **soloUltimosApuntes**: Si se indica un valor (entero positivo), devolverá únicamente los últimos apuntes especificados por dicho número (Ej. 10 devolverá los últimos diez apuntes de seguimiento).
-* **tipoApunte**: Si se establece, se devolverán únicamente los apuntes cuyo código se haya especificado en este campo (Ej. FI proporciona solo las faltas sin justificar).
+* **tipoApunte**: Si se establece (cadena de texto), se devolverán únicamente los apuntes cuyo código se haya especificado en este campo (Ej. FI proporciona solo las faltas sin justificar).
 
 **Observaciones**:
 Los valores de los códigos del parámetro **tipoApunte** son los correspondientes al campo *Codigo* de la tabla XFA_TTiposApuntesSeguimiento (ND, FJ, FI, AP, etc.).
 
 # Ejemplos.
 ### A) Solicitud de datos del apunte de seguimiento para el idApunteSeguimiento = "ba8edd81-01b5-4fc1-8741-67954cc83ea9".
+* ba8edd81-01b5-4fc1-8741-67954cc83ea9
+
+### B) Solicitud de datos del apunte de seguimiento para el idApunteSeguimiento = "ba8edd81-01b5-4fc1-8741-67954cc83ea9".
+* ba8edd81-01b5-4fc1-8741-67954cc83ea9
+
+### C) Solicitud de datos del apunte de seguimiento para el idApunteSeguimiento = "ba8edd81-01b5-4fc1-8741-67954cc83ea9".
+* ba8edd81-01b5-4fc1-8741-67954cc83ea9
+
+### D) Solicitud de datos del apunte de seguimiento para el idApunteSeguimiento = "ba8edd81-01b5-4fc1-8741-67954cc83ea9".
 * ba8edd81-01b5-4fc1-8741-67954cc83ea9
