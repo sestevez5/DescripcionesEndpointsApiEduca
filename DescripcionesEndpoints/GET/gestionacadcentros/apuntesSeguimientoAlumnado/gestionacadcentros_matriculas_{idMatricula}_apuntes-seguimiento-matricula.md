@@ -21,11 +21,11 @@ Los valores de los códigos del parámetro **tipoApunte** son los correspondient
 ### A) Solicitud de solo las faltas para la matrícula con idMatricula = "ef1e4d24-f728-4c69-9b95-91668ba2c4fd" el día 12/03/24 entre las 08:00:00 y las 14:00:00.
 * ef1e4d24-f728-4c69-9b95-91668ba2c4fd/apuntes-seguimiento-matricula?soloFaltas=true & fechaHoraDesde=2024-03-12T08:00:00 & fechaHoraHasta=2024-03-12T14:00:00
 
-### B) Solicitud de datos del apunte de seguimiento para el idApunteSeguimiento = "ba8edd81-01b5-4fc1-8741-67954cc83ea9".
-* ba8edd81-01b5-4fc1-8741-67954cc83ea9
+### B) Solicitud de todos los apuntes de seguimiento del área con código = "MAT" para la matrícula con idMatricula = "ef1e4d24-f728-4c69-9b95-91668ba2c4fd".
+* ef1e4d24-f728-4c69-9b95-91668ba2c4fd/apuntes-seguimiento-matricula?codigoArea=MAT
 
-### C) Solicitud de datos del apunte de seguimiento para el idApunteSeguimiento = "ba8edd81-01b5-4fc1-8741-67954cc83ea9".
-* ba8edd81-01b5-4fc1-8741-67954cc83ea9
+### C) Solicitud de los 5 últimos apuntes de seguimiento con tipoApunte = "AP" (Codigo = "Anotación positiva") para la matrícula con idMatricula = "ef1e4d24-f728-4c69-9b95-91668ba2c4fd".
+* ef1e4d24-f728-4c69-9b95-91668ba2c4fd/apuntes-seguimiento-matricula?soloFaltas=false & soloUltimosApuntes=5 & tipoApunte=AP
 
-### D) Solicitud de datos del apunte de seguimiento para el idApunteSeguimiento = "ba8edd81-01b5-4fc1-8741-67954cc83ea9".
-* ba8edd81-01b5-4fc1-8741-67954cc83ea9
+### D) Solicitud de las últimas 8 faltas injustificadas (tipoApunte = FI) del área con código = "EFI" hasta el día 30/05/2024 a las 14:00:00 para la matrícula con idMatricula = "ef1e4d24-f728-4c69-9b95-91668ba2c4fd".
+* ef1e4d24-f728-4c69-9b95-91668ba2c4fd/apuntes-seguimiento-matricula?soloFaltas=true & fechaHoraHasta=2024-05-30T14:00:00 & codigoArea=EFI & soloUltimosApuntes=8 & tipoApunte=FI
