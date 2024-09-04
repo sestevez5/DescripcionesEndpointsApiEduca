@@ -1,6 +1,12 @@
 # Descripción general.
 
-Este endpoint proporciona información detallada de un apunte de seguimiento a partir de .
+Este endpoint proporciona información detallada de un apunte de seguimiento a partir del parámetro *idApunteSeguimiento*, por lo que está orientado a aplicaciones consumidoras que conocen identificadores internos de Pincel de las entidades que representan los parámetros.  
 
-**Observaciones**:
-Los únicos parámetros son los de carácter general de paginación (*posicionInicial* y *tamanyoBloque*).
+## Parámetros específicos
+
+* **idApunteSeguimiento**: Obligatorio (Ej. ba8edd81-01b5-4fc1-8741-67954cc83ea9)
+
+# Ejemplos.
+### A) Solicitud de datos del apunte de seguimiento para el idApunteSeguimiento = "ba8edd81-01b5-4fc1-8741-67954cc83ea9".
+* ba8edd81-01b5-4fc1-8741-67954cc83ea9
+
