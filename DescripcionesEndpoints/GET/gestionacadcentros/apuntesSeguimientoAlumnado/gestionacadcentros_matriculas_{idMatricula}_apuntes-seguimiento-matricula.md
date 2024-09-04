@@ -6,7 +6,8 @@ Este endpoint proporciona información detallada de todos los apuntes de seguimi
 
 * **idMatricula**: Obligatorio (Ej. ef1e4d24-f728-4c69-9b95-91668ba2c4fd)
 * **soloFaltas**:
-  * Si se no se establece valor 
+  * Si se no se establece valor o se elige "No", se devolverán los apuntes de seguimiento de cualquier tipo.
+  * Si se escoge el valor "Sí", solo devolverá los apuntes de seguimiento con el atributo "EsAusencia = 1" (Ej. Falta justificada, Retrasos y salidas anticipadas, etc.).
 * **fechaHoraDesde**:
 * **fechaHoraHasta**:
 * **codigoArea**:
