@@ -1,8 +1,8 @@
-# Descripción general
+# Descripción general.
 
 Este endpoint proporciona datos de las matrículas asociadas a los responsables del alumnado.
 
-## Parámetros específicos
+## Parámetros específicos.
 
 * **cursoEscolar**: Si se indica, muestra las matrículas para el curso escolar especificado (Ej. 2022).
 * **codigoCentro**: Si se indica, muestra las matrículas para el centro especificado (Ej. 35010488).
