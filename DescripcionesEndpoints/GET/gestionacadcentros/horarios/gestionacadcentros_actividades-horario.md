@@ -1,4 +1,4 @@
-# Descripción general
+# Descripción general.
 
 Este endpoint proporciona datos de actividades susceptibles de disponer de horario:
 * Matrículas (alumnado),
@@ -7,7 +7,7 @@ Este endpoint proporciona datos de actividades susceptibles de disponer de horar
 * Grupos,
 * Dependencias.
 
-## Parámetros comunes
+## Parámetros comunes.
 * **opcion**: 1, 2, 3, 4, 5. Se deberá escoger uno obligatoriamente.
 * **cursoEscolar**: Obligatorio (Ej. 2023).
 * **codigoCentro**: Obligatorio (Ej. 38010773).
@@ -22,9 +22,9 @@ Este endpoint proporciona datos de actividades susceptibles de disponer de horar
 * Opción 4: Proporciona las actividades de un grupo. Además del cursoEscolar y codigoCentro, será necesario indicar el codigoGrupo.
 * Opción 5: Proporciona las actividades de una dependencia. Además del cursoEscolar y codigoCentro, será necesario indicar el codigoDependencia.
 
-## Parámetros específicos
+## Parámetros específicos.
 
-### Opción 1
+### Opción 1.
 * **nifNieAlumnado**: NIF o NIE del alumnado.
 * **cialAlumnado**: CIAL del alumnado.
 * **fechaReferenciaMatricula**: Si no se especifica, se considera la fecha del sistema.
@@ -32,24 +32,24 @@ Este endpoint proporciona datos de actividades susceptibles de disponer de horar
 
 **Observaciones**: No están permitidos en esta opción los campos _nifNieDocente_, _fechaReferenciaServicioDocente_, _nifNiePas_, _fechaReferenciaServicioPas_, _codigoGrupo_, _codigoDependencia_.
 
-### Opción 2
+### Opción 2.
 * **nifNieDocente**: NIF o NIE del docente.
 * **fechaReferenciaServicioDocente**: Si no se especifica, se considera la fecha del sistema.
 
 **Observaciones**: No están permitidos en esta opción los campos _nifNieAlumnado_, _cialAlumnado_, _fechaReferenciaMatricula_, _idEstudioSC_, _nifNiePas_, _fechaReferenciaServicioPas_, _codigoGrupo_, _codigoDependencia_.
 
-### Opción 3
+### Opción 3.
 * **nifNiePas**: NIF o NIE del personal de administración y servicios.
 * **fechaReferenciaServicioPas**: Si no se especifica, se considera la fecha del sistema.
 
 **Observaciones**: No están permitidos en esta opción los campos _nifNieAlumnado_, _cialAlumnado_, _fechaReferenciaMatricula_, _idEstudioSC_, _nifNieDocente_, _fechaReferenciaServicioDocente_, _codigoGrupo_, _codigoDependencia_.
 
-### Opción 4
+### Opción 4.
 * **codigoGrupo**: Obligatorio (Ej. ESO1A).
 
 **Observaciones**: No están permitidos en esta opción los campos _nifNieAlumnado_, _cialAlumnado_, _fechaReferenciaMatricula_, _idEstudioSC_, _nifNieDocente_, _fechaReferenciaServicioDocente_, _nifNiePas_, _fechaReferenciaServicioPas_ , _codigoDependencia_.
 
-### Opción 5
+### Opción 5.
 * **codigoDependencia**: Obligatorio (Ej. A10).
 
 **Observaciones**: No están permitidos en esta opción los campos _nifNieAlumnado_, _cialAlumnado_, _fechaReferenciaMatricula_, _idEstudioSC_, _nifNieDocente_, _fechaReferenciaServicioDocente_, _nifNiePas_, _fechaReferenciaServicioPas_ , _codigoGrupo_.
