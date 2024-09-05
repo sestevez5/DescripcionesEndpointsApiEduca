@@ -9,7 +9,7 @@ Este endpoint devuelve la colección de entradas públicas del calendario, es de
 * **fechaHasta**: Si se indica, devuelve las entradas con fecha igual o anterior a la especificada (Ej. 2023-03-15T14:00:00).
 
 **Observaciones**:
-* En el caso de no establecerse los parámetros fechaDesde o fechaHasta, se utilizarán los del periodo administrativo del curso escolar actual a fecha del sistema.
+* En el caso de no establecerse los parámetros fechaDesde y fechaHasta, se utilizarán los del periodo administrativo del curso escolar actual a fecha del sistema.
 * Opción 1: Devuelve las entradas públicas a partir del codigoCentro (obligatorio).
 * Opción 2: Devuelve las entradas públicas a partir del idCentro (obligatorio).
 
