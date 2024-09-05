@@ -23,13 +23,13 @@ Este endpoint devuelve la colección de entradas públicas del calendario, es de
 ### Opción 2.
 * **idCentro**: Obligatorio (Ej. 7C6F1441-12B7-4D59-96AA-55AD4BE7662F).
 
-**Observaciones**: El parámetro codigoCentro no está permitidos en esta opción.
+**Observaciones**: El parámetro codigoCentro no está permitido en esta opción.
 
 # Ejemplos.
-### A) Solicitud de datos con nivelDetalle extendido del alumno con cial B00P08015J.
-* ?opcion=2 & cial=B00P08015J & nivelDetalle=e
+### A) Solicitud de entradas públicas del curso escolar actual para el centro con código "35009139".
+* ?opcion=1 & codigoCentro=35009139
 
-### B) Solicitud de datos con nivelDetalle reducido de todo el alumnado del centro con código "35010488".
+### B) Solicitud de entradas públicas del centro con idCentro = .
 * ?opcion=1 & codigoCentro=35010488
 
 ### C) Solicitud de datos con nivelDetalle medio del alumnado del centro con código "35010488" y matrícula en el curso 2023.
