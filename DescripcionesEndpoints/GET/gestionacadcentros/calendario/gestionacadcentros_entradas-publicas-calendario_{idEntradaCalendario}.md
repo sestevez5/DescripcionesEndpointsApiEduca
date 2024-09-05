@@ -7,6 +7,6 @@ Este endpoint devuelve una entrada pública del calendario, es decir, que es vis
 * **idEntradaCalendario**: Obligatorio (Ej. 04872299-80B0-400D-8DF4-A0CF0F1B6BB1)
 
 # Ejemplos.
-### A) Solicitud de la entrada pública con idEntradaCalendario = 204872299-80B0-400D-8DF4-A0CF0F1B6BB12.
+### A) Solicitud de la entrada pública con idEntradaCalendario = "04872299-80B0-400D-8DF4-A0CF0F1B6BB1".
 * 04872299-80B0-400D-8DF4-A0CF0F1B6BB1
 
