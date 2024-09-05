@@ -1,18 +1,3 @@
-Este parámetro establece el conjunto de parámetros válido para cada opcion.
-
- Parámetros habilitados para 'opcion = 1': 
- * codigoCentro
- * fechaDesde
- * fechaHasta
-
- Parámetros habilitados para 'opcion = 2': 
- * idCentro
- * fechaDesde
- * fechaHasta
-
- En el caso de no establecerse los parámetros de fechaDesde y fechaHasta, se utilizarán los del periodo administrativo del curso escolar actual a fecha del sistema.
-
-
 # Descripción general.
 
 Este endpoint devuelve la colección de entradas públicas del calendario, es decir, aquellas que son visibles para toda la comunidad educativa (idNivelPrivacidad = 2 en *dbo.XCA_EntradasCalendario*).
@@ -24,6 +9,7 @@ Este endpoint devuelve la colección de entradas públicas del calendario, es de
 * **fechaHasta**: Si se indica, devuelve las entradas con fecha igual o anterior a la especificada (Ej. 2023-03-15T14:00:00).
 
 **Observaciones**:
+* En el caso de no establecerse los parámetros fechaDesde o fechaHasta, se utilizarán los del periodo administrativo del curso escolar actual a fecha del sistema.
 * Opción 1: Devuelve las entradas públicas a partir del codigoCentro (obligatorio).
 * Opción 2: Devuelve las entradas públicas a partir del idCentro (obligatorio).
 
