@@ -19,36 +19,25 @@ Este endpoint devuelve la colección de entradas públicas del calendario, es de
 
 ## Parámetros comunes.
 
-* **opcion**: 1, 2, 3. Se deberá escoger uno obligatoriamente.
-* **tieneMatriculaEnElCentro**: selecciona al alumnado que está matriculado al menos en un curso escolar.
-* **conMatriculaEnElCurso**: selecciona al alumnado que está matriculado en el curso escolar indicado (Ej. 2024).
-* **nivelDetalle**: r, m, e (reducido, medio, extendido). Si no se indica, su valor por defecto será r.
-* **tieneMatriculaActiva**: selecciona al alumnado con matrícula sin fecha de finalización en el curso escolar indicado.
+* **opcion**: 1, 2. Se deberá escoger uno obligatoriamente.
+* **fechaDesde**: Si se indica, devuelve las entradas con fecha igual o posterior a la especificada (Ej. 2023-05-01T09:30:00).
+* **fechaHasta**: Si se indica, devuelve las entradas con fecha igual o anterior a la especificada (Ej. 2023-03-15T14:00:00).
 
 **Observaciones**:
-* Opción 1: Devuelve los datos personales de todo el alumnado a partir del codigoCentro (obligatorio).
-* Opción 2: Devuelve los datos personales del alumnado a partir de su cial, nifnie o pasaporte, siendo obligatorio uno solo de los mismos.
-* Opción 3: Devuelve los datos del alumnado tutelado y de sus responsables a partir del nifnie o pasaporte del responsable, siempre que tenga derecho a información.
+* Opción 1: Devuelve las entradas públicas a partir del codigoCentro (obligatorio).
+* Opción 2: Devuelve las entradas públicas a partir del idCentro (obligatorio).
 
 ## Parámetros específicos.
 
 ### Opción 1.
 * **codigoCentro**: Obligatorio (Ej. 38010773)
 
-**Observaciones**: Los campos cial, nifNie, pasaporte, nifNieResponsable y pasaporteResponsable no están permitidos en esta opción.
+**Observaciones**: El parámetro idCentro no está permitido en esta opción.
 
 ### Opción 2.
-* **cial**: CIAL del alumnado.
-* **nifnie**: NIF o NIE del alumnado.
-* **pasaporte**: Pasaporte del alumnado.
+* **idCentro**: Obligatorio (Ej. 7C6F1441-12B7-4D59-96AA-55AD4BE7662F).
 
-**Observaciones**: Sólo se debe proporcionar uno de los datos identificativos del alumnado (cial, nifNie o pasaporte). Los campos nifNieResponsable y pasaporteResponsable no están permitidos en esta opción.
-
-### Opción 3.
-* **nifNieResponsable**: NIF o NIE del responsable del alumnado.
-* **pasaporteResponsable**: Pasaporte del responsable del alumnado.
-
-**Observaciones**: Sólo es necesario indicar uno de los datos identificativos del responsable. Los campos cial, nifNie y pasaporte no están permitidos en esta opción.
+**Observaciones**: El parámetro codigoCentro no está permitidos en esta opción.
 
 # Ejemplos.
 ### A) Solicitud de datos con nivelDetalle extendido del alumno con cial B00P08015J.
