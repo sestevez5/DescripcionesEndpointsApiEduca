@@ -2,6 +2,8 @@
 
 Este endpoint proporciona los diferentes edificios que conforman un centro educativo a partir del parámetro *idCentro*, por lo que está orientado a aplicaciones consumidoras que conocen identificadores internos de Pincel de las entidades que representan los parámetros.
 
+**Observaciones**: Aparte de los parámetros optativos de caracter general de paginación (_posicionInicial_ y _tamanyoBloque_), el campo *idCentro* es obligatorio.
+
 ## Parámetros específicos.
 
 * **idCentro**: Obligatorio (Ej. 33283FBB-18B1-4195-93B1-179785FAC806)
