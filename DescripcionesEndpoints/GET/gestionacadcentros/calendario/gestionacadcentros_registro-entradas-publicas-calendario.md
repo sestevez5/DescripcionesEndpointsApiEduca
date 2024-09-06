@@ -7,17 +7,14 @@ Este endpoint devuelve la colección de entradas públicas del calendario de un 
 * **codigoCentro**: Obligatorio (Ej. 38010773)
 * **fechaDesde**: Si se indica, devuelve las entradas con fecha igual o posterior a la especificada (Ej. 2023-05-01).
 * **fechaHasta**: Si se indica, devuelve las entradas con fecha igual o anterior a la especificada (Ej. 2023-03-15).
-* **tipoEntrada**: Si se indica, se devuelven solamente las entradas cuyo código coincida con el especificado, y que corresponden al parámetro _codigo_ de la tabla XCA_TTipoEntradaCalendario (Ej. FES devuelve los días festivos).
+* **tipoEntrada**: Si se indica, se devuelven solamente las entradas cuyo código coincida con el especificado, y que corresponden al parámetro _codigo_ de la tabla *XCA_TTipoEntradaCalendario* (Ej. "FES" devuelve los días festivos).
 
 **Observaciones**:
 * En el caso de no establecerse los parámetros fechaDesde y fechaHasta, se devolverán todas las entradas públicas del calendario.
 
 # Ejemplos.
-### A) Solicitud de entradas públicas del curso escolar actual para el centro con código "35009139".
-* ?opcion=1 & codigoCentro=35009139
+### A) Solicitud de todas las entradas públicas del centro con código "35009139" entre los días 01/09/2023 y 30/06/2024.
+* ?codigoCentro=35010488 & fechaDesde=2023-09-01 & fechaHasta=2024-06-30
 
-### B) Solicitud de entradas públicas del centro con idCentro = "561EBA45-51E5-4E3F-BA6B-C4CBB8363079" desde el día 01/06/2022.
-* ?opcion=2 & idCentro=561EBA45-51E5-4E3F-BA6B-C4CBB8363079 & fechaDesde=2022-06-01
-
-### C) Solicitud de entradas públicas del centro con código "35010488" desde el 01/01/2020 hasta el 05/09/2024.
-* ?opcion=1 & codigoCentro=35010488 & fechaDesde=2020-01-01 & fechaHasta=2024-09-05
+### B) Solicitud de las entradas públicas de tipo "FES" (Día festivo) del centro con código "35009139" a partir del día 08/01/2024.
+* ?codigoCentro=35010488 & fechaDesde=2024-01-08 & tipoEntrada=FES
