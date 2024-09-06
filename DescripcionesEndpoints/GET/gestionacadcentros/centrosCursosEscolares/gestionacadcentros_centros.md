@@ -1,6 +1,6 @@
 # Descripción general.
 
-Este endpoint proporciona información de los centros educativos.
+Este endpoint proporciona información (Etapa, denominación, cursos escolares, etc.) de los centros educativos.
 
 ## Parámetros comunes.
 * **codigoCentro**: Si no se indica, se muestran todos los centros (Ej. 38010773)
