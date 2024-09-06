@@ -1,16 +1,11 @@
 # Descripción general.
 
-Este endpoint proporciona información de el centros educativo a partir.
+Este endpoint proporciona información de un centro educativo a partir del parámetro *idCentro*, por lo que está orientado a aplicaciones consumidoras que conocen identificadores internos de Pincel de las entidades que representan los parámetros.
 
-## Parámetros comunes.
-* **codigoCentro**: Si no se indica, se muestran todos los centros (Ej. 38010773)
+## Parámetros específicos.
+
 * **idCentroSC**: Si no se indica, se muestran todos los centros (Ej. 2250)
-* **codEtapaCentro**: Si no se indica, se muestran todos los tipos de centros (Ej. IES).
-* **isla**: Si no se indica, se muestran los centros de todas las islas (Ej. 3, muestra los centros de Gran Canaria).
-* **naturaleza**: Si no se indica, se muestran los centros de cualquier naturaleza (Ej. 1, ofrece los centros públicos).
-* **zonaInspeccion**: Si no se indica, se muestran los centros de todas las zonas de inspección (Ej. 305, ofrece los centros adscritos a esa zona).
-* **cursoEscolarZonaInspeccion**: Si no se indica, se muestran los centros para todos los cursos (Ej. 2022, ofrece los centros de ese curso).
-* **codigoMunicipio**: Si no se indica, se muestran los centros de todos los municipio (Ej. 38005, ofrece los centros con ese código)
+
 
 **Observaciones**:
 * Todos los parámetros son opcionales.
