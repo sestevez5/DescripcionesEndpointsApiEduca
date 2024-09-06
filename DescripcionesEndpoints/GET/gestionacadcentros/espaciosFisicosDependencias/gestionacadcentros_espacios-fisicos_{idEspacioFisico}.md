@@ -1,8 +1,6 @@
 # Descripción general.
 
-Este endpoint devuelve información del espacio físico (codigo, metrosCuadrados, etc.) de un centro educativo a partir del parámetro *idEspacioFisico*.
-
-**Observaciones**: Aparte de los parámetros optativos de caracter general de paginación (_posicionInicial_ y _tamanyoBloque_), el campo *codigoCentro* es obligatorio.
+Este endpoint devuelve información del espacio físico (codigo, metrosCuadrados, etc.) de un centro educativo a partir del parámetro *idEspacioFisico*, por lo que está orientado a aplicaciones consumidoras que conocen identificadores internos de Pincel de las entidades que representan los parámetros.
 
 ## Parámetros específicos.
 
