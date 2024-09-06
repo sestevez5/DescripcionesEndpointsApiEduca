@@ -4,18 +4,8 @@ Este endpoint proporciona información de un centro educativo a partir del pará
 
 ## Parámetros específicos.
 
-* **idCentroSC**: Si no se indica, se muestran todos los centros (Ej. 2250)
+* **idCentro**: Obligatorio (Ej. 3793A6D1-C742-42ED-B005-DA3529421EE5)
 
-
-**Observaciones**:
-* Todos los parámetros son opcionales.
-
-# Ejemplos.
-### A) Solicitud de datos del centro con código "38011108".
-* ?codigoCentro=38011108
-
-### B) Solicitud de los centros públicos de la isla de Tenerife.
-* ?isla=7 & naturaleza=1
-
-### C) Solicitud de los centros de la zona de inspección 401 en el curso 2021. 
-* ?zonaInspeccion=401 & cursoEscolarZonaInspeccion=2021
+# Ejemplo.
+### A) Solicitud de datos del centro con idCentro "3793A6D1-C742-42ED-B005-DA3529421EE5".
+* 3793A6D1-C742-42ED-B005-DA3529421EE5
