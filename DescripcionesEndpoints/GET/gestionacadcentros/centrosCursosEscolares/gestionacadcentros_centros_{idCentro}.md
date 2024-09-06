@@ -1,6 +1,6 @@
 # Descripción general.
 
-Este endpoint proporciona información de un centro educativo a partir del parámetro *idCentro*, por lo que está orientado a aplicaciones consumidoras que conocen identificadores internos de Pincel de las entidades que representan los parámetros.
+Este endpoint proporciona información de un centro educativo (Etapa, denominación, cursos escolares, etc.) a partir del parámetro *idCentro*, por lo que está orientado a aplicaciones consumidoras que conocen identificadores internos de Pincel de las entidades que representan los parámetros.
 
 ## Parámetros específicos.
 
