@@ -1,6 +1,6 @@
 # Descripción general.
 
-Este endpoint proporciona las diferentes dependencias (Aulas, salas, talleres, etc.) que conforman un centro educativo a partir del parámetro *idCentro*, por lo que está orientado a aplicaciones consumidoras que conocen identificadores internos de Pincel de las entidades que representan los parámetros.
+Este endpoint proporciona las diferentes dependencias (Aulas, salas, talleres, etc.) que conforman un centro educativo a partir del parámetro *idCursoCentro*, por lo que está orientado a aplicaciones consumidoras que conocen identificadores internos de Pincel de las entidades que representan los parámetros.
 
 **Observaciones**: Aparte de los parámetros optativos de caracter general de paginación (_posicionInicial_ y _tamanyoBloque_), el campo *idCursoCentro* es obligatorio.
 
