@@ -1,6 +1,6 @@
 # Descripción general.
 
-Este endpoint devuelve las dependencias de un centro educativo (Espacio físico, edificio, agrupación funcional, código, etc.) a partir de los parámetros *codigoCentro* y *cursoEscolar*.
+Este endpoint devuelve las dependencias de un centro educativo a partir de los parámetros *codigoCentro* y *cursoEscolar*.
 
 **Observaciones**: Aparte de los parámetros optativos de caracter general de paginación (_posicionInicial_ y _tamanyoBloque_), los campos *codigoCentro* y *cursoEscolar* son obligatorios.
 
