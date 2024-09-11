@@ -14,5 +14,5 @@ Este endpoint devuelve las dependencias de un centro educativo (Espacio físico,
 * **cursoEscolar**: Obligatorio (Ej. 2023).
 
 # Ejemplos.
-### A) Solicitud de los espacios físicos del centro con codigoCentro "35010488".
-* ?codigoCentro=35010488
+### A) Solicitud con nivelDetalle "medio" de las dependencias del centro con codigoCentro "35010488" para el cursoEscolar = "2022".
+* ?codigoCentro=35010488 & cursoEscolar=2022 & nivelDetalle=m
