@@ -1,6 +1,6 @@
 # Descripción general.
 
-Este endpoint devuelve información relativa a los cargos y funciones de un centro educativo.
+Este endpoint devuelve información relativa a los cargos y funciones (dirección, jefatura, coordinaciones, etc.) de un centro educativo a partir de su _codigoCentro_.
 
 ## Parámetros comunes.
 * **opcion**: 1, 2. Se deberá escoger uno obligatoriamente.
