@@ -17,4 +17,4 @@ Este endpoint devuelve información relativa a los cargos y funciones (direcció
 * ?codigoCentro=35010488 & cursoEscolar=2024 & esCargoDirectivo=true
 
 ### C) Solicitud de datos con nivelDetalle reducido de los cargos y funciones *no directivas* del centro con código "35010488" en el curso 2022.
-* ?codigoCentro=35010488 & cursoEscolar=2022 & esCargoDirectivo=false
+* ?codigoCentro=35010488 & cursoEscolar=2022 & esCargoDirectivo=false & nivelDetalle=r
