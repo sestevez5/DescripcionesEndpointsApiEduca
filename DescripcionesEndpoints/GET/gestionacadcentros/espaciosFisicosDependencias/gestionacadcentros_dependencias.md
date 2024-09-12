@@ -1,8 +1,8 @@
 # Descripción general.
 
-Un centro educativo puede estar conformado por uno o varios edificios, cada uno de los cuales puede contener diferentes espacios físicos, que a su vez estarán constituidos por diferentes dependencias. Por ejemplo, un edificio puede estar formado por varias plantas, en cada una de las cuales habrá distintas dependencias, como aulas, departamentos, talleres, laboratorios, etc.
+Un centro educativo puede estar conformado por uno o varios edificios, cada uno de los cuales puede contener diferentes espacios físicos, que a su vez estarán constituidos por diferentes _dependencias_. Por ejemplo, un edificio puede estar formado por varias plantas, en cada una de las cuales habrá distintas dependencias, como aulas, departamentos, talleres, laboratorios, etc.
 
-Este endpoint devuelve las dependencias de un centro educativo a partir de los parámetros *codigoCentro* y *cursoEscolar*.
+Este endpoint devuelve las _dependencias_ de un centro educativo a partir de los parámetros *codigoCentro* y *cursoEscolar*.
 
 **Observaciones**: Aparte de los parámetros optativos de caracter general de paginación (_posicionInicial_ y _tamanyoBloque_), los campos *codigoCentro* y *cursoEscolar* son obligatorios.
 
