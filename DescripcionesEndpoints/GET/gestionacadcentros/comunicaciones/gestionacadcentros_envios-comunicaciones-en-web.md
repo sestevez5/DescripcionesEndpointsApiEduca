@@ -14,7 +14,11 @@ Este endpoint proporciona datos relativos al envío de comunicaciones en web de 
 * **fechahasta**: Si se indica, devuelve todos los envíos de comunicaciones en web cuya fecha de envío sea igual o anterior al valor del parámetro _fechaHasta_.
 * **ultimas**: Si se indica, devuelve el número especificado de comunicaciones en web más recientes.
 
-**Observaciones**: Se debe escoger uno solo de los campos _nifNieResponsable_ o _pasaporteResponsable_.
+**Observaciones**:
+* Ninguno de los campos *nifNieRemitente*, *pasaporteRemitente* o *cialRemitente* es obligatorio, pero si se especifica, solo se podrá indicar uno de ellos.
+* Ninguno de los campos *nifNieDestinatario*, *pasaporteDestinatario* o *cialDestinatario* es obligatorio, pero si se especifica, solo se podrá indicar uno de ellos.
+*
+* Se debe escoger uno solo de los campos _nifNieResponsable_ o _pasaporteResponsable_.
 
 # Ejemplos.
 ### A) Solicitud de datos de las matrículas asociadas al responsable con pasaporte = "INV234567" del centro con código "35010488".
