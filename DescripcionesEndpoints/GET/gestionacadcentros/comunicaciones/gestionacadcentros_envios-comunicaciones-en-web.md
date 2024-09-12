@@ -15,10 +15,9 @@ Este endpoint proporciona datos relativos al envío de comunicaciones en web de 
 * **ultimas**: Si se indica, devuelve el número especificado de comunicaciones en web más recientes.
 
 **Observaciones**:
+* **El endpoint solo atenderá la petición si el remitente o destinatario pasado como parámetro en la llamada corresponde al usuario autenticado**. En caso contrario, se dará la respuesta establecida para la no autorización de la llamada.
 * Ninguno de los campos *nifNieRemitente*, *pasaporteRemitente* o *cialRemitente* es obligatorio, pero si se especifica, solo se podrá indicar uno de ellos.
 * Ninguno de los campos *nifNieDestinatario*, *pasaporteDestinatario* o *cialDestinatario* es obligatorio, pero si se especifica, solo se podrá indicar uno de ellos.
-*
-* Se debe escoger uno solo de los campos _nifNieResponsable_ o _pasaporteResponsable_.
 
 # Ejemplos.
 ### A) Solicitud de datos de las matrículas asociadas al responsable con pasaporte = "INV234567" del centro con código "35010488".
