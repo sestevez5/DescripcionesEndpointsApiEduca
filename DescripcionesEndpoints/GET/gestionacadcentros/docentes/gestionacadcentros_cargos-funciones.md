@@ -3,11 +3,11 @@
 Este endpoint devuelve información relativa a los cargos y funciones (dirección, jefatura, coordinaciones, etc.) de un centro educativo a partir de su _codigoCentro_.
 
 ## Parámetros comunes.
-* **opcion**: 1, 2. Se deberá escoger uno obligatoriamente.
+* ****: 1, 2. Se deberá escoger uno obligatoriamente.
 * **incluirNoVigentes**: Si se selecciona, incluye las enseñanzas no vigentes.
 
 **Observaciones**:
-* Opción 1: Los campos obligatorios son el cursoEscolar y el codigoCentro.
+* Opción 1: Los campos obligatorios son el *codigoCentro* y el *cursoEscolar*.
 * Opción 2: El campo idCursoCentro es obligatorio.
 
 ## Parámetros específicos.
