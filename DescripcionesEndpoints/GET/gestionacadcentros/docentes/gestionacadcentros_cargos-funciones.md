@@ -1,6 +1,6 @@
 # Descripción general.
 
-Este endpoint devuelve información relativa a los cargos y funciones (dirección, jefatura, coordinaciones, etc.) de un centro educativo a partir de su _codigoCentro_.
+Este endpoint devuelve información relativa a los cargos y funciones (dirección, jefatura de estudios, coordinaciones, jefaturas de departamento, etc.) de un centro educativo a partir de su _codigoCentro_.
 
 ## Parámetros comunes.
 * **codigoCentro**: Obligatorio (Ej. 38010773)
@@ -15,3 +15,6 @@ Este endpoint devuelve información relativa a los cargos y funciones (direcció
 
 ### B) Solicitud de datos con nivelDetalle reducido de los cargos directivos del centro con código "35010488" en el curso 2024.
 * ?codigoCentro=35010488 & cursoEscolar=2024 & esCargoDirectivo=true
+
+### C) Solicitud de datos con nivelDetalle reducido de los cargos y funciones *no directivas* del centro con código "35010488" en el curso 2022.
+* ?codigoCentro=35010488 & cursoEscolar=2022 & esCargoDirectivo=false
