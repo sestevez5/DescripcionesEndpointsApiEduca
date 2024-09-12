@@ -20,9 +20,9 @@ Este endpoint proporciona datos relativos al envío de comunicaciones en web de 
 * Ninguno de los campos *nifNieDestinatario*, *pasaporteDestinatario* o *cialDestinatario* es obligatorio, pero si se especifica, solo se podrá indicar uno de ellos.
 
 # Ejemplos.
-### A) Solicitud de datos de las matrículas asociadas al responsable con pasaporte = "INV234567" del centro con código "35010488".
-* ?codigoCentro=35010488 & pasaporteResponsable=INV234567
+### A) Solicitud de datos de todas las comunicaciones en web del remitente con nifNieRemitente = "41414141L".
+* ?nifnieRemitente=41414141L
  
-### B) Solicitud de datos de todas las matrículas asociadas al responsable con DNI = "41414141L".
-* ?nifNieResponsable=41414141L
+### B) Solicitud de datos de todas las comunicaciones en web entre el remitente con DNI = "41414141L" y el destinatario con CIAL = "60000000S" entre los días 01/05/2024 y 30/06/2024.
+* ?nifnieRemitente=41414141L & cialDestinatario=60000000S & fechaDesde=2024-05-01 & fechaHasta=2024-06-30
   
