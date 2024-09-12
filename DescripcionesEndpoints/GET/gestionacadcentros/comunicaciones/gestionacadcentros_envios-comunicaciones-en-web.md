@@ -4,10 +4,15 @@ Este endpoint proporciona datos relativos al envío de comunicaciones en web de 
 
 ## Parámetros específicos.
 
-* **cursoEscolar**: Si se indica, muestra las matrículas para el curso escolar especificado (Ej. 2022).
-* **codigoCentro**: Si se indica, muestra las matrículas para el centro especificado (Ej. 35010488).
-* **nifNieResponsable**: NIF o NIE del responsable del alumnado.
-* **pasaporteResponsable**: Pasaporte del responsable del alumnado.
+* **nifNieRemitente**: NIF o NIE del remitente de la comunicación.
+* **pasaporteRemitente**: Pasaporte del remitente de la comunicación.
+* **cialRemitente**: CIAL del remitente de la comunicación.
+* **nifNieDestinatario**: NIF o NIE del destinatario de la comunicación.
+* **pasaporteDestinatario**: Pasaporte del destinatario de la comunicación.
+* **cialDestinatario**: CIAL del destinatario de la comunicación.
+* **fechaDesde**: Si se indica, devuelve todos los envíos de comunicaciones en web cuya fecha de envío sea igual o posterior al valor del parámetro _fechaDesde_.
+* **fechahasta**: Si se indica, devuelve todos los envíos de comunicaciones en web cuya fecha de envío sea igual o anterior al valor del parámetro _fechaHasta_.
+* **ultimas**: Si se indica, devuelve el número especificado de comunicaciones en web más recientes.
 
 **Observaciones**: Se debe escoger uno solo de los campos _nifNieResponsable_ o _pasaporteResponsable_.
 
