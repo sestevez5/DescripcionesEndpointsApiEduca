@@ -4,7 +4,7 @@ Este endpoint proporciona información de las áreas (Ej. *Ciencias de la Natura
 
 ## Parámetros comunes.
 
-* **incluirNoVigentes**: Si se selecciona, incluye los estudios no vigentes. Si se escoge "No" o "No establecido", devuelve solo los estudios vigentes.
+* **incluirNoVigentes**: Si se selecciona, incluye los estudios no vigentes. Si se escoge "No" o "No establecido", devuelve solo las areas vigentes.
 
 ## Parámetros específicos.
 
