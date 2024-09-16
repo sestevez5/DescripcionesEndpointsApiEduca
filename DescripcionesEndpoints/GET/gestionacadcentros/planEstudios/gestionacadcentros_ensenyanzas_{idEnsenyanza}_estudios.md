@@ -3,7 +3,7 @@
 Este endpoint proporciona los estudios impartidos en un centro educativo (Ej. 3º Educación Secundaria Obligatoria, 1º CFGM Informática y Comunicaciones, etc.) a partir del parámetro *idEnsenyanza*, por lo que está orientado a aplicaciones consumidoras que conocen identificadores internos de Pincel de las entidades que representan los parámetros.
 
 ## Parámetros comunes.
-* **incluirNoVigentes**: Si se selecciona, incluye los estudios no vigentes.
+* **incluirNoVigentes**: Si se selecciona, incluye los estudios no vigentes. Si se escoge "No" o "No establecido", devuelve solo los estudios vigentes.
 * **incluirNoOFertados**: Si se selecciona, incluye los estudios no ofertados por el centro educativo.
 
 ## Parámetros específicos.
