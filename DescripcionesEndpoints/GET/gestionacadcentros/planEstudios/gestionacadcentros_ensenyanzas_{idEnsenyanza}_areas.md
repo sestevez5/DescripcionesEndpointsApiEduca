@@ -13,7 +13,7 @@ Este endpoint proporciona las áreas (Ej. *Ámbito de Comunicación y Representa
 * **idEstudio**: Si se indica, se muestran solo las áreas del estudio indicado (Ej. c7200149-ef64-4b79-9522-af86214669dc).
 
 # Ejemplos.
-### A) Solicitud con nivel de detalle medio de las áreas correspondientes al estudio con idEstudio = "c7200149-ef64-4b79-9522-af86214669dc" de la enseñanza con idEnsenyanza = "70d15bce-1e77-481d-b958-2f3215f1071a" .
+### A) Solicitud con nivel de detalle medio de las áreas correspondientes al estudio con idEstudio = "c7200149-ef64-4b79-9522-af86214669dc" de la enseñanza con idEnsenyanza = "70d15bce-1e77-481d-b958-2f3215f1071a".
 * 70d15bce-1e77-481d-b958-2f3215f1071a/areas?idEstudio=c7200149-ef64-4b79-9522-af86214669dc & nivelDetalle=m
 
 ### B) Solicitud con nivel de detalle reducido de todas las áreas, incluyendo las de estudios no vigentes, correspondientes a la enseñanza con idEnsenyanza = "70d15bce-1e77-481d-b958-2f3215f1071a".
