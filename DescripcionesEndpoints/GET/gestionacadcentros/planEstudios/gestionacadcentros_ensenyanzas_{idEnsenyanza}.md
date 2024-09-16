@@ -1,6 +1,6 @@
 # Descripción general.
 
-Este endpoint proporciona las enseñanzas impartidas en un centro educativo (Ej. Educación Secundaria Obligatoria, Ciclos Formativos de Grado medio, etc.) a partir del parámetro *idEnsenyanza*, por lo que está orientado a aplicaciones consumidoras que conocen identificadores internos de Pincel de las entidades que representan los parámetros.
+Este endpoint proporciona las enseñanzas impartidas en un centro educativo (Ej. Educación Secundaria Obligatoria, Ciclos Formativos de Grado Medio, etc.) a partir del parámetro *idEnsenyanza*, por lo que está orientado a aplicaciones consumidoras que conocen identificadores internos de Pincel de las entidades que representan los parámetros.
 
 ## Parámetros comunes.
 
