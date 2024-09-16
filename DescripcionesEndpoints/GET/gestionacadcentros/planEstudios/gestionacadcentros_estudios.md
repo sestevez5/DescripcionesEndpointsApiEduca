@@ -1,6 +1,6 @@
 # Descripción general.
 
-Este endpoint devuelve los estudios impartidos en los centros educativos.
+Este endpoint devuelve los estudios impartidos en los centros educativos (Ej. *2º Educación Secundaria Obligatoria (LOMLOE)*, *1º CFGS Sanidad - Dietética*, etc.).
 
 ## Parámetros comunes.
 * **opcion**: 1, 2. Se deberá escoger uno obligatoriamente.
