@@ -16,5 +16,5 @@ Este endpoint proporciona las áreas (Ej. *Ámbito de Comunicación y Representa
 ### A) Solicitud con nivel de detalle medio de las áreas correspondientes al estudio con idEstudio = "c7200149-ef64-4b79-9522-af86214669dc" de la enseñanza con idEnsenyanza = "70d15bce-1e77-481d-b958-2f3215f1071a" .
 * 70d15bce-1e77-481d-b958-2f3215f1071a/areas?idEstudio=c7200149-ef64-4b79-9522-af86214669dc & nivelDetalle=m
 
-### B) Solicitud de los estudios, incluyendo los no vigentes y no ofertados, correspondientes a la enseñanza con idEnsenyanza = "a0361e9f-3fc6-434b-a16d-ef492101d8f1".
-a0361e9f-3fc6-434b-a16d-ef492101d8f1/estudios?incluirNoVigentes=true & incluirNoOfertados=true
+### B) Solicitud con nivel de detalle reducido de todas las áreas, incluyendo las de estudios no vigentes, correspondientes a la enseñanza con idEnsenyanza = "70d15bce-1e77-481d-b958-2f3215f1071a".
+* 70d15bce-1e77-481d-b958-2f3215f1071a/areas?incluirNoVigentes=true & nivelDetalle=r
