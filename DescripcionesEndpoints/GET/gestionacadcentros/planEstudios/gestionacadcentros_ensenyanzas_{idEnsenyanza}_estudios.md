@@ -4,7 +4,7 @@ Este endpoint proporciona los estudios impartidos en un centro educativo (Ej. 3�
 
 ## Parámetros comunes.
 * **incluirNoVigentes**: Si se selecciona, incluye los estudios no vigentes. Si se escoge "No" o "No establecido", devuelve solo los estudios vigentes.
-* **incluirNoOFertados**: Si se selecciona, incluye los estudios no ofertados por el centro educativo.
+* **incluirNoOFertados**: Si se selecciona, incluye los estudios no ofertados por el centro educativo. Si se escoge "No" o "No establecido", devuelve solo los estudios ofertados.
 
 ## Parámetros específicos.
 
