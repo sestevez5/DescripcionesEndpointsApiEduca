@@ -1,6 +1,6 @@
 # Descripción general.
 
-Este endpoint devuelve las enseñanzas impartidas en los centros educativos (Ej. Educación Primaria, Ciclos Formativos de Grado Básico, Bachillerato, etc.).
+Este endpoint devuelve las enseñanzas impartidas en los centros educativos (Ej. *Educación Primaria*, *Ciclos Formativos de Grado Básico*, *Bachillerato*, etc.).
 
 ## Parámetros comunes.
 * **opcion**: 1, 2. Se deberá escoger uno obligatoriamente.
