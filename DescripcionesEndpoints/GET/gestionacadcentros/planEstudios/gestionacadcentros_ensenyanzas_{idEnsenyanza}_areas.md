@@ -4,21 +4,17 @@ Este endpoint proporciona las áreas (Ej. *Ámbito de Comunicación y Representa
 
 ## Parámetros comunes.
 
+* **incluirNoVigentes**: Si se selecciona, permite incluir áreas pertenecientes a estudios no vigentes ofertados por el centro. Si se escoge "No" o "No establecido", devuelve solo áreas de estudios vigentes.
 * **nivelDetalle**: Se deberá escoger uno obligatoriamente r, m (reducido, medio).
-* **incluirNoVigentes**: Si se selecciona, incluye los estudios no vigentes. Si se escoge "No" o "No establecido", devuelve solo los estudios vigentes.
-
-## Parámetros comunes.
-* **incluirNoVigentes**: Si se selecciona, incluye los estudios no vigentes. Si se escoge "No" o "No establecido", devuelve solo los estudios vigentes.
-* **incluirNoOFertados**: Si se selecciona, incluye los estudios no ofertados por el centro educativo. Si se escoge "No" o "No establecido", devuelve solo los estudios ofertados.
 
 ## Parámetros específicos.
 
 * **idEnsenyanza**: Obligatorio (Ej. 9bba0d43-3be7-4d0c-b8ba-14b13ab63ad4).
-* **idEstudio**: Si no se indica, se muestran todas los estudios para el curso y centro indicado.
+* **idEstudio**: Si se indica, se muestran solo las áreas del estudio indicado (Ej. c7200149-ef64-4b79-9522-af86214669dc).
 
 # Ejemplos.
-### A) Solicitud de los estudios vigentes y ofertados correspondientes a la enseñanza con idEnsenyanza = "9bba0d43-3be7-4d0c-b8ba-14b13ab63ad4".
-* 9bba0d43-3be7-4d0c-b8ba-14b13ab63ad4/estudios
+### A) Solicitud con nivel de detalle medio de las áreas correspondientes al estudio con idEstudio = "c7200149-ef64-4b79-9522-af86214669dc" de la enseñanza con idEnsenyanza = "70d15bce-1e77-481d-b958-2f3215f1071a" .
+* 70d15bce-1e77-481d-b958-2f3215f1071a/areas?idEstudio=c7200149-ef64-4b79-9522-af86214669dc & nivelDetalle=m
 
 ### B) Solicitud de los estudios, incluyendo los no vigentes y no ofertados, correspondientes a la enseñanza con idEnsenyanza = "a0361e9f-3fc6-434b-a16d-ef492101d8f1".
 a0361e9f-3fc6-434b-a16d-ef492101d8f1/estudios?incluirNoVigentes=true & incluirNoOfertados=true
