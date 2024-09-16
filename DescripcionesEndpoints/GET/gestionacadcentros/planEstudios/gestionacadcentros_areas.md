@@ -1,6 +1,6 @@
 # Descripción general.
 
-Este endpoint proporciona información de las áreas de las diferentes enseñanzas y estudios de un centro educativo.
+Este endpoint proporciona información de las áreas (Ej. *Ciencias de la Naturaleza*, *Literatura Universal*, *Formación en Centros de Trabajo*, etc.) de las diferentes enseñanzas y estudios de un centro educativo.
 
 ## Parámetros comunes.
 
