@@ -11,6 +11,9 @@ Este endpoint proporciona los estudios impartidos en un centro educativo (Ej. 3�
 * **idEnsenyanza**: Obligatorio (Ej. 9bba0d43-3be7-4d0c-b8ba-14b13ab63ad4)
 
 # Ejemplos.
-### A) Solicitud de los estudios, incluyendo los no ofertados, correspondientes a la enseñanza con idEnsenyanza = "9bba0d43-3be7-4d0c-b8ba-14b13ab63ad4".
-* 9bba0d43-3be7-4d0c-b8ba-14b13ab63ad4/estudios?incluirNoOfertados=true
+### A) Solicitud de todos los estudios vigentes y ofertados correspondientes a la enseñanza con idEnsenyanza = "9bba0d43-3be7-4d0c-b8ba-14b13ab63ad4".
+* 9bba0d43-3be7-4d0c-b8ba-14b13ab63ad4/estudios
+
+### B) Solicitud de los estudios, incluyendo los no vigentes y no ofertados, correspondientes a la enseñanza con idEnsenyanza = "9bba0d43-3be7-4d0c-b8ba-14b13ab63ad4".
+a0361e9f-3fc6-434b-a16d-ef492101d8f1/estudios?incluirNoVigentes=true & incluirNoOfertados=true
 
