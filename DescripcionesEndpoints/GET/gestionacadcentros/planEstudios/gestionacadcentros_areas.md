@@ -19,7 +19,7 @@ Este endpoint proporciona las áreas (Ej. *Ciencias de la Naturaleza*, *Literatu
 
 ### Opción 1.
 * **cursoEscolar**: Obligatorio (Ej. 2023).
-* **codigoCentro**: Obligatorio (Ej. 38010773)
+* **codigoCentro**: Obligatorio (Ej. 38010773).
 
 **Observaciones**: El campo idCursoCentro no está permitido en esta opción.
 
