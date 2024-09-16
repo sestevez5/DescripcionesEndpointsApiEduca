@@ -8,7 +8,7 @@ Este endpoint proporciona información de las áreas (Ej. *Ciencias de la Natura
 
 ## Parámetros específicos.
 
-* **idArea**: Obligatorio (Ej. 2023).
+* **idArea**: Obligatorio (Ej. 5e09f10d-778a-4b8a-b98b-b9495b050018).
 
 
 
