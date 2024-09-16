@@ -14,7 +14,7 @@ Este endpoint devuelve las enseñanzas impartidas en los centros educativos (Ej.
 
 ### Opción 1.
 * **cursoEscolar**: Obligatorio (Ej. 2023).
-* **codigoCentro**: Obligatorio (Ej. 38010773)
+* **codigoCentro**: Obligatorio (Ej. 38010773).
 
 **Observaciones**: El campo idCursoCentro no está permitido en esta opción.
 
