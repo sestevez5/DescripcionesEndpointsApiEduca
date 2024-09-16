@@ -5,7 +5,7 @@ Este endpoint proporciona las áreas (Ej. *Ciencias de la Naturaleza*, *Literatu
 ## Parámetros comunes.
 
 * **opcion**: 1, 2. Se deberá escoger uno obligatoriamente.
-* **nivelDetalle**: Se deberá escoger uno obligatoriamente r, m (reducido, medio)
+* **nivelDetalle**: Se deberá escoger uno obligatoriamente r, m (reducido, medio).
 * **idEnsenyanza**: Si no se indica, se muestran todas las enseñanzas para el curso y centro indicado.
 * **idEstudio**: Si no se indica, se muestran todas los estudios para el curso y centro indicado.
 * **incluirNoVigentes**: Si se selecciona, incluye los estudios no vigentes. Si se escoge "No" o "No establecido", devuelve solo los estudios vigentes.
