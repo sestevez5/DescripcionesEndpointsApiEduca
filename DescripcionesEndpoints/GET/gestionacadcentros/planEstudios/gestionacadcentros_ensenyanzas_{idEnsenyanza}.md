@@ -4,7 +4,7 @@ Este endpoint proporciona las enseñanzas impartidas en un centro educativo (Ej.
 
 ## Parámetros comunes.
 
-* **incluirNoVigentes**: Si se selecciona, incluye los estudios no vigentes.
+* **incluirNoVigentes**: Si se selecciona, incluye las enseñanzas no vigentes.
 
 ## Parámetros específicos.
 
