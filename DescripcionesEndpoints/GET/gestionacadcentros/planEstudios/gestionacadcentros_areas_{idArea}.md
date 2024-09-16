@@ -4,7 +4,7 @@ Este endpoint proporciona información exhaustiva de las áreas (Ej. *Ciencias d
 
 ## Parámetros comunes.
 
-* **incluirNoVigentes**: Si se selecciona, incluye las areas no vigentes. Si se escoge "No" o "No establecido", devuelve solo las areas vigentes.
+* **incluirNoVigentes**: Si se selecciona, permite incluir áreas pertenecientes a estudios no vigentes ofertados por el centro. Si se escoge "No" o "No establecido", devuelve solo información de áreas de estudios vigentes.
 
 ## Parámetros específicos.
 
