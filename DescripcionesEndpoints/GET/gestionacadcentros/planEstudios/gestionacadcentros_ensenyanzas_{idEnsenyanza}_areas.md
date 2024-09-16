@@ -1,5 +1,14 @@
 # Descripción general.
 
+Este endpoint proporciona las áreas (Ej. *Ciencias de la Naturaleza*, *Literatura Universal*, *Formación en Centros de Trabajo*, etc.) de las diferentes enseñanzas y estudios de un centro educativo.
+
+## Parámetros comunes.
+
+* **opcion**: 1, 2. Se deberá escoger uno obligatoriamente.
+* **nivelDetalle**: Se deberá escoger uno obligatoriamente r, m (reducido, medio).
+* **idEnsenyanza**: Si no se indica, se muestran todas las enseñanzas para el curso y centro indicado.
+* **idEstudio**: Si no se indica, se muestran todas los estudios para el curso y centro indicado.
+* **incluirNoVigentes**: Si se selecciona, incluye los estudios no vigentes. Si se escoge "No" o "No establecido", devuelve solo los estudios vigentes.
 
 
 Este endpoint proporciona los estudios impartidos en un centro educativo (Ej. *3º Educación Secundaria Obligatoria*, *1º CFGM Informática y Comunicaciones*, etc.) a partir del parámetro *idEnsenyanza*, por lo que está orientado a aplicaciones consumidoras que conocen identificadores internos de Pincel de las entidades que representan los parámetros.
