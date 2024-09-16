@@ -8,7 +8,7 @@ Este endpoint proporciona los estudios impartidos en un centro educativo (Ej. *3
 
 ## Parámetros específicos.
 
-* **idEnsenyanza**: Obligatorio (Ej. 9bba0d43-3be7-4d0c-b8ba-14b13ab63ad4)
+* **idEnsenyanza**: Obligatorio (Ej. 9bba0d43-3be7-4d0c-b8ba-14b13ab63ad4).
 
 # Ejemplos.
 ### A) Solicitud de los estudios vigentes y ofertados correspondientes a la enseñanza con idEnsenyanza = "9bba0d43-3be7-4d0c-b8ba-14b13ab63ad4".
