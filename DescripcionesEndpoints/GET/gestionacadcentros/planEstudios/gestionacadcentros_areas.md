@@ -8,7 +8,7 @@ Este endpoint proporciona información de las áreas de las diferentes enseñanz
 * **nivelDetalle**: Se deberá escoger uno obligatoriamente r, m (reducido, medio)
 * **idEnsenyanza**: Si no se indica, se muestran todas las enseñanzas para el curso y centro indicado.
 * **idEstudio**: Si no se indica, se muestran todas los estudios para el curso y centro indicado.
-* **incluirNoVigentes**: Si se selecciona, incluye los estudios no vigentes.
+* **incluirNoVigentes**: Si se selecciona, incluye los estudios no vigentes. Si se escoge "No" o "No establecido", devuelve solo los estudios vigentes.
 
 **Observaciones**:
 * En las dos opciones el nivelDetalle es obligatorio.
