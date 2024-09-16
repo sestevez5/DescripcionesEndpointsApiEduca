@@ -1,6 +1,6 @@
 # Descripción general.
 
-Este endpoint proporciona las áreas (Ej. *Ámbito de Comunicación y Representación*, *Física y Química*, *Atención al cliente*, etc.) de las diferentes enseñanzas y estudios de un centro educativo a partir del parámetro idEnsenyanza, por lo que está orientado a aplicaciones consumidoras que conocen identificadores internos de Pincel de las entidades que representan los parámetros.
+Este endpoint proporciona las áreas (Ej. *Ámbito de Comunicación y Representación*, *Física y Química*, *Atención al cliente*, etc.) de las diferentes enseñanzas de un centro educativo a partir del parámetro idEnsenyanza, por lo que está orientado a aplicaciones consumidoras que conocen identificadores internos de Pincel de las entidades que representan los parámetros.
 
 ## Parámetros comunes.
 
