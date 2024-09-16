@@ -4,7 +4,7 @@ Este endpoint devuelve las enseñanzas impartidas en los centros educativos (Ej.
 
 ## Parámetros comunes.
 * **opcion**: 1, 2. Se deberá escoger uno obligatoriamente.
-* **incluirNoVigentes**: Si se selecciona, incluye las enseñanzas no vigentes.
+* **incluirNoVigentes**: Si se selecciona, incluye las enseñanzas no vigentes. Si se escoge "No" o "No establecido", devuelve solo las enseñanzas vigentes.
 
 **Observaciones**:
 * Opción 1: Los campos obligatorios son el cursoEscolar y el codigoCentro.
