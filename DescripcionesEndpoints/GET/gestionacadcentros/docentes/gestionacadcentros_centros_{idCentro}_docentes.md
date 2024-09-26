@@ -3,7 +3,7 @@
 
 # Descripción general.
 
-Este endpoint devuelve los datos de los docentes de un centro educativo a partir del parámetro {idCentro}.
+Este endpoint devuelve los datos de los docentes de un centro educativo a partir del parámetro _idCentro_, por lo que está orientado a aplicaciones consumidoras que conocen identificadores internos de Pincel de las entidades que representan los parámetros.
 
 ## Parámetros comunes.
 * **opcion**: 1, 2. Se deberá escoger uno obligatoriamente
