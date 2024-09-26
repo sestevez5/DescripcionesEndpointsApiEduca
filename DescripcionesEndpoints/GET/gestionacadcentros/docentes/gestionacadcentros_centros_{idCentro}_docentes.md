@@ -15,12 +15,10 @@ Este endpoint devuelve los datos de los docentes de un centro educativo a partir
 * **tieneServicioEnElCurso**: Cuando se ha seleccionado la opción anterior, permite indicar el curso escolar en el que ha tenido servicio un docente (Ej. 2023).
 
 # Ejemplos.
-### A) Solicitud de datos reducidos de todos los docentes del centro con idCentro = 561EBA45-51E5-4E3F-BA6B-C4CBB8363079.
+### A) Solicitud de datos con nivel de detalle reducido de todos los docentes del centro con idCentro = 561EBA45-51E5-4E3F-BA6B-C4CBB8363079.
 * 561EBA45-51E5-4E3F-BA6B-C4CBB8363079/docentes
 
-### B) Solicitud de datos reducidos de todos los docentes del centro con código "35010488".
-* ?opcion=2 & codigoCentro=35010488
+### B) Solicitud de datos con nivel de detalle medio de los docentes con servicio en el curso 2024 en el centro con idCentro = 561EBA45-51E5-4E3F-BA6B-C4CBB8363079.
+* 561EBA45-51E5-4E3F-BA6B-C4CBB8363079/docentes?tieneServicioEnElCentro=true & tieneServicioEnElCurso=2024 & nivelDetalle=m
 
-### C) Solicitud de datos con nivel de detalle medio de los docentes del centro con código "35010488" y servicio en el curso 2023. 
-* ?opcion=2 & codigoCentro=35010488 & tieneServicioEnElCentro=true & tieneServicioEnElCurso=2023 & nivelDetalle=m
 
