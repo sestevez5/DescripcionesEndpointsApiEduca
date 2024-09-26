@@ -6,35 +6,13 @@
 Este endpoint devuelve los datos de los docentes de un centro educativo a partir del parámetro _idCentro_, por lo que está orientado a aplicaciones consumidoras que conocen identificadores internos de Pincel de las entidades que representan los parámetros.
 
 ## Parámetros comunes.
-* **opcion**: 1, 2. Se deberá escoger uno obligatoriamente
-* **codigoCentro**: Obligatorio (Ej. 38010773)
-* **nivelDetalle**: r, m, e (reducido, medio, extendido). Si no se indica, su valor por defecto será r.
-
-## Parámetros comunes.
 * **nivelDetalle**: r, m, e (reducido, medio, extendido). Si no se indica, su valor por defecto será r.
 
 ## Parámetros específicos.
 
 * **idCentro**: Obligatorio (Ej. 561EBA45-51E5-4E3F-BA6B-C4CBB8363079)
-* **tieneMatriculaCentro**: permite seleccionar al alumnado que está matriculado.
-
-**Observaciones**:
-* Opción 1: Además del codigoCentro, será necesario indicar nifnie o pasaporte.
-* Opción 2: Además del codigoCentro, opcionalmente se podrá seleccionar tieneServicioEnElCentro y/o tieneServicioEnElCurso.
-
-## Parámetros específicos.
-
-### Opción 1.
-* **nifnie**: NIF o NIE del docente.
-* **pasaporte**: Pasaporte del docente.
-
-**Observaciones**: Debe cumplimentarse solamente uno de ellos.
-
-### Opción 2.
 * **tieneServicioEnElCentro**: Booleano que permite seleccionar a los docentes que tienen o han tenido algún servicio en el centro. Si no se indica, se seleccionan todos los docentes del centro.
 * **tieneServicioEnElCurso**: Cuando se ha seleccionado la opción anterior, permite indicar el curso escolar en el que ha tenido servicio un docente (Ej. 2023).
-
-**Observaciones**: Ambos son opcionales.
 
 # Ejemplos.
 ### A) Solicitud de datos extendidos del docente con nif = 00000001R en el centro con código "35010488".
