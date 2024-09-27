@@ -1,3 +1,7 @@
+# MODIFICAR.
+
+
+
 # Descripción general.
 
 Este endpoint devuelve los nombres de todos los municipios establecidos en el catálogo general de la administración educativa del Gobierno de Canarias (Ej. Agaete, Santoña, Vélez-Blanco).
@@ -16,7 +20,7 @@ Este endpoint devuelve los nombres de todos los municipios establecidos en el ca
 * **denominacionContiene**: Si se pasa este parámetro, se devuelven solo los municipios cuya denominación contiene dicho parámetro.
 * **soloMunicipiosCanarias**: Si se selecciona el valor *No*, incluye los municipios no pertenecientes a la Comunidad Autónoma de Canarias.
 
-# MODIFICAR.
+
 
 
 
