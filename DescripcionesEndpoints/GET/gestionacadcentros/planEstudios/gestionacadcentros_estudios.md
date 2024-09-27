@@ -1,25 +1,25 @@
-# Descripción general
+# Descripción general.
 
-Este endpoint devuelve los estudios impartidos en los centros educativos.
+Este endpoint devuelve los estudios impartidos en los centros educativos (Ej. *2º Educación Secundaria Obligatoria (LOMLOE)*, *1º CFGS Sanidad - Dietética*, etc.).
 
-## Parámetros comunes
+## Parámetros comunes.
 * **opcion**: 1, 2. Se deberá escoger uno obligatoriamente.
-* **incluirNoVigentes**: Si se selecciona, incluye los estudios no vigentes.
-* **incluirNoOFertados**: Si se selecciona, incluye los estudios no ofertados por el centro educativo.
+* **incluirNoVigentes**: Si se selecciona, incluye los estudios no vigentes. Si se escoge "No" o "No establecido", devuelve solo los estudios vigentes.
+* **incluirNoOFertados**: Si se selecciona, incluye los estudios no ofertados por el centro educativo. Si se escoge "No" o "No establecido", devuelve solo los estudios ofertados.
 
 **Observaciones**:
 * Opción 1: Los campos obligatorios son el cursoEscolar y el codigoCentro.
 * Opción 2: El campo idCursoCentro es obligatorio.
 
-## Parámetros específicos
+## Parámetros específicos.
 
-### Opción 1
+### Opción 1.
 * **cursoEscolar**: Obligatorio (Ej. 2023).
-* **codigoCentro**: Obligatorio (Ej. 38010773)
+* **codigoCentro**: Obligatorio (Ej. 38010773).
 
 **Observaciones**: El campo idCursoCentro no está permitido en esta opción.
 
-### Opción 2
+### Opción 2.
 * **idCursoCentro**: Obligatorio (Ej. E480D237-EC8C-4AFF-A870-01C277A3D712).
 
 **Observaciones**: Los campos cursoEscolar y codigoCentro no están permitidos en esta opción.

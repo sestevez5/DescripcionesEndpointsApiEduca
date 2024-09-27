@@ -1,8 +1,8 @@
-# Descripción general
+# Descripción general.
 
 Este endpoint proporciona datos personales de los responsables del alumnado registrado en los centros educativos .
 
-## Parámetros comunes
+## Parámetros comunes.
 * **opcion**: 1, 2. Se deberá escoger uno obligatoriamente.
 * **codigoCentro**: Obligatorio (Ej. 38010773)
 * **nivelDetalle**: r, m, e (reducido, medio, extendido). Si no se indica, su valor por defecto será r.
@@ -11,15 +11,15 @@ Este endpoint proporciona datos personales de los responsables del alumnado regi
 * Opción 1: El codigoCentro es obligatorio, además de uno solo de los campos nifNie o pasaporte.
 * Opción 2: Sólo es obligatorio el campo codigoCentro.
 
-## Parámetros específicos
+## Parámetros específicos.
 
-### Opción 1
+### Opción 1.
 * **nifNie**: NIF o NIE del responsable del alumnado.
 * **pasaporte**: Pasaporte del responsable del alumnado.
 
 **Observaciones**: Se debe escoger uno solo de los campos _nifNie_ o _pasaporte_.
 
-### Opción 2
+### Opción 2.
 
 * **tieneTuteladoMatriculaEnElCentro**: si no se selecciona, proporciona todos los responsables del alumnado del centro.
 * **tieneTuteladoMatriculaEnElCurso**: selecciona los responsables del alumnado que está matriculado en el curso escolar indicado (Ej. 2024).

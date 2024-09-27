@@ -1,29 +1,29 @@
-# Descripción general
+# Descripción general.
 
-Este endpoint proporciona información de las áreas de las diferentes enseñanzas y estudios de un centro educativo.
+Este endpoint proporciona las áreas (Ej. *Ciencias de la Naturaleza*, *Literatura Universal*, *Formación en Centros de Trabajo*, etc.) de las diferentes enseñanzas y estudios de un centro educativo.
 
-## Parámetros comunes
+## Parámetros comunes.
 
 * **opcion**: 1, 2. Se deberá escoger uno obligatoriamente.
-* **nivelDetalle**: Se deberá escoger uno obligatoriamente r, m (reducido, medio)
+* **nivelDetalle**: Se deberá escoger uno obligatoriamente r, m (reducido, medio).
 * **idEnsenyanza**: Si no se indica, se muestran todas las enseñanzas para el curso y centro indicado.
 * **idEstudio**: Si no se indica, se muestran todas los estudios para el curso y centro indicado.
-* **incluirNoVigentes**: Si se selecciona, incluye los estudios no vigentes.
+* **incluirNoVigentes**: Si se selecciona, incluye los estudios no vigentes. Si se escoge "No" o "No establecido", devuelve solo los estudios vigentes.
 
 **Observaciones**:
 * En las dos opciones el nivelDetalle es obligatorio.
 * Opción 1: Los campos obligatorios son el cursoEscolar y el codigoCentro.
 * Opción 2: El campo idCursoCentro es obligatorio.
 
-## Parámetros específicos
+## Parámetros específicos.
 
-### Opción 1
+### Opción 1.
 * **cursoEscolar**: Obligatorio (Ej. 2023).
-* **codigoCentro**: Obligatorio (Ej. 38010773)
+* **codigoCentro**: Obligatorio (Ej. 38010773).
 
 **Observaciones**: El campo idCursoCentro no está permitido en esta opción.
 
-### Opción 2
+### Opción 2.
 * **idCursoCentro**: Obligatorio (Ej. E480D237-EC8C-4AFF-A870-01C277A3D712).
 
 **Observaciones**: Los campos cursoEscolar y codigoCentro no están permitidos en esta opción.

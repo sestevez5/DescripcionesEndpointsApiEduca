@@ -1,2 +1,12 @@
+# Descripción general.
 
-<p style="text-align: center;">Pendiente de desarrollar</p>
+Este endpoint devuelve una entrada pública del calendario, es decir, que es visible para toda la comunidad educativa (idNivelPrivacidad = 2 en *dbo.XCA_EntradasCalendario*) a partir del parámetro *idEntradaCalendario*, por lo que está orientado a aplicaciones consumidoras que conocen identificadores internos de Pincel de las entidades que representan los parámetros.
+
+## Parámetros específicos.
+
+* **idEntradaCalendario**: Obligatorio (Ej. 04872299-80B0-400D-8DF4-A0CF0F1B6BB1)
+
+# Ejemplos.
+### A) Solicitud de la entrada pública con idEntradaCalendario = "04872299-80B0-400D-8DF4-A0CF0F1B6BB1".
+* 04872299-80B0-400D-8DF4-A0CF0F1B6BB1
+

@@ -1,11 +1,11 @@
-# Descripción general
+# Descripción general.
 
-Este endpoint proporciona los datos personales de los responsables del alumnado de un centro a partir del parámetro *idCentro*.
+Este endpoint proporciona los datos personales de los responsables del alumnado de un centro a partir del parámetro *idCentro*, por lo que está orientado a aplicaciones consumidoras que conocen identificadores internos de Pincel de las entidades que representan los parámetros.
 
-## Parámetros comunes
+## Parámetros comunes.
 * **nivelDetalle**: r, m, e (reducido, medio, extendido). Si no se indica, su valor por defecto será r.
 
-## Parámetros específicos
+## Parámetros específicos.
 
 * **idCentro**: Obligatorio (Ej. 561EBA45-51E5-4E3F-BA6B-C4CBB8363079)
 * **tieneTuteladoMatriculaEnElCentro**: permite seleccionar a los responsables del alumnado que tiene matrícula.

@@ -1,8 +1,8 @@
-# Descripción general
+# Descripción general.
 
 Este endpoint devuelve los datos de los docentes a partir del código del centro.
 
-## Parámetros comunes
+## Parámetros comunes.
 * **opcion**: 1, 2. Se deberá escoger uno obligatoriamente
 * **codigoCentro**: Obligatorio (Ej. 38010773)
 * **nivelDetalle**: r, m, e (reducido, medio, extendido). Si no se indica, su valor por defecto será r.
@@ -11,15 +11,15 @@ Este endpoint devuelve los datos de los docentes a partir del código del centro
 * Opción 1: Además del codigoCentro, será necesario indicar nifnie o pasaporte.
 * Opción 2: Además del codigoCentro, opcionalmente se podrá seleccionar tieneServicioEnElCentro y/o tieneServicioEnElCurso.
 
-## Parámetros específicos
+## Parámetros específicos.
 
-### Opción 1
+### Opción 1.
 * **nifnie**: NIF o NIE del docente.
 * **pasaporte**: Pasaporte del docente.
 
 **Observaciones**: Debe cumplimentarse solamente uno de ellos.
 
-### Opción 2
+### Opción 2.
 * **tieneServicioEnElCentro**: Booleano que permite seleccionar a los docentes que tienen o han tenido algún servicio en el centro. Si no se indica, se seleccionan todos los docentes del centro.
 * **tieneServicioEnElCurso**: Cuando se ha seleccionado la opción anterior, permite indicar el curso escolar en el que ha tenido servicio un docente (Ej. 2023).
 

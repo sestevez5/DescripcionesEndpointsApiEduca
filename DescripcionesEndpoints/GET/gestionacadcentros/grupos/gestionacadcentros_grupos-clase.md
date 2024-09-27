@@ -1,8 +1,8 @@
-# Descripción general
+# Descripción general.
 
 Este endpoint devuelve información de los grupos clase de un centro educativo.
 
-## Parámetros comunes
+## Parámetros comunes.
 * **opcion**: 1, 2. Se deberá escoger uno obligatoriamente.
 * **nivelDetalle**: r, m (reducido, medio). Si no se indica, su valor por defecto será r.
 
@@ -10,9 +10,9 @@ Este endpoint devuelve información de los grupos clase de un centro educativo.
 * Opción 1: Los campos obligatorios son el cursoEscolar y el codigoCentro.
 * Opción 2: El campo idCursoCentro es obligatorio.
 
-## Parámetros específicos
+## Parámetros específicos.
 
-### Opción 1
+### Opción 1.
 * **cursoEscolar**: Obligatorio (Ej. 2023).
 * **codigoCentro**: Obligatorio (Ej. 38010773).
 * **idEstudioSC**: Optativo. No se puede especificar simultáneamente con el campo *idEnsenyanzaSC* (Ej. 232)
@@ -20,7 +20,7 @@ Este endpoint devuelve información de los grupos clase de un centro educativo.
 
 **Observaciones**: Los campos idCursoCentro, IdEstudio, IdEnsenyanza no están permitidos en esta opción.
 
-### Opción 2
+### Opción 2.
 * **idCursoCentro**: Obligatorio (Ej. E480D237-EC8C-4AFF-A870-01C277A3D712).
 * **idEstudio**: Optativo. No se puede especificar simultáneamente con el campo *idEnsenyanza* (Ej. FB122AE6-37F4-45AF-BED5-F401C0AB6E87)
 * **idEnsenyanza**: Optativo. No se puede especificar simultáneamente con el campo *idEstudio* (Ej. 5FF2F0FD-02AD-44F0-8D39-EF37774F9569)
