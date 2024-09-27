@@ -1,13 +1,14 @@
 # Descripción general
 
-Este endpoint devuelve la colección de alumnado con NEAE. Nótese que una NEAE se establece sobre una matrícula y no sobre un/a alumno/a.
-Es importante destacar que las NEAE tienen un periodo de vigencia que, por defecto, coincide con el curso escolar completo, pero el rango de vigencia puede ser más reducido. 
-Por otro lado, es importante señalar que pueden establecerse múltiples NEAE sobre una misma matrícula, siempre y cuando estas no se solapen en el tiempo. Esto ocurre cuando, por ejemplo, hay una revisión de una NEAE y se considera oportuno alterar las condiciones. No debe modificarse la NEAE original, puesto que afecta al pasado formativo del alumnado y podría tener consecuencias indeseables en materia de evaluación.
+Este endpoint devuelve la colección de alumnado con NEAE. Nótese que una NEAE se establece sobre una matrícula y no sobre un/a alumno/a. 
+
+Las NEAE tienen un periodo de vigencia que, por defecto, coincide con el curso escolar completo, pero el rango de vigencia puede ser más reducido. 
+Por otro lado, es importante señalar que pueden establecerse múltiples NEAE sobre una misma matrícula, siempre y cuando estas no se solapen en el tiempo. Esto ocurre cuando, por ejemplo, hay una revisión de una NEAE y se considera oportuno alterar las condiciones. No debe modificarse la NEAE original, puesto que podría afectar al registro en materia de evaluación del alumno hasta la fecha, pudiendo tener consecuencias indeseables en materia de evaluación.
 
 ## Parámetros comunes
 * **opcion**: 1, 2. Se deberá escoger una obligatoriamente.
 * **nivelDetalle**: r, m, e (reducido, medio, extendido). Si no se indica, su valor por defecto será r.
-* **fechaReferencia**: Es un parámetro no obligatorio y, en caso de que se omita, se considerará la fecha del sistema. Solo se devolverán las neae vigentes a la fecha indicada (o del sistema si no se especifica )
+* **fechaReferencia**: Es un parámetro no obligatorio y, en caso de que se omita, se considerará la fecha del sistema. Solo se devolverán las neae vigentes a la fecha indicada (o del sistema si no se especifica)
 
 ## Parámetros específicos
 
