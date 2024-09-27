@@ -4,27 +4,24 @@ ApiEduca es un API REST que expone las entidades que se gestionan en la Herramie
 # Seguridad.
 Esta ApiRest tiene carácter interno y su consumo solo puede realizarse a través de la Intranet Corporativa. 
 
-Hemos seguido el estándar propuesto para este tipo de herramientas que es "Bearer". Es un formato ampliamente asumido que nos permite la autorización en conjunto con la autenticación de usuario. Básicamente, se requiere que en todas las peticiones se añada un token en cabecera que identifica al consumidor y, opcionalmente, contiene información adicional.
+Hemos seguido el estándar propuesto para este tipo de herramientas que es "Bearer". Es un formato ampliamente asumido que nos permite la autorización en conjunto con la autenticación de usuario. Básicamente, se requiere que en todas las peticiones se añada un token en cabecera que identifica al consumidor y, opcionalmente, contendrá información adicional requerida para el proceso de autenticación/autorización.
 
-Para la obtención de un token se requiere pasar por un proceso de autorización que, como mínimo, va a requerir una "apikey" que, actualmente, es necesario contactar con el equipo de desarrollo del SI04 para obtenerla.
+Para la obtención de un token se requiere pasar por un proceso de autorización que, como mínimo, requerirá una "apikey" que, en la actualidad es gestionada por el equipo de desarrollo del SI04.
 
-Existen varios endpoints orientados a la obtención de un token de acceso. El más sencillo solo requerirá aportar la apikey suministrada que, básicamente, representa a la consumidora. Existen otros endpoint que requerirán más información como, por ejemplo, credenciales de usuarios. Como podemos imaginar, estos últimos aportarán un mayor nivel de privilegios a la hora del consumo de endpoints.
-
-# Generalidades.
-Se ha intentado imprimir la máxima regularidad en la implementación de los endpoints que conforman este Api con el objetivo de normalizar su desarrollo y, a la par, simplificar su consumo.  En este apartado describiremos lo que, a nuestro juicio, en conveniente conocer por su carácter transversal, evitando así, reiterar las mismas especificaciónes en diferentes endpoints.
+Existen varios endpoints orientados a la obtención de un token de acceso. Ver [Anexo I](#AnexoI). El más sencillo solo requerirá aportar la apikey suministrada que, básicamente, representa a la aplicación consumidora. Existen otros endpoints que requerirán más información como, por ejemplo, credenciales de usuarios. Como podemos imaginar, estos últimos aportarán un mayor nivel de privilegios a la hora del consumo de endpoints.
 
 # Estructura de los endpoints.
 
-Podemos distinguir tres unidades de información en los endpoints: servidor, sistema y segmentos propios del endpoint.
+Podemos distinguir tres unidades de información en el _path_ que representa a los endpoints: servidor, sistema de información y segmentos propios del endpoint.
 
-* Disponemos de dos entornos: preproducción y producción. El segmento unicial de las uris correspondientes a los endpoints en cada entorno serán: https://wwwpre.educacion.org/educacion/bussed/apieduca y https://www.gobiernodecanarias.org/educacion/bussed/apieduca.
-* Los endpoints estarán dentro de un sistema y dicho sistema se identificará en el primer segmento. Es el segmento que sigue al indicado en el punto anterior.
+* Disponemos de dos entornos: preproducción y producción. El segmento inicial correspondiente a los endpoints en cada entorno serán: https://wwwpre.educacion.org/educacion/bussed/apieduca y https://www.gobiernodecanarias.org/educacion/bussed/apieduca.
+* Los endpoints se encontrarán en el contexto de un _sistema de información_ que será identificado por el segmento que precede al servidor. 
 * Finalmente, tenemos los segmentos del Path que identifican al propio endpoint.
 
 Veamos algunos ejemplos:
 
-Ejemplo 1: https://www.gobiernodecanarias.org/educacion/bussed/apieduca/centros/zonas-inspeccion: endpoint que devuelve las diferentes zonas de inspección que se han establecidos en materia de educación en la Comunidad Canaria. Es una gestión correspondiente al Directorio de Centros y, por tanto, el "sistema" es "centros". En este caso, atendiendo al comienzo de la uri podemos ver que se trata de un endpoint del entorno de producción.
-Ejemplo 2: https://wwwpre.educacion.org/educacion/bussed/apieduca/gestionacadcentros/matriculas: endpoint de que devuelve una colección de matrículas del entorno de preproducción. Se trata de información proveniente de Pincel Ekade. La sección del endpoint "sistema" que representa a todas las entidades provenientes de Pincel Ekade es  "gestionacadcentros" (Gestión académica y administrativa de centros).
+Ejemplo 1: https://www.gobiernodecanarias.org/educacion/bussed/apieduca/centros/zonas-inspeccion: endpoint que devuelve las diferentes zonas de inspección que se han establecidos en materia de educación en la Comunidad Canaria. Es una gestión correspondiente al Directorio de Centros y, por tanto, el "sistema de información" es "centros". En este caso, atendiendo al comienzo de la uri, podemos ver que se trata de un endpoint del entorno de producción.
+Ejemplo 2: https://wwwpre.educacion.org/educacion/bussed/apieduca/gestionacadcentros/matriculas: endpoint de que devuelve una colección de matrículas del entorno de preproducción. Se trata de información proveniente de Pincel Ekade. La sección del endpoint "sistema de información" que representa a todas las entidades provenientes de Pincel Ekade es  "gestionacadcentros" (Gestión académica y administrativa de centros).
 
 
 ## Estructura de las respuestas.
@@ -66,11 +63,26 @@ En este punto hay otro aspecto a destacar relacionado con la seguridad. Puede qu
 - **Opcion**: en algunos de los endpoints que devuelven colecciones se permite aplicar filtros de diferentes formas. Cada una de esas formas es lo que denominamos "opción". En la descripción de cada endpoint de especifica los parámetros que conforman cada una de las opciones.
 
 - **Paginación**: posicionInicial y tamanyoBloque: como es obvio, debemos establecer un sistema de paginación ante endpoints que devuelven colecciones de entidades. Hemos definido dos parámetros para establecer la página requerida en la respuesta a través de la posición inicial del paquete solicitado y el número de datos requerido. Por ejemplo, si indicamos en el parámetro "posicionInicial" el valor 4 y al parámetro "tamanyoBloque" el valor 70, el sistema devolverá la cuarta página de un sistema de bloques de 70 registros.
-En caso de omisión de estos parámetros se devolverá la primera página de una paginación de bloques de tamaño 100. (posicionIniciao=0 y tamanyoBloque=100). No obstante, se podrá solicitar la información sin paginar haciendo uso del parámetro "paginar" ( Ej: paginar=false).
+En caso de omisión de estos parámetros se devolverá la primera página de una paginación de bloques de tamaño 100. (posicionInicial=1 y tamanyoBloque=100). No obstante, se podrá solicitar la información sin paginar haciendo uso del parámetro "paginar" ( Ej: paginar=false).
 
 - **Orden**: con carácter general, los endpoints que devuelven colecciones dispondrán de un campo "orden" en el que podemos establecer la ordenación de la colección devuelta a partir de múltiples propiedades del DTO devuelto. Por defecto, para cada campo que conforma el parámetro "orden" se establecerá, por defecto, un orden ascendente, pero es posible invertir el orden sin más que añadir a su derecha el signo "-". Por ejemplo consideremos la ejecución del endpoint que devuelve una colección de matriculas del centro 38010773 y curso escolar 2023. Queremos que los datos se devuelvan ordenados por fecha de matrícula en orden descendente, seguido de apellidos y nombre en orden ascendente. La sintaxis sería: "https://wwwpre.educacion.org/educacion/bussed/apieduca/gestionacadcentros/matriculas?opcion=1&cursoEscolar=2023&codigoCentro=38010773&orden=-fechaMatricula,primerApellido,segundoApellido,nombre".
 
-## [Anexo I]{#AnexoI} 
+### Formato de los parámetros query.
+
+- **Fechas:**  aaaa-mm-dd ( Ej. 2024-04-12)
+- **Fecha/hora:**  aaaa-mm-ssThh:mm:ssZ ( Ej. 2024-04-12T13:12:15T)
+- **Guid:**  "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", a puede tomar los valores [0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f] ( Ej. 92b6505b99a946fcb107c47f2acf5734    )
+- **Booleano:** true/false.
+
+# Otros aspectos de carácter general.
+
+## Contenidos de documentos devueltos por endpoints.
+
+Existen múltiples endpoints que devuelven el contenido de ficheros como, por ejemplo, el endpoint que devuelve los documentos asociados a una NEAE.
+Este contenido siempre se devolverá como un array de byte codificado en base64.
+
+
+# Anexo I{#AnexoI}
 
 La autenticación en ApiEduca, como la mayoría de Apis de tipo ApiREST, está basada en tokens. En concreto, en el modelo JWT Bearer. Por tanto, como paso previo a cualquier invocación de endpoints necesitamos obtener un token váldio.
 
