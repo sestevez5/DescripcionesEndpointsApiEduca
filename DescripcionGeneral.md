@@ -1,25 +1,30 @@
 # Descripción.
-ApiEduca es un API REST que expone las entidades que se gestionan en la Herramienta de Gestión Académica y Administrativa de los centros educativos (Pincel Ekade). No obstante, de forma temporal, también se han incluidos entidades externas como, por ejemplo, algunas de las gestionadas en el Directorio de Centros o el Plan de Estudios de Canarias.
+ApiEduca es un API REST que expone las entidades que se gestionan en la Herramienta para la Gestión Académica y Administrativa de los centros educativos (Pincel Ekade). No obstante, de forma temporal, también se han incluido entidades externas como, por ejemplo, algunas de las gestionadas en el Directorio de Centros o el Plan de Estudios de Canarias.
 
 # Seguridad.
-ApiEduca es un Api de carácter interno y su consumo solo puede realizarse a través de la Intranet Corporativa . Además, es condición necesaria disponer de un ApiKey para su acceso. Este ApiKey tendrá asociado unos niveles de autorización que, en buena parte, marcarán los privilegios de acceso y manipulación de los recursos expuestos.
+Esta ApiRest tiene carácter interno y su consumo solo puede realizarse a través de la Intranet Corporativa. 
 
-Existen determinados endpoints en los que disponer de un ApiKey con los privilegios necesarios no nos aporta el acceso a los mismos. Dichos endpoints requieren de una autenticación personal. ApiEduca provee de diferentes endpoints para realizar la autenticación cubriendo las diferentes casuísticas. Ver [Anexo I](#AnexoI)
+Hemos seguido el estándar propuesto para este tipo de herramientas que es "Bearer". Es un formato ampliamente asumido que nos permite la autorización en conjunto con la autenticación de usuario. Básicamente, se requiere que en todas las peticiones se añada un token en cabecera que identifica al consumidor y, opcionalmente, contiene información adicional.
+
+Para la obtención de un token se requiere pasar por un proceso de autorización que, como mínimo, va a requerir una "apikey" que, actualmente, es necesario contactar con el equipo de desarrollo del SI04 para obtenerla.
+
+Existen varios endpoints orientados a la obtención de un token de acceso. El más sencillo solo requerirá aportar la apikey suministrada que, básicamente, representa a la consumidora. Existen otros endpoint que requerirán más información como, por ejemplo, credenciales de usuarios. Como podemos imaginar, estos últimos aportarán un mayor nivel de privilegios a la hora del consumo de endpoints.
 
 # Generalidades.
-Se ha intentado imprimir la máxima regularidad en la implementación de los endpoints que conforman este Api con el objetivo de normalizar su desarrollo y, a la par, simplificar su consumo.  En este apartado describiremos lo que, a nuestro juicio, en conveniente conocer por su carácter transversal, evitando, así, reiterar las mismas especificaciónes en diferentes Endpoints.
+Se ha intentado imprimir la máxima regularidad en la implementación de los endpoints que conforman este Api con el objetivo de normalizar su desarrollo y, a la par, simplificar su consumo.  En este apartado describiremos lo que, a nuestro juicio, en conveniente conocer por su carácter transversal, evitando así, reiterar las mismas especificaciónes en diferentes endpoints.
 
 # Estructura de los endpoints.
 
 Podemos distinguir tres unidades de información en los endpoints: servidor, sistema y segmentos propios del endpoint.
 
 * Disponemos de dos entornos: preproducción y producción. El segmento unicial de las uris correspondientes a los endpoints en cada entorno serán: https://wwwpre.educacion.org/educacion/bussed/apieduca y https://www.gobiernodecanarias.org/educacion/bussed/apieduca.
-* Los endpoints estarán dentro de un sistema y dicho sistema se identificará en el primer segmento. Justo el segmento que sigur al indicado en el punto anterior.
+* Los endpoints estarán dentro de un sistema y dicho sistema se identificará en el primer segmento. Es el segmento que sigue al indicado en el punto anterior.
+* Finalmente, tenemos los segmentos del Path que identifican al propio endpoint.
 
 Veamos algunos ejemplos:
 
-Ejemplo 1: https://www.gobiernodecanarias.org/educacion/bussed/apieduca/centros/zonas-inspeccion: endpoint que devuelve las diferentes zonas de inspección que se han establecidos en materia de educación en la Comunidad Canarias. Es una gestión correspondiente al Directorio de Centros y, por tanto, el "sistema" es "centros". En este caso, atendiendo al comienzo de la uri podemos ver que se trata de un endpoint del entornod e producción.
-Ejemplo 2: https://wwwpre.educacion.org/educacion/bussed/apieduca/gestionacadcentros/matriculas: endpoint de que devuelve una colección de matrículas del entorno de preproducción. Se trata de información proveniente de Pincel Ekade. La sección del endpoint que sistema que representa a todas las entidades provenientes de Pincel Ekade es  "gestionacadcentros" (Gestión académica y administrativa de centros).
+Ejemplo 1: https://www.gobiernodecanarias.org/educacion/bussed/apieduca/centros/zonas-inspeccion: endpoint que devuelve las diferentes zonas de inspección que se han establecidos en materia de educación en la Comunidad Canaria. Es una gestión correspondiente al Directorio de Centros y, por tanto, el "sistema" es "centros". En este caso, atendiendo al comienzo de la uri podemos ver que se trata de un endpoint del entorno de producción.
+Ejemplo 2: https://wwwpre.educacion.org/educacion/bussed/apieduca/gestionacadcentros/matriculas: endpoint de que devuelve una colección de matrículas del entorno de preproducción. Se trata de información proveniente de Pincel Ekade. La sección del endpoint "sistema" que representa a todas las entidades provenientes de Pincel Ekade es  "gestionacadcentros" (Gestión académica y administrativa de centros).
 
 
 ## Estructura de las respuestas.
@@ -33,7 +38,7 @@ En el apartado "colecciones" veremos cómo, en ocasiones, disponemos de represen
 Este campo devuelve una colección de mensajes (potencialmente vacío). En muchas ocasiones es necesario acompañar las respuestas con mensajes que aporten información adicional a los consumidores, los cuales pueden ir desde meros avisos hasta notificaciones de errores. Por ejemplo, el sistema, ante una petición incorrectamente formada, notificará de este hecho al peticionario. También es el mecanismo habitual cuando se realiza una petición que incumple reglas de negocio establecidas (Ej. "La fecha de finalización de una matrícula no puede ser anterior a la fecha de matrícula").
 
 ### Metadatos.
-Este campo es, precisamente, el que nos ha llevado a optar por el uso de envolvente a las respuestas. Se trata de un objeto que nos permite aportar información sobre la propia gestión de la petición. A nivel básico, aporta, entre otros datos, la fecha/hora de la petición, usuario autenticado, url de la solicitud, etc. En determinadas ocaciones estos medadatos se enriquecen con informacióin adicional. Tal es el caso de las respuestas de peticiones que devuelven colecciones. En estos casos se aporta información adicional como, por ejemplo, datos de paginación, filtro y orden.
+Este campo es, precisamente, el que nos ha llevado a optar por el uso de envolvente a las respuestas. Se trata de un objeto que nos permite aportar información sobre la propia petición. A nivel básico, aporta, entre otros datos, la fecha/hora de la petición, usuario autenticado, url de la solicitud, etc. En determinadas ocaciones estos medadatos se enriquecen con informacióin adicional. Tal es el caso de las respuestas de peticiones que devuelven colecciones. En estos casos se aporta información adicional como, por ejemplo, datos de paginación, filtro y orden.
 
 ## Códigos de respuesta.
 En función de la naturaleza de las peticiones o del resultado obtenido al procesar una petición nos podemos encontrar con múltiples casuísticas. Hemos intentado ajustarnos a la semántica establecida en el protocolo HTTP en lo relativo a los códigos de respuestas. Con carácter general se devuelve un subconjunto de códigos que intentamos describir a continuación.
@@ -46,7 +51,7 @@ Es importante destacar que la intención primera de codificación del segundo ca
 - **203** (_Non-Authoritative Information_): es el código de respuesta que damos ante una petición habilitada para un cliente que ha podido ser atendida pero la lógica de la aplicación establece que no debe aportarse la información requerida. Un ejemplo de respuesta con este código podría ser la solicitud de sesiones de evaluación no publicadas para ciertas aplicaciones.
 - **400** (_Bad Request_): es el código de respuesta ante una petición que no puede ser atendida por estar mal formada, por no seguir las directrices de la especificación de los parámetros query, etc. En resumen, estamos ante peticiones que no pueden ser resueltas de forma satisfactoria.
 - **401** (_Unauthorized_): como indica su descripción se da esta respuesta cuando el cliente no está autorizado a consumir el endpoint. Puede deberse a que el usuario no ha hecho uso de un token o que la información del token establece que el cliente no es apto para el consumo del endpoint.
-- **403** (_Forbidden_): este código de respuesta solo se devuelve cuando se hace uso de endpoints dirigidos a la autenticación y, fruto del procesado de la petición se dictamina que la autenticación es insatisfactoria. Por ejemplo, no se obtiene un token debido a credenciales no válidas.
+- **403** (_Forbidden_): este código de respuesta solo se devuelve cuando se hace uso de endpoints dirigidos a la autenticación y, fruto del procesado de la petición, se dictamina que la autenticación es insatisfactoria. Por ejemplo, no se obtiene un token debido a credenciales no válidas.
 - **409** (_Conflict_): se devuelve cuando se ejecuta un endpoint de manipulación de un recurso (métodos POST, PUT, DELETE, PATCH ) y hay una o varias reglas de negocio que impiden la ejecución de la acción solicitada. Se devolverá en el nodo "mensajes" la colección de reglas que se incumplen.
 - **500** (_Internal Server Error_): no se establece ningún desglose. Aparece este error ante excepciones internas de la aplicación.
 
@@ -55,15 +60,15 @@ Es importante destacar que la intención primera de codificación del segundo ca
 ### Parámetros de carácter general.
 Los endpoints de tipo GET que devuelven colecciones de datos conforman el conjunto más representativo de endpoints de ApiEduca y, probablemente, el más demandado. Es muy importante, por tanto, aportarle la suficiente flexibilidad para que cubra las necesidades de la mayoría de los consumidores, aunque evitando dar respuestas sobreajustadas que provoquen un exceso de configuraciones que compliquen su uso e implementación. Como respuesta a la flexibilidad hemos uniformado los parámetros que establecen especificaciones de carácter general, tanto en lo referente a la información devuelta como en la oferta de parámetros. Son los siguientes:
 
-- **Nivel de detalle**: muchos de los endpoints que devuelven colecciones de objetos nos permite establecer el nivel de información devuelta en estos objetos. Es decir, nos permiten establecer la estructura de los objetos devueltos. El parámetro es "nivelDetalle" y sus valores posibles son "r"(reducido), "m"(medio) y "e"(extendido), aunque puede que algunos endpoints no ofrezcan todos los niveles. Es obvio que el uso del nivel reducido redundará en una mejora del rendimiento. En general, se aconseja usar siempre el nivel mínimo que aporte la información requerida.
-En este punto hay otro aspecto a destacar y es el relacionado con la seguridad. Puede que a determinados usuarios solo se les permita hacer uso de niveles reducidos de contenido debido a que los extendidos exponen información a la que dichos usuarios no están autorizados a acceder.
+- **Nivel de detalle**: muchos de los endpoints que devuelven colecciones de objetos nos permite establecer el nivel de información devuelta en estos objetos. Es decir, nos permiten establecer la estructura de los objetos devueltos. El parámetro es "nivelDetalle" y sus valores potenciales son "r"(reducido), "m"(medio) y "e"(extendido), aunque puede que algunos endpoints no ofrezcan todos los niveles. Es obvio que el uso del nivel reducido redundará en una mejora del rendimiento. En general, se aconseja usar siempre el nivel mínimo que aporte la información requerida.
+En este punto hay otro aspecto a destacar relacionado con la seguridad. Puede que a determinados usuarios solo se les permita hacer uso de niveles reducidos de contenido debido a que los extendidos exponen información a la que dichos usuarios no están autorizados a acceder.
 
 - **Opcion**: en algunos de los endpoints que devuelven colecciones se permite aplicar filtros de diferentes formas. Cada una de esas formas es lo que denominamos "opción". En la descripción de cada endpoint de especifica los parámetros que conforman cada una de las opciones.
 
 - **Paginación**: posicionInicial y tamanyoBloque: como es obvio, debemos establecer un sistema de paginación ante endpoints que devuelven colecciones de entidades. Hemos definido dos parámetros para establecer la página requerida en la respuesta a través de la posición inicial del paquete solicitado y el número de datos requerido. Por ejemplo, si indicamos en el parámetro "posicionInicial" el valor 4 y al parámetro "tamanyoBloque" el valor 70, el sistema devolverá la cuarta página de un sistema de bloques de 70 registros.
-En caso de omisión de estos parámetros se devolverá la primera página de una paginación de bloques de tamaño 100. (posicionIniciao=0 y tamanyoBloque=100).
+En caso de omisión de estos parámetros se devolverá la primera página de una paginación de bloques de tamaño 100. (posicionIniciao=0 y tamanyoBloque=100). No obstante, se podrá solicitar la información sin paginar haciendo uso del parámetro "paginar" ( Ej: paginar=false).
 
-### Orden <pendiente>
+- **Orden**: con carácter general, los endpoints que devuelven colecciones dispondrán de un campo "orden" en el que podemos establecer la ordenación de la colección devuelta a partir de múltiples propiedades del DTO devuelto. Por defecto, para cada campo que conforma el parámetro "orden" se establecerá, por defecto, un orden ascendente, pero es posible invertir el orden sin más que añadir a su derecha el signo "-". Por ejemplo consideremos la ejecución del endpoint que devuelve una colección de matriculas del centro 38010773 y curso escolar 2023. Queremos que los datos se devuelvan ordenados por fecha de matrícula en orden descendente, seguido de apellidos y nombre en orden ascendente. La sintaxis sería: "https://wwwpre.educacion.org/educacion/bussed/apieduca/gestionacadcentros/matriculas?opcion=1&cursoEscolar=2023&codigoCentro=38010773&orden=-fechaMatricula,primerApellido,segundoApellido,nombre".
 
 ## [Anexo I]{#AnexoI} 
 
