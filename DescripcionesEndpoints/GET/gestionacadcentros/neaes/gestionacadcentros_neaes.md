@@ -4,10 +4,6 @@ Este endpoint devuelve la colección de alumnado con NEAE. Nótese que una NEAE 
 Es importante destacar que las NEAES tienen un periodo de vigencia que, por defecto, coincide con el curso escolar completo, pero el rango de vigencia puede ser más reducido. 
 Por otro lado, es importante destacar que pueden establecerse múltiples NEAEs sobre una misma matrícula, siempre y cuando estas no se solapen en el tiempo. Esto ocurre cuando, por ejemplo, hay una revisión de una NEAE y se considera oportuno alterar las condiciones. No debe modificarse la NEAE original, puesto que afecta al pasado formativo del alumnado y podría tener concecuencias indeseables en materia de evaluación.
 
-
-
-
-
 ## Parámetros comunes
 * **opcion**: 1, 2. Se deberá escoger una obligatoriamente.
 * **nivelDetalle**: r, m, e (reducido, medio, extendido). Si no se indica, su valor por defecto será r.
