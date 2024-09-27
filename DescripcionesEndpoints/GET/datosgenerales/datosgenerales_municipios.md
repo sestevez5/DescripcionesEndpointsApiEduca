@@ -7,11 +7,18 @@ Este endpoint devuelve los nombres de todos los municipios establecidos en el ca
 ## Parámetros específicos.
 
 * **codigoIsla**: Si se indica, devuelve los municipios según los siguientes códigos: 1 (*Fuerteventura*), 2 (*Lanzarote*), 3 (*Gran Canaria*), 4 (*La Gomera*), 5 (*El Hierro*), 6 (*La Palma*), 7 (*Tenerife*).
-  * Si no se indica y el parámetro **soloMunicipiosCanarias** tiene los valores *No establecido* o *Sí*, devuelve todos los municipios de la Comunidad Autónoma de Canarias. 
-* **codigoProvincia**: Si se indica, devuelve los municipios de la correspondiente provincia (Ej. 35 *Las Palmas de Gran Canaria*, 39 *Cantabria*).
-* **fechaReferencia**:
-* **denominacionContiene**:
-* **soloMunicipiosCanarias**:
+  * Si no se indica y el parámetro **soloMunicipiosCanarias** tiene los valores *No establecido* o *Sí*, devuelve todos los municipios de la Comunidad Autónoma de Canarias.
+  * Si no se indica y el parámetro **soloMunicipiosCanarias** tiene el valor *No*, devuelve todos los municipios del catálogo general. 
+* **codigoProvincia**: Si se indica, devuelve los municipios de la correspondiente provincia de la Comunidad Autónoma Canaria (Ej. 35 *Las Palmas de Gran Canaria*, 38 *Santa Cruz de Tenerife*).
+  * Si no se indica y el parámetro **soloMunicipiosCanarias** tiene los valores *No establecido* o *Sí*, devuelve todos los municipios de la Comunidad Autónoma de Canarias.
+  * Si no se indica y el parámetro **soloMunicipiosCanarias** tiene el valor *No*, devuelve todos los municipios del catálogo general. 
+* **fechaReferencia**: Si se indica, devuelve los municipios vigentes en la fecha especificada. Si no, devuelve los municipios vigentes en la fecha del sistema.
+* **denominacionContiene**: Si se pasa este parámetro, se devuelven solo los municipios cuya denominación contiene dicho parámetro.
+* **soloMunicipiosCanarias**: Si se selecciona el valor *No*, incluye los municipios no pertenecientes a la Comunidad Autónoma de Canarias.
+
+# MODIFICAR.
+
+
 
 **Observaciones**: Todos los parámetros específicos son opcionales, de modo que si no se indica ninguno, se devuelven todos los municipios canarios.
 
