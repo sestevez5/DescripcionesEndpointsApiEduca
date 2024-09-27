@@ -10,5 +10,5 @@ Este endpoint devuelve información relativa a las zonas de inspección en mater
 
 # Ejemplos.
 ### A) Solicitud de las zonas de inspección para el curso "2024".
-* ?cursoEscolar=2024
+* /centros/zonas-inspeccion?cursoEscolar=2024
 
