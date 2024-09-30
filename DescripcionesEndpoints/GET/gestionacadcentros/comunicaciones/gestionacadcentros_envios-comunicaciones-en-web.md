@@ -22,15 +22,15 @@ Este endpoint proporciona datos relativos al envío de comunicaciones en web de 
 
 # Ejemplos.
 ### A) Solicitud de datos de todas las comunicaciones en web del remitente con nifNieRemitente = "41414141L".
-* ?nifnieRemitente=41414141L
+* /gestionacadcentros/envios-comunicaciones-en-web?nifnieRemitente=41414141L
  
 ### B) Solicitud de datos de todas las comunicaciones en web entre el remitente con DNI = "41414141L" y el destinatario con CIAL = "60000000S" entre los días 01/05/2024 y 30/06/2024.
-* ?nifnieRemitente=41414141L & cialDestinatario=60000000S & fechaDesde=2024-05-01 & fechaHasta=2024-06-30
+* /gestionacadcentros/envios-comunicaciones-en-web?nifnieRemitente=41414141L & cialDestinatario=60000000S & fechaDesde=2024-05-01 & fechaHasta=2024-06-30
 
 ### C) Solicitud de datos de las últimas 5 comunicaciones en web recibidas por el destinatario con nifNieDestinatario = "41414141L".
-* ?nifnieDestinatario=41414141L & ultimas=5
+* /gestionacadcentros/envios-comunicaciones-en-web?nifnieDestinatario=41414141L & ultimas=5
 
 ### D) Solicitud de datos de la última comunicación en web entre el remitente con DNI = "41414141L" y el destinatario con DNI = "60000000S" entre los días 01/09/2023 y 22/12/2023.
-* ?nifnieRemitente=41414141L & nifnieDestinatario=60000000S & fechaDesde=2023-09-01 & fechaHasta=2023-12-22 & ultimas=1
+* /gestionacadcentros/envios-comunicaciones-en-web?nifnieRemitente=41414141L & nifnieDestinatario=60000000S & fechaDesde=2023-09-01 & fechaHasta=2023-12-22 & ultimas=1
 
   
