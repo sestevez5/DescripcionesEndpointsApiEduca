@@ -4,8 +4,8 @@ Este endpoint proporciona información de un centro educativo (Etapa, denominaci
 
 ## Parámetros específicos.
 
-* **idCentro**: Obligatorio (Ej. 3793A6D1-C742-42ED-B005-DA3529421EE5)
+* **idCentro**: Obligatorio (Ej. 3793A6D1C74242EDB005DA3529421EE5)
 
 # Ejemplo.
-### A) Solicitud de datos del centro con idCentro "3793A6D1-C742-42ED-B005-DA3529421EE5".
-* 3793A6D1-C742-42ED-B005-DA3529421EE5
+### A) Solicitud de datos del centro con idCentro "3793A6D1C74242EDB005DA3529421EE5".
+* /gestionacadcentros/centros/3793A6D1-C742-42ED-B005-DA3529421EE5
