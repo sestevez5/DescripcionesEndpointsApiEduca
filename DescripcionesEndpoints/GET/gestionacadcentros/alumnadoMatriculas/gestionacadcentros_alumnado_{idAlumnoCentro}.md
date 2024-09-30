@@ -8,6 +8,6 @@ Este endpoint proporciona datos personales del alumnado y de sus responsables a 
 
 # Ejemplos.
 ### A) Solicitud de datos del alumno para el idAlumnoCentro = "ba9b30a2-2d88-4b60-ba19-000c86f9e462".
-* ba9b30a2-2d88-4b60-ba19-000c86f9e462
+* /gestionacadcentros/alumnado/ba9b30a2-2d88-4b60-ba19-000c86f9e462
 
 
