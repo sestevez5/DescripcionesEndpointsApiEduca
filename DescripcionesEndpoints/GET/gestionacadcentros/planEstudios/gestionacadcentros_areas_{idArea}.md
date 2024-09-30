@@ -8,8 +8,8 @@ Este endpoint proporciona información exhaustiva de las áreas (Ej. *Ciencias d
 
 ## Parámetros específicos.
 
-* **idArea**: Obligatorio (Ej. 5e09f10d-778a-4b8a-b98b-b9495b050018).
+* **idArea**: Obligatorio (Ej. 5e09f10d778a4b8ab98bb9495b050018).
 
 # Ejemplo.
-### A) Solicitud de datos del área con idArea = "5e09f10d-778a-4b8a-b98b-b9495b050018".
-* 5e09f10d-778a-4b8a-b98b-b9495b050018
+### A) Solicitud de datos del área con idArea = "5e09f10d778a4b8ab98bb9495b050018".
+* /gestionacadcentros/areas/5e09f10d778a4b8ab98bb9495b050018
