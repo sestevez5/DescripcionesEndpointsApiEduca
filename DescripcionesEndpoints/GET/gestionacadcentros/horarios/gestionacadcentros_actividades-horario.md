@@ -56,16 +56,16 @@ Este endpoint proporciona datos de actividades susceptibles de disponer de horar
 
 # Ejemplos.
 ### A) Solicitud del horario completo de una matrícula para un estudio concreto y un curso escolar determinado.
-* ?opcion=1 & cursoEscolar=2023 & codigoCentro=35010488 & horarioCompleto=true & cialAlumnado=A95F0610K & idEstudioSC=3206
+* /gestionacadcentros/actividades-horario?opcion=1 & cursoEscolar=2023 & codigoCentro=35010488 & horarioCompleto=true & cialAlumnado=A95F0610K & idEstudioSC=3206
 
 ### B) Solicitud del horario de un docente-servicio para un curso escolar determinado.
-* ?opcion=2 & cursoEscolar=2023 & codigoCentro=35010488 & nifNieDocente=00000001R
+* /gestionacadcentros/actividades-horario?opcion=2 & cursoEscolar=2023 & codigoCentro=35010488 & nifNieDocente=00000001R
 
 ### C) Solicitud del horario completo de un pas-servicio en la fecha "30/03/2024". 
-* ?opcion=3 & cursoEscolar=2023 & codigoCentro=35010488 & nifNiePas=Y3003352A & fechaReferenciaServicioPas=2024-03-30
+* /gestionacadcentros/actividades-horario?opcion=3 & cursoEscolar=2023 & codigoCentro=35010488 & nifNiePas=Y3003352A & fechaReferenciaServicioPas=2024-03-30
 
 ### D) Solicitud del horario completo del grupo "2ESOA" para el curso 2023. 
-* ?opcion=4 & cursoEscolar=2023 & codigoCentro=35010488 & horarioCompleto=true & codigoGrupo=2ESOA
+* /gestionacadcentros/actividades-horario?opcion=4 & cursoEscolar=2023 & codigoCentro=35010488 & horarioCompleto=true & codigoGrupo=2ESOA
 
 ### E) Solicitud del horario de actividades en la dependencia "A10" en la fecha "30/05/2024". 
-* ?opcion=5 & cursoEscolar=2023 & codigoCentro=35010488 & fechaReferenciaHorario=2024-05-30 & codigoDependencia=A10
+* /gestionacadcentros/actividades-horario?opcion=5 & cursoEscolar=2023 & codigoCentro=35010488 & fechaReferenciaHorario=2024-05-30 & codigoDependencia=A10
