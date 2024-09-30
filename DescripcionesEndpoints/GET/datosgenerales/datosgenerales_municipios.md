@@ -20,14 +20,16 @@ Este endpoint devuelve los nombres de todos los municipios establecidos en el ca
 * **denominacionContiene**: Si se pasa este parámetro, se devuelven solo los municipios cuya denominación contiene dicho parámetro.
 * **soloMunicipiosCanarias**: Si se selecciona el valor *No*, incluye los municipios no pertenecientes a la Comunidad Autónoma de Canarias.
 
-
-
-
-
-**Observaciones**: Todos los parámetros específicos son opcionales, de modo que si no se indica ninguno, se devuelven todos los municipios canarios.
+**Observaciones**: Todos los parámetros específicos son opcionales. Si no se indica ninguno, se devuelven todos los municipios canarios.
 
 # Ejemplos.
 
 ### A) Solicitud de los municipios de la isla de La Palma.
 * /datosgenerales/municipios?codigoIsla=6
+
+### B) Solicitud de los municipios de la comunidad autónoma de Cantabria.
+* /datosgenerales/municipios?codigoProvincia=39 & soloMunicipiosCanarias=false
+
+### C) Solicitud de los municipios de la provincia de Las Palmas.
+* /datosgenerales/municipios?codigoProvincia=35 & soloMunicipiosCanarias=true
 
