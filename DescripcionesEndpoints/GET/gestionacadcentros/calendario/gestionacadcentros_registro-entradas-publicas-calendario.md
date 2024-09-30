@@ -10,11 +10,11 @@ Este endpoint devuelve la colección de entradas públicas del calendario de un 
 * **tipoEntrada**: Si se indica, se devuelven solamente las entradas cuyo código coincida con el especificado, y que corresponden al parámetro _codigo_ de la tabla *XCA_TTipoEntradaCalendario* (Ej. "FES" devuelve los días festivos).
 
 **Observaciones**:
-* En el caso de no establecerse los parámetros fechaDesde y fechaHasta, se devolverán todas las entradas públicas del calendario.
+* En el caso de no establecerse los parámetros *fechaDesde* y *fechaHasta*, se devolverán todas las entradas públicas del calendario.
 
 # Ejemplos.
 ### A) Solicitud de todas las entradas públicas del centro con código "35009139" entre los días 01/09/2023 y 30/06/2024.
-* ?codigoCentro=35010488 & fechaDesde=2023-09-01 & fechaHasta=2024-06-30
+* /gestionacadcentros/registro-entradas-publicas-calendario?codigoCentro=35010488 & fechaDesde=2023-09-01 & fechaHasta=2024-06-30
 
 ### B) Solicitud de las entradas públicas de tipo "FES" (Día festivo) del centro con código "35009139" a partir del día 08/01/2024.
-* ?codigoCentro=35010488 & fechaDesde=2024-01-08 & tipoEntrada=FES
+* /gestionacadcentros/registro-entradas-publicas-calendario?codigoCentro=35010488 & fechaDesde=2024-01-08 & tipoEntrada=FES
