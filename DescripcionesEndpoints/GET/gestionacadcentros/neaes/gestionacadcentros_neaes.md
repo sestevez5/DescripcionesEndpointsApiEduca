@@ -29,10 +29,10 @@ Por otro lado, es importante señalar que pueden establecerse múltiples NEAE so
 
 # Ejemplos.
 ### A) Obtener todas las NEAE registradas en el centro con código 35010488 en el curso escolar 2024 activas en la fecha de la ejecución.
-* ?opcion=1 & cursoEscolar=2024 & codigoCentro=35010488
+* /gestionacadcentros/neaes?opcion=1 & cursoEscolar=2024 & codigoCentro=35010488
 
 ### B) Obtener todas las NEAE registradas en el centro con código 35010488 en el curso escolar 2024 que estén activas el 25/12/2024.
-* ?opcion=1 & cursoEscolar=2024 & codigoCentro=35010488 & fechaReferencia=2024-03-30
+* /gestionacadcentros/neaes?opcion=1 & cursoEscolar=2024 & codigoCentro=35010488 & fechaReferencia=2024-03-30
 
-### C) Obtener todas las NEAE registradas en el cursoCentro con identificador interno "561EBA45-51E5-4E3F-BA6B-C4CBB8363079".
-* ?opcion=2 & idCursoCentro=44C3D926-9D68-4D2B-9D34-8BDEA9344703
+### C) Obtener todas las NEAE registradas en el cursoCentro con identificador interno "561EBA4551E54E3FBA6BC4CBB8363079".
+* /gestionacadcentros/neaes?opcion=2 & idCursoCentro=561EBA4551E54E3FBA6BC4CBB8363079
