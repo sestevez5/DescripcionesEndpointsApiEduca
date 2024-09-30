@@ -13,8 +13,8 @@ Este endpoint proporciona datos de las matrículas asociadas a los responsables 
 
 # Ejemplos.
 ### A) Solicitud de datos de las matrículas asociadas al responsable con pasaporte = "INV234567" del centro con código "35010488".
-* ?codigoCentro=35010488 & pasaporteResponsable=INV234567
+* /gestionacadcentros/responsables-matriculas?codigoCentro=35010488 & pasaporteResponsable=INV234567
  
 ### B) Solicitud de datos de todas las matrículas asociadas al responsable con DNI = "41414141L".
-* ?nifNieResponsable=41414141L
+* /gestionacadcentros/responsables-matriculas?nifNieResponsable=41414141L
   
