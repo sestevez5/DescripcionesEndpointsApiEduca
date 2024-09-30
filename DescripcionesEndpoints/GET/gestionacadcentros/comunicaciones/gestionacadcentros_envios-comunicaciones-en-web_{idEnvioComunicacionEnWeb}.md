@@ -4,13 +4,13 @@ Este endpoint proporciona datos detallados relativos al envío de comunicaciones
 
 ## Parámetros específicos.
 
-* **idEnvioComunicacionEnWeb**: Obligatorio (Ej. b9d83ae6-2bf3-44b4-a1b3-070bafec92ab)
+* **idEnvioComunicacionEnWeb**: Obligatorio (Ej. b9d83ae62bf344b4a1b3070bafec92ab)
 
 **Observaciones**:
 
 * El endpoint **solo atenderá la petición si el usuario autenticado es remitente o destinatario** del envío de la comunicación correspondiente al *IdEnvioComunicacionEnWeb* especificado.
 
 # Ejemplo.
-### A) Solicitud de datos de la comunicación en web con idEnvioComunicacionEnWeb = "36d7165f-6ae6-4ac2-8875-942d893e82d7".
-* 36d7165f-6ae6-4ac2-8875-942d893e82d7
+### A) Solicitud de datos de la comunicación en web con idEnvioComunicacionEnWeb = "36d7165f6ae64ac28875942d893e82d7".
+* /gestionacadcentros/envios-comunicaciones-en-web/36d7165f6ae64ac28875942d893e82d7
  
