@@ -4,8 +4,8 @@ Este endpoint devuelve información del espacio físico (codigo, metrosCuadrados
 
 ## Parámetros específicos.
 
-* **idEspacioFisico**: Obligatorio (Ej. dc465709-b6e2-4c59-828f-6b0d63a04678).
+* **idEspacioFisico**: Obligatorio (Ej. dc465709b6e24c59828f6b0d63a04678).
 
 # Ejemplos.
-### A) Solicitud de información del espacio físico con idEspacioFisico = "dc465709-b6e2-4c59-828f-6b0d63a04678".
-* dc465709-b6e2-4c59-828f-6b0d63a04678
+### A) Solicitud de información del espacio físico con idEspacioFisico = "dc465709b6e24c59828f6b0d63a04678".
+* /gestionacadcentros/espacios-fisicos/dc465709b6e24c59828f6b0d63a04678
