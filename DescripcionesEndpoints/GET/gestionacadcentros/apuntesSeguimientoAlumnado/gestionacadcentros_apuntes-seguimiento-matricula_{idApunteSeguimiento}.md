@@ -4,9 +4,9 @@ Este endpoint proporciona información detallada de un apunte de seguimiento (fe
 
 ## Parámetros específicos.
 
-* **idApunteSeguimiento**: Obligatorio (Ej. ba8edd81-01b5-4fc1-8741-67954cc83ea9)
+* **idApunteSeguimiento**: Obligatorio (Ej. ba8edd8101b54fc1874167954cc83ea9)
 
 # Ejemplos.
-### A) Solicitud de datos del apunte de seguimiento para el idApunteSeguimiento = "ba8edd81-01b5-4fc1-8741-67954cc83ea9".
-* ba8edd81-01b5-4fc1-8741-67954cc83ea9
+### A) Solicitud de datos del apunte de seguimiento para el idApunteSeguimiento = "ba8edd8101b54fc1874167954cc83ea9".
+* /gestionacadcentros/apuntes-seguimiento-matricula/ba8edd8101b54fc1874167954cc83ea9
 
