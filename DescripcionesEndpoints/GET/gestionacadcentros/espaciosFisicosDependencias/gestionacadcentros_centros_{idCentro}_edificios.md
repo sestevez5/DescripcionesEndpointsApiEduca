@@ -6,8 +6,8 @@ Este endpoint proporciona los diferentes edificios que conforman un centro educa
 
 ## Parámetros específicos.
 
-* **idCentro**: Obligatorio (Ej. 33283FBB-18B1-4195-93B1-179785FAC806)
+* **idCentro**: Obligatorio (Ej. 33283FBB18B1419593B1179785FAC806)
 
 # Ejemplo.
-### A) Solicitud de datos de los edificios del centro con idCentro "C372B7FE-132A-4806-BA55-B6BD259F33D6".
-* C372B7FE-132A-4806-BA55-B6BD259F33D6/edificios
+### A) Solicitud de datos de los edificios del centro con idCentro "C372B7FE132A4806BA55B6BD259F33D6".
+* /gestionacadcentros/centros/C372B7FE132A4806BA55B6BD259F33D6/edificios
