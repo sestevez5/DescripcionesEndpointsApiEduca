@@ -17,10 +17,10 @@ Este endpoint proporciona información (Etapa, denominación, cursos escolares, 
 
 # Ejemplos.
 ### A) Solicitud de datos del centro con código "38011108".
-* ?codigoCentro=38011108
+* /gestionacadcentros/centros?codigoCentro=38011108
 
 ### B) Solicitud de los centros públicos de la isla de Tenerife.
-* ?isla=7 & naturaleza=1
+* /gestionacadcentros/centros?isla=7 & naturaleza=1
 
 ### C) Solicitud de los centros de la zona de inspección 401 en el curso 2021. 
-* ?zonaInspeccion=401 & cursoEscolarZonaInspeccion=2021
+* /gestionacadcentros/centros?zonaInspeccion=401 & cursoEscolarZonaInspeccion=2021
