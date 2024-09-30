@@ -29,5 +29,5 @@ Este endpoint devuelve los nombres de todos los municipios establecidos en el ca
 # Ejemplos.
 
 ### A) Solicitud de los municipios de la isla de La Palma.
-* ?codigoIsla=6
+* /datosgenerales/municipios?codigoIsla=6
 
