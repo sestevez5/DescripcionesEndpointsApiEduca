@@ -17,4 +17,4 @@ Este endpoint devuelve las _dependencias_ de un centro educativo a partir de los
 
 # Ejemplos.
 ### A) Solicitud con nivelDetalle "medio" de las dependencias del centro con codigoCentro "35010488" para el cursoEscolar = "2022".
-* ?codigoCentro=35010488 & cursoEscolar=2022 & nivelDetalle=m
+* /gestionacadcentros/dependencias?codigoCentro=35010488 & cursoEscolar=2022 & nivelDetalle=m
