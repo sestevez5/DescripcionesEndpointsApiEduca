@@ -4,10 +4,10 @@ Este endpoint proporciona datos personales del alumnado y de sus responsables a 
 
 ## Parámetros específicos.
 
-* **idAlumnoCentro**: Obligatorio (Ej. 8A3C8338-C34D-431F-AB68-0000A69092B4)
+* **idAlumnoCentro**: Obligatorio (Ej. 8A3C8338C34D431FAB680000A69092B4)
 
 # Ejemplos.
-### A) Solicitud de datos del alumno para el idAlumnoCentro = "ba9b30a2-2d88-4b60-ba19-000c86f9e462".
+### A) Solicitud de datos del alumno para el idAlumnoCentro = "ba9b30a22d884b60ba19000c86f9e462".
 * /gestionacadcentros/alumnado/ba9b30a22d884b60ba19000c86f9e462
 
 
