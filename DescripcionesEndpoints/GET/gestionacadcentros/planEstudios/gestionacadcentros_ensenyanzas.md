@@ -24,7 +24,7 @@ Este endpoint devuelve las enseñanzas impartidas en los centros educativos (Ej.
 **Observaciones**: Los campos cursoEscolar y codigoCentro no están permitidos en esta opción.
 
 # Ejemplos.
-### A) Solicitud de todas las enseñanzas para el idCursoCentro especificado .
+### A) Solicitud de todas las enseñanzas para el idCursoCentro especificado.
 * /gestionacadcentros/ensenyanzas?opcion=2 & idCursoCentro=E480D237EC8C4AFFA87001C277A3D712
 
 ### B) Solicitud de todas las enseñanzas del centro con código "35007374" en el curso 2024.
