@@ -7,7 +7,7 @@ Este endpoint proporciona los datos personales de los responsables del alumnado 
 
 ## Parámetros específicos.
 
-* **idCentro**: Obligatorio (Ej. 561EBA45-51E5-4E3F-BA6B-C4CBB8363079)
+* **idCentro**: Obligatorio (Ej. 561EBA4551E54E3FBA6BC4CBB8363079)
 * **tieneTuteladoMatriculaEnElCentro**: permite seleccionar a los responsables del alumnado que tiene matrícula.
   * No establecido: Devuelve todos los responsables del alumnado del centro.
   * Sí: Devuelve a los responsables del alumnado con matrícula en el centro.
@@ -16,7 +16,7 @@ Este endpoint proporciona los datos personales de los responsables del alumnado 
 
 # Ejemplos.
 ### A) Solicitud de datos extendidos de todos los responsables del alumnado en un centro para un idCentro concreto.
-* 561EBA45-51E5-4E3F-BA6B-C4CBB8363079/responsables?nivelDetalle=e
+* /gestionacadcentros/centros/561EBA4551E54E3FBA6BC4CBB8363079/responsables?nivelDetalle=e
    
 ### **B**) Solicitud de datos medios de los responsables del alumnado con matrícula en el curso 2024 para un idCentro concreto.
-* 561EBA45-51E5-4E3F-BA6B-C4CBB8363079/responsables?tieneTuteladoMatriculaEnElCentro=true & tieneTuteladoMatriculaEnElCurso=2024 & nivelDetalle=m
+* /gestionacadcentros/centros/561EBA4551E54E3FBA6BC4CBB8363079/responsables?tieneTuteladoMatriculaEnElCentro=true & tieneTuteladoMatriculaEnElCurso=2024 & nivelDetalle=m
