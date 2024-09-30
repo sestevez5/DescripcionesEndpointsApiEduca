@@ -21,21 +21,21 @@ Este endpoint devuelve información de los grupos clase de un centro educativo.
 **Observaciones**: Los campos idCursoCentro, IdEstudio, IdEnsenyanza no están permitidos en esta opción.
 
 ### Opción 2.
-* **idCursoCentro**: Obligatorio (Ej. E480D237-EC8C-4AFF-A870-01C277A3D712).
-* **idEstudio**: Optativo. No se puede especificar simultáneamente con el campo *idEnsenyanza* (Ej. FB122AE6-37F4-45AF-BED5-F401C0AB6E87)
-* **idEnsenyanza**: Optativo. No se puede especificar simultáneamente con el campo *idEstudio* (Ej. 5FF2F0FD-02AD-44F0-8D39-EF37774F9569)
+* **idCursoCentro**: Obligatorio (Ej. E480D237EC8C4AFFA87001C277A3D712).
+* **idEstudio**: Optativo. No se puede especificar simultáneamente con el campo *idEnsenyanza* (Ej. FB122AE637F445AFBED5F401C0AB6E87)
+* **idEnsenyanza**: Optativo. No se puede especificar simultáneamente con el campo *idEstudio* (Ej. 5FF2F0FD02AD44F08D39EF37774F9569)
 
 **Observaciones**: Los campos cursoEscolar, codigoCentro, idEstudioSC, idEnsenyanzaSC no están permitidos en esta opción.
 
 # Ejemplos.
 ### A) Solicitud de todos los grupos clase con nivelDetalle medio del centro con código "38011327" en el curso 2022.
-* ?opcion=1 & cursoEscolar=2022 & codigoCentro=38011327 & nivelDetalle=m
+* /gestionacadcentros/grupos-clase?opcion=1 & cursoEscolar=2022 & codigoCentro=38011327 & nivelDetalle=m
 
 ### B) Solicitud de los grupos clase con nivelDetalle reducido de una enseñanza concreta del centro con código "35007374" en el curso 2021.
-* ?opcion=1 & cursoEscolar=2021 & codigoCentro=38011327 & idEnsenyanzaSC=9
+* /gestionacadcentros/grupos-clase?opcion=1 & cursoEscolar=2021 & codigoCentro=38011327 & idEnsenyanzaSC=9
 
 ### C) Solicitud de todos los grupos clase con nivelDetalle medio para un idCursoCentro determinado.
-* ?opcion=2 & idCursoCentro=D2F5FE18-A312-4939-B8CC-46D8E8EF46FF & nivelDetalle=m
+* /gestionacadcentros/grupos-clase?opcion=2 & idCursoCentro=D2F5FE18A3124939B8CC46D8E8EF46FF & nivelDetalle=m
 
 ### D) Solicitud de los grupos clase con nivelDetalle reducido de un estudio concreto para un idCursoCentro determinado.
-* ?opcion=2 & idCursoCentro=D2F5FE18-A312-4939-B8CC-46D8E8EF46FF & idEstudio=89FC278E-0BFF-4190-8197-2F18A0C07516
+* /gestionacadcentros/grupos-clase?opcion=2 & idCursoCentro=D2F5FE18A3124939B8CC46D8E8EF46FF & idEstudio=89FC278E0BFF419081972F18A0C07516
