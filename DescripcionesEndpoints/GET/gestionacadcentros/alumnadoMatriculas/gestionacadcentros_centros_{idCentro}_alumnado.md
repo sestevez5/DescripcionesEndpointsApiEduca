@@ -7,7 +7,7 @@ Este endpoint proporciona los datos personales de todo el alumnado de un centro 
 
 ## Parámetros específicos.
 
-* **idCentro**: Obligatorio (Ej. 561EBA45-51E5-4E3F-BA6B-C4CBB8363079)
+* **idCentro**: Obligatorio (Ej. 561EBA4551E54E3FBA6BC4CBB8363079)
 * **tieneMatriculaCentro**: permite seleccionar al alumnado que está matriculado.
   * No establecido: Devuelve todo el alumnado.
   * Sí: Devuelve al alumnado con matrícula en el centro.
@@ -16,7 +16,7 @@ Este endpoint proporciona los datos personales de todo el alumnado de un centro 
 
 # Ejemplos.
 ### A) Solicitud de datos reducidos de todo el alumnado con matrícula en un centro para un idCentro concreto.
-* 561EBA45-51E5-4E3F-BA6B-C4CBB8363079/alumnado?tieneMatriculaCentro=true
+* /gestionacadcentros/centros/561EBA4551E54E3FBA6BC4CBB8363079/alumnado?tieneMatriculaCentro=true
    
 ### B) Solicitud de datos extendidos del alumnado con matrícula en el curso 2023 para un idCentro concreto.
-* 561EBA45-51E5-4E3F-BA6B-C4CBB8363079/alumnado?tieneMatriculaCentro=true & tieneMatriculaEnCurso=2023 & nivelDetalle=e
+* /gestionacadcentros/centros/561EBA4551E54E3FBA6BC4CBB8363079/alumnado?tieneMatriculaCentro=true & tieneMatriculaEnCurso=2023 & nivelDetalle=e
