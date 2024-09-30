@@ -12,4 +12,4 @@ Este endpoint devuelve los _espacios físicos_ de un centro educativo a partir d
 
 # Ejemplos.
 ### A) Solicitud de los espacios físicos del centro con codigoCentro "35010488".
-* ?codigoCentro=35010488
+* /gestionacadcentros/espacios-fisicos?codigoCentro=35010488
