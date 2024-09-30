@@ -4,9 +4,8 @@ Este endpoint devuelve una entrada pública del calendario, es decir, que es vis
 
 ## Parámetros específicos.
 
-* **idEntradaCalendario**: Obligatorio (Ej. 04872299-80B0-400D-8DF4-A0CF0F1B6BB1)
+* **idEntradaCalendario**: Obligatorio (Ej. 0487229980B0400D8DF4A0CF0F1B6BB1)
 
 # Ejemplos.
 ### A) Solicitud de la entrada pública con idEntradaCalendario = "04872299-80B0-400D-8DF4-A0CF0F1B6BB1".
-* 04872299-80B0-400D-8DF4-A0CF0F1B6BB1
-
+* /gestionacadcentros/entradas-publicas-calendario/0487229980B0400D8DF4A0CF0F1B6BB1
