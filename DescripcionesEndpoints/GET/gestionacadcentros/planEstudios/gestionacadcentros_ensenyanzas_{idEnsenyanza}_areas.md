@@ -9,12 +9,12 @@ Este endpoint proporciona las áreas (Ej. *Ámbito de Comunicación y Representa
 
 ## Parámetros específicos.
 
-* **idEnsenyanza**: Obligatorio (Ej. 9bba0d43-3be7-4d0c-b8ba-14b13ab63ad4).
-* **idEstudio**: Si se indica, se muestran solo las áreas del estudio indicado (Ej. c7200149-ef64-4b79-9522-af86214669dc).
+* **idEnsenyanza**: Obligatorio (Ej. 9bba0d433be74d0cb8ba14b13ab63ad4).
+* **idEstudio**: Si se indica, se muestran solo las áreas del estudio indicado (Ej. c7200149ef644b799522af86214669dc).
 
 # Ejemplos.
-### A) Solicitud con nivel de detalle medio de las áreas correspondientes al estudio con idEstudio = "c7200149-ef64-4b79-9522-af86214669dc" de la enseñanza con idEnsenyanza = "70d15bce-1e77-481d-b958-2f3215f1071a".
-* 70d15bce-1e77-481d-b958-2f3215f1071a/areas?idEstudio=c7200149-ef64-4b79-9522-af86214669dc & nivelDetalle=m
+### A) Solicitud con nivel de detalle medio de las áreas correspondientes al estudio con idEstudio = "c7200149ef644b799522af86214669dc" de la enseñanza con idEnsenyanza = "70d15bce1e77481db9582f3215f1071a".
+* /gestionacadcentros/ensenyanzas/70d15bce1e77481db9582f3215f1071a/areas?idEstudio=c7200149ef644b799522af86214669dc & nivelDetalle=m
 
-### B) Solicitud con nivel de detalle reducido de todas las áreas, incluyendo las de estudios no vigentes, correspondientes a la enseñanza con idEnsenyanza = "70d15bce-1e77-481d-b958-2f3215f1071a".
-* 70d15bce-1e77-481d-b958-2f3215f1071a/areas?incluirNoVigentes=true & nivelDetalle=r
+### B) Solicitud con nivel de detalle reducido de todas las áreas, incluyendo las de estudios no vigentes, correspondientes a la enseñanza con idEnsenyanza = "70d15bce1e77481db9582f3215f1071a".
+* /gestionacadcentros/ensenyanzas/70d15bce1e77481db9582f3215f1071a/areas?incluirNoVigentes=true & nivelDetalle=r
