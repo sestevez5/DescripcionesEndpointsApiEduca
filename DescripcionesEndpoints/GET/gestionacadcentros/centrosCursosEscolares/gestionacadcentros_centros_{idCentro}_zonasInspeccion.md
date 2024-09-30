@@ -4,9 +4,9 @@ Este endpoint devuelve información relativa a la zona de inspección (inspector
 
 ## Parámetros específicos.
 
-* **idCentro**: Obligatorio (Ej. 3793A6D1-C742-42ED-B005-DA3529421EE5)
+* **idCentro**: Obligatorio (Ej. 3793A6D1C74242EDB005DA3529421EE5)
 * **cursoEscolar**: Obligatorio (Ej. 2023).
 
 # Ejemplos.
-### A) Solicitud de la zona de inspección del centro con idCentro = "561EBA45-51E5-4E3F-BA6B-C4CBB8363079" para el curso "2024".
-* 561EBA45-51E5-4E3F-BA6B-C4CBB8363079/zonas-inspeccion?cursoEscolar=2024
+### A) Solicitud de la zona de inspección del centro con idCentro = "561EBA4551E54E3FBA6BC4CBB8363079" para el curso "2024".
+* /gestionacadcentros/centros/561EBA4551E54E3FBA6BC4CBB8363079/zonas-inspeccion?cursoEscolar=2024
