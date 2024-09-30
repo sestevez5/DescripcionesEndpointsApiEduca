@@ -8,9 +8,8 @@ Este endpoint proporciona las enseñanzas impartidas en un centro educativo (Ej.
 
 ## Parámetros específicos.
 
-* **idEnsenyanza**: Obligatorio (Ej. 9bba0d43-3be7-4d0c-b8ba-14b13ab63ad4).
+* **idEnsenyanza**: Obligatorio (Ej. 9bba0d433be74d0cb8ba14b13ab63ad4).
 
 # Ejemplos.
-### A) Solicitud de las enseñanzas con idEnsenyanza = "9bba0d43-3be7-4d0c-b8ba-14b13ab63ad4".
-* 9bba0d43-3be7-4d0c-b8ba-14b13ab63ad4
-
+### A) Solicitud de las enseñanzas con idEnsenyanza = "9bba0d433be74d0cb8ba14b13ab63ad4".
+* /gestionacadcentros/ensenyanzas/9bba0d433be74d0cb8ba14b13ab63ad4
