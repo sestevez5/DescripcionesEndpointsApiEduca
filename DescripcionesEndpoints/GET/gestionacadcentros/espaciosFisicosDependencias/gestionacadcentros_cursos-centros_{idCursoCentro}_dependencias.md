@@ -6,8 +6,8 @@ Este endpoint proporciona las diferentes dependencias (Aulas, salas, talleres, e
 
 ## Parámetros específicos.
 
-* **idCursoCentro**: Obligatorio (Ej. E480D237-EC8C-4AFF-A870-01C277A3D712)
+* **idCursoCentro**: Obligatorio (Ej. E480D237EC8C4AFFA87001C277A3D712)
 
 # Ejemplo.
-### A) Solicitud de las dependencias para el idCursoCentro "E480D237-EC8C-4AFF-A870-01C277A3D712".
-* E480D237-EC8C-4AFF-A870-01C277A3D712/dependencias
+### A) Solicitud de las dependencias para el idCursoCentro "E480D237EC8C4AFFA87001C277A3D712".
+* /gestionacadcentros/cursos-centros/E480D237EC8C4AFFA87001C277A3D712/dependencias
