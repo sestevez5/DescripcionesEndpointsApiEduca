@@ -12,4 +12,4 @@ Este endpoint devuelve los diferentes _edificios_ que conforman un centro educat
 
 # Ejemplos.
 ### A) Solicitud de los edificios del centro con codigoCentro = "35015887".
-* ?codigoCentro=35015887
+* /gestionacadcentros/edificios?codigoCentro=35015887
