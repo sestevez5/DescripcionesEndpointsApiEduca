@@ -1,6 +1,6 @@
 # Descripción general.
 
-Este endpoint proporciona los datos de las sesiones de evaluación de los centros educativos.
+Este endpoint proporciona los datos de todas las sesiones de evaluación de un centro educativo.
 
 ## Parámetros comunes.
 * **codigoCentro**: Obligatorio (Ej. 38010773)
