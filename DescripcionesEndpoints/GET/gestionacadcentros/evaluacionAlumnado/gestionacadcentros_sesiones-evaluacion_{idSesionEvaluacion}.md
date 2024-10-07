@@ -1,12 +1,12 @@
 # Descripción general.
 
-Este endpoint proporciona datos personales del alumnado y de sus responsables a partir del parámetro *idSesionEvaluacion*, por lo que está orientado a aplicaciones consumidoras que conocen identificadores internos de Pincel de las entidades que representan los parámetros.
+Este endpoint proporciona los datos de una sesión de evaluación a partir del parámetro *idSesionEvaluacion*, por lo que está orientado a aplicaciones consumidoras que conocen identificadores internos de Pincel de las entidades que representan los parámetros.
 
 ## Parámetros específicos.
 
-* **idAlumnoCentro**: Obligatorio (Ej. 8A3C8338C34D431FAB680000A69092B4)
+* **idSesionEvaluacion**: Obligatorio (Ej. a03b12da48ae4bfd9ac9180c1aca1710)
 
 # Ejemplos.
-### A) Solicitud de datos del alumno para el idAlumnoCentro = "ba9b30a22d884b60ba19000c86f9e462".
-* /gestionacadcentros/alumnado/ba9b30a22d884b60ba19000c86f9e462
+### A) Solicitud de datos de la sesión de evaluación con idSesionEvaluacion = "a03b12da48ae4bfd9ac9180c1aca1710".
+* /gestionacadcentros/sesiones-evaluacion/a03b12da-48ae-4bfd-9ac9-180c1aca1710
 
