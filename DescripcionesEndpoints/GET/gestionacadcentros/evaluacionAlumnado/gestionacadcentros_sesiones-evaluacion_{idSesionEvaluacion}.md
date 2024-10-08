@@ -8,5 +8,5 @@ Este endpoint proporciona los datos de una sesión de evaluación a partir del p
 
 # Ejemplos.
 ### A) Solicitud de datos de la sesión de evaluación con idSesionEvaluacion = "a03b12da48ae4bfd9ac9180c1aca1710".
-* /gestionacadcentros/sesiones-evaluacion/a03b12da-48ae-4bfd-9ac9-180c1aca1710
+* /gestionacadcentros/sesiones-evaluacion/a03b12da48ae4bfd9ac9180c1aca1710
 
