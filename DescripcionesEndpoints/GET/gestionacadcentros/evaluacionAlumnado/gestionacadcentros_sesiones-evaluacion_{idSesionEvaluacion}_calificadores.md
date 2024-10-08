@@ -17,16 +17,16 @@ Este endpoint proporciona los calificadores de una sesión de evaluación (Ej. B
 ### Opción 1.
 * **idMatriculaArea**: Obligatorio (Ej. 2C1A14915209497B99290AA13948DD86).
 
-**Observaciones**: El campo idAreaSC no produce ningún efecto en esta opción.
+**Observaciones**: El campo *idAreaSC* no produce ningún efecto en esta opción.
 
 ### Opción 2.
 * **idAreaSC**: Obligatorio (Ej. 96563).
 
-**Observaciones**: El campo idmatriculaArea no produce ningún efecto en esta opción.
+**Observaciones**: El campo *idMatriculaArea* no produce ningún efecto en esta opción.
 
 # Ejemplos.
-### A) Solicitud de datos de la sesión de evaluación con idSesionEvaluacion = "a03b12da48ae4bfd9ac9180c1aca1710".
-* /gestionacadcentros/sesiones-evaluacion/a03b12da-48ae-4bfd-9ac9-180c1aca1710
+### A) Solicitud de los calificadores de la sesión de evaluación con idSesionEvaluacion = "a03b12da48ae4bfd9ac9180c1aca1710" e idMatriculaArea = 'C5E14D26C27D44AA869995DDE1D4419A'.
+* /gestionacadcentros/sesiones-evaluacion/A03B12DA-48AE-4BFD-9AC9-180C1ACA1710/calificadores?opcion=1 & idMatriculaArea=C5E14D26-C27D-44AA-8699-95DDE1D4419A
 
 
 
