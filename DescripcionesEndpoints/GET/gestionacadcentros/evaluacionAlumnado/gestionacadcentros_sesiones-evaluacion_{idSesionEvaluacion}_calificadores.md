@@ -1,7 +1,7 @@
 
 # Descripción general.
 
-Este endpoint proporciona los calificadores de una sesión de evaluación (Ej. Naturales del 1 al 10, Bien, No superada, etc.) a partir del parámetro *idSesionEvaluacion*, por lo que está orientado a aplicaciones consumidoras que conocen identificadores internos de Pincel de las entidades que representan los parámetros.
+Este endpoint proporciona los calificadores de una sesión de evaluación (Ej. Bien, No superada, etc.) a partir del parámetro *idSesionEvaluacion*, por lo que está orientado a aplicaciones consumidoras que conocen identificadores internos de Pincel de las entidades que representan los parámetros.
 
 ## Parámetros específicos.
 
