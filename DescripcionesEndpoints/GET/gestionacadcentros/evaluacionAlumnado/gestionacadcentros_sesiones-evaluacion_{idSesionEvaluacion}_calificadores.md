@@ -5,7 +5,7 @@ Este endpoint proporciona los calificadores de una sesión de evaluación (Ej. B
 
 ## Parámetros comunes.
 
-* **opcion**: Opcional. Si se selecciona "Sí", se muestran todas las fotos del expediente del alumnado. La opciones "No" y "No establecido" devuelven la más reciente (**idFoto** en *XAL_FotosAlumnos* = **idFotoReciente** en *XAL_AlumnadoCentro*).
+* **opcion**: 1, 2. Se deberá escoger uno obligatoriamente.
 * **idSesionEvaluacion**: Obligatorio (Ej. a03b12da48ae4bfd9ac9180c1aca1710)
 
 **Observaciones**:
@@ -14,25 +14,15 @@ Este endpoint proporciona los calificadores de una sesión de evaluación (Ej. B
 
 ## Parámetros específicos.
 
-* **idSesionEvaluacion**: Obligatorio (Ej. a03b12da48ae4bfd9ac9180c1aca1710)
-
 ### Opción 1.
-* **codigoCentro**: Obligatorio (Ej. 35010488).
-* **cial**: CIAL del alumnado.
-* **nifNie**: NIF o NIE del alumnado.
-* **pasaporte**: Pasaporte del alumnado.
+* **idMatriculaArea**: Obligatorio (Ej. 2C1A14915209497B99290AA13948DD86).
 
-**Observaciones**: Los campos idAlumnadoCentro e idMatricula no están permitidos en esta opción.
+**Observaciones**: El campo idAreaSC no produce ningún efecto en esta opción.
 
 ### Opción 2.
-* **idAlumnadoCentro**: Obligatorio (Ej. E480D237EC8C4AFFA87001C277A3D712).
-* **idMatricula**: Obligatorio (Ej. 2AA7983F81C74285B41875018751C91D).
+* **idAreaSC**: Obligatorio (Ej. 96563).
 
-**Observaciones**: Solo se debe indicar uno de los parámetros. Los campos codigoCentro, cial, nifNie y pasaporte no están permitidos en esta opción.
-
-
-
-
+**Observaciones**: El campo idmatriculaArea no produce ningún efecto en esta opción.
 
 # Ejemplos.
 ### A) Solicitud de datos de la sesión de evaluación con idSesionEvaluacion = "a03b12da48ae4bfd9ac9180c1aca1710".
