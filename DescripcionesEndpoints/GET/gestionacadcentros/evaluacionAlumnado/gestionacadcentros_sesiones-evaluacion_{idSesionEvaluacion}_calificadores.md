@@ -26,17 +26,7 @@ Este endpoint proporciona los calificadores de una sesión de evaluación (Ej. B
 
 # Ejemplos.
 ### A) Solicitud de los calificadores de la sesión de evaluación con idSesionEvaluacion = "a03b12da48ae4bfd9ac9180c1aca1710" e idMatriculaArea = 'C5E14D26C27D44AA869995DDE1D4419A'.
-* /gestionacadcentros/sesiones-evaluacion/A03B12DA-48AE-4BFD-9AC9-180C1ACA1710/calificadores?opcion=1 & idMatriculaArea=C5E14D26-C27D-44AA-8699-95DDE1D4419A
+* /gestionacadcentros/sesiones-evaluacion/A03B12DA48AE4BFD9AC9180C1ACA1710/calificadores?opcion=1 & idMatriculaArea=C5E14D26C27D44AA869995DDE1D4419A
 
-
-
-
-
-
-
-# Ejemplos.
-### A) Solicitud de todas las fotos del alumnado con pasaporte "119227796" del centro con código "35010488".
-* /gestionacadcentros/alumnado/fotos?opcion=1 & codigoCentro=35010488 & pasaporte=119227796
-
-### B) Solicitud de la foto más reciente del alumnado con idAlumnadoCentro = "EA1EF2E1E86B42F5A6591152F745EF37".
-* /gestionacadcentros/alumnado/fotos?opcion=2 & idAlumnadoCentro=EA1EF2E1E86B42F5A6591152F745EF37
+### B) Solicitud de los calificadores de la sesión de evaluación con idSesionEvaluacion = "a03b12da48ae4bfd9ac9180c1aca1710" e idAreaSC = "96563".
+* /gestionacadcentros/sesiones-evaluacion/A03B12DA48AE4BFD9AC9180C1ACA1710/calificadores?opcion=2 & idAreaSC=96563
