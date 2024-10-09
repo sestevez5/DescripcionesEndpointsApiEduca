@@ -19,13 +19,13 @@ Este endpoint proporciona las fotos del personal docente.
 * **nifNie**: NIF o NIE del docente.
 * **pasaporte**: Pasaporte del docente.
 
-**Observaciones**: Los campos idDocenteCentro e idDocenteServicio no están permitidos en esta opción.
+**Observaciones**: Los campos *idDocenteCentro* e *idDocenteServicio* no están permitidos en esta opción.
 
 ### Opción 2.
 * **idDocenteCentro**: Obligatorio (Ej. E480D237EC8C4AFFA87001C277A3D712).
 * **idDocenteServicio**: Obligatorio (Ej. 2AA7983F81C74285B41875018751C91D).
 
-**Observaciones**: Solo se debe indicar uno de los parámetros. Los campos codigoCentro, nifNie y pasaporte no están permitidos en esta opción.
+**Observaciones**: Solo se debe indicar uno de los parámetros. Los campos *codigoCentro*, *nifNie* y *pasaporte* no están permitidos en esta opción.
 
 # Ejemplos.
 ### A) Solicitud de todas las fotos del docente con NIF "11000000C" del centro con código "35010488".
