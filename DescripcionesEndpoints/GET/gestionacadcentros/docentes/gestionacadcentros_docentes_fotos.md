@@ -19,11 +19,11 @@ Parámetros habilitados para 'opcion = 2':
 
 # Descripción general.
 
-Este endpoint proporciona las fotos del alumnado que figuran en su expediente.
+Este endpoint proporciona las fotos del personal docente.
 
 ## Parámetros comunes.
 
-* **todasLasFotos**: Opcional. Si se selecciona "Sí", se muestran todas las fotos del expediente del alumnado. La opciones "No" y "No establecido" devuelven la más reciente (**idFoto** en *XAL_FotosAlumnos* = **idFotoReciente** en *XAL_AlumnadoCentro*).
+* **todasLasFotos**: Opcional. Si se selecciona "Sí", se muestran todas las fotos del docente. La opciones "No" y "No establecido" devuelven la más reciente (**idFoto** en *XPE_FotosPersonal* = **idFotoReciente** en *XPE_IdentificacionCentros*).
 
 **Observaciones**:
 * Opción 1: El *codigoCentro* es obligatorio, además de uno solo de los campos *cial*, *nifNie* o *pasaporte*.
