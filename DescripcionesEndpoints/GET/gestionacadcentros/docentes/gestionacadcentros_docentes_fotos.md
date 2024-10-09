@@ -26,8 +26,8 @@ Este endpoint proporciona las fotos del personal docente.
 * **todasLasFotos**: Opcional. Si se selecciona "Sí", se muestran todas las fotos del docente. La opciones "No" y "No establecido" devuelven la más reciente (**idFoto** en *XPE_FotosPersonal* = **idFotoReciente** en *XPE_IdentificacionCentros*).
 
 **Observaciones**:
-* Opción 1: El *codigoCentro* es obligatorio, además de uno solo de los campos *cial*, *nifNie* o *pasaporte*.
-* Opción 2: Se debe indicar uno solo de los campos *idAlumnadoCentro* o *idMatricula*.
+* Opción 1: El *codigoCentro* es obligatorio, además de uno solo de los campos *nifNie* o *pasaporte*.
+* Opción 2: Se debe indicar uno solo de los campos *idDocenteCentro* o *idDocenteServicio*.
 
 ## Parámetros específicos.
 
