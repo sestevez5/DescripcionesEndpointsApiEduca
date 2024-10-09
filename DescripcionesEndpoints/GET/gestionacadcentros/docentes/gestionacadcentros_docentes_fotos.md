@@ -28,8 +28,8 @@ Este endpoint proporciona las fotos del personal docente.
 **Observaciones**: Solo se debe indicar uno de los parámetros. Los campos codigoCentro, nifNie y pasaporte no están permitidos en esta opción.
 
 # Ejemplos.
-### A) Solicitud de todas las fotos del alumnado con pasaporte "119227796" del centro con código "35010488".
-* /gestionacadcentros/alumnado/fotos?opcion=1 & codigoCentro=35010488 & pasaporte=119227796
+### A) Solicitud de todas las fotos del docente con NIF "11000000C" del centro con código "35010488".
+* /gestionacadcentros/docentes/fotos?opcion=1 & codigoCentro=35010488 & nifNie=11000000C & todasLasFotos=true
 
-### B) Solicitud de la foto más reciente del alumnado con idAlumnadoCentro = "EA1EF2E1E86B42F5A6591152F745EF37".
-* /gestionacadcentros/alumnado/fotos?opcion=2 & idAlumnadoCentro=EA1EF2E1E86B42F5A6591152F745EF37
+### B) Solicitud de la foto más reciente del docente con idDocenteServicio = "D1269A4D5DE6436EA1762F55B2E0E9C3".
+* /gestionacadcentros/docentes/fotos?opcion=2 & idDocenteServicio=D1269A4D5DE6436EA1762F55B2E0E9C3
