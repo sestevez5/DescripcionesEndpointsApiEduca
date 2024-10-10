@@ -16,8 +16,8 @@ Este endpoint proporciona las fotos del personal docente.
 
 ### Opción 1.
 * **codigoCentro**: Obligatorio (Ej. 35010488).
-* **nifNie**: NIF o NIE del docente.
-* **pasaporte**: Pasaporte del docente.
+* **nifNie**: Obligatorio si no se indica pasaporte.
+* **pasaporte**: Obligatorio si no se indica nifNie.
 
 **Observaciones**: Los campos *idDocenteCentro* e *idDocenteServicio* no están permitidos en esta opción.
 
