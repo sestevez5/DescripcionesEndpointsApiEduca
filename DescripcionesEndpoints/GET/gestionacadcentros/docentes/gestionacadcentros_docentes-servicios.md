@@ -24,7 +24,7 @@ Este endpoint proporciona todos los nombramientos docentes para un curso escolar
 * **nifnie**: NIF o NIE del docente.
 * **pasaporte**: Pasaporte del docente.
 
-**Observaciones**: El parámetro *fechaReferencia* no está permitido en esta opción.
+**Observaciones**: Debe cumplimentarse solamente uno de ellos. El parámetro *fechaReferencia* no está permitido en esta opción.
 
 # Ejemplos.
 ### A) Solicitud de datos extendidos del docente con nif = 00000001R en el centro con código "35010488".
