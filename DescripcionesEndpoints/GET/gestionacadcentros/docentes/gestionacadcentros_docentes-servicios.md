@@ -10,7 +10,7 @@ Este endpoint proporciona todos los nombramientos docentes para un curso escolar
 
 **Observaciones**:
 * Opción 1: Además del *cursoEscolar*, será necesario indicar el *codigoCentro*.
-* Opción 2: Además del codigoCentro, opcionalmente se podrá seleccionar tieneServicioEnElCentro y/o tieneServicioEnElCurso.
+* Opción 2: Solo debe cumplimentarse uno de los parámetros *nifNie* o *pasaporte*.
 
 ## Parámetros específicos.
 
@@ -22,14 +22,6 @@ Este endpoint proporciona todos los nombramientos docentes para un curso escolar
 ### Opción 2.
 * **nifnie**: NIF o NIE del docente.
 * **pasaporte**: Pasaporte del docente.
-
-**Observaciones**: Solo debe cumplimentarse uno de los parámetros *nifNie* o *pasaporte*.
-
-
-* **tieneServicioEnElCentro**: Booleano que permite seleccionar a los docentes que tienen o han tenido algún servicio en el centro. Si no se indica, se seleccionan todos los docentes del centro.
-* **tieneServicioEnElCurso**: Cuando se ha seleccionado la opción anterior, permite indicar el curso escolar en el que ha tenido servicio un docente (Ej. 2023).
-
-**Observaciones**: Ambos son opcionales.
 
 # Ejemplos.
 ### A) Solicitud de datos extendidos del docente con nif = 00000001R en el centro con código "35010488".
