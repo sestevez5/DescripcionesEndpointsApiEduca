@@ -18,6 +18,7 @@ Este endpoint proporciona todos los nombramientos docentes para un curso escolar
 
 * **cursoEscolar**: Obligatorio (Ej. 2022).
 * **codigoCentro**: Obligatorio (Ej. 35009139).
+* **fechaReferencia**: Devuelve solo los nombramientos vigentes en esa fecha (Ej. 2024-10-10). Si no se indica, suministra todos los nombramientos en el curso especificado.
 
 ### Opción 2.
 * **nifnie**: NIF o NIE del docente.
