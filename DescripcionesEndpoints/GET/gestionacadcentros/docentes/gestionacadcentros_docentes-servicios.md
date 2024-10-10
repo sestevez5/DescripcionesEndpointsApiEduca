@@ -6,7 +6,7 @@
 Este endpoint proporciona todos los nombramientos docentes para un curso escolar o los de un determinado docente en un centro educativo según la opción y parámetros escogidos.
 
 ## Parámetros comunes.
-* **opcion**: 1, 2. Se deberá escoger uno obligatoriamente
+* **opcion**: 1, 2. Se deberá escoger uno obligatoriamente.
 
 **Observaciones**:
 * Opción 1: Además del *cursoEscolar*, será necesario indicar el *codigoCentro*.
@@ -15,12 +15,17 @@ Este endpoint proporciona todos los nombramientos docentes para un curso escolar
 ## Parámetros específicos.
 
 ### Opción 1.
+
+* **cursoEscolar**: Obligatorio (Ej. 2022).
+* **codigoCentro**: Obligatorio (Ej. 35009139).
+
+### Opción 2.
 * **nifnie**: NIF o NIE del docente.
 * **pasaporte**: Pasaporte del docente.
 
-**Observaciones**: Debe cumplimentarse solamente uno de ellos.
+**Observaciones**: Solo debe cumplimentarse uno de los parámetros *nifNie* o *pasaporte*.
 
-### Opción 2.
+
 * **tieneServicioEnElCentro**: Booleano que permite seleccionar a los docentes que tienen o han tenido algún servicio en el centro. Si no se indica, se seleccionan todos los docentes del centro.
 * **tieneServicioEnElCurso**: Cuando se ha seleccionado la opción anterior, permite indicar el curso escolar en el que ha tenido servicio un docente (Ej. 2023).
 
