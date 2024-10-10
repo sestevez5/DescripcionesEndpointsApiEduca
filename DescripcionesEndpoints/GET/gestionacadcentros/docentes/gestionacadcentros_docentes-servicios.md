@@ -3,7 +3,7 @@
 
 # Descripción general.
 
-Este endpoint proporciona todos los docentes de un determinado centro educativo en un curso escolar a partir del parámetro *idCursoCentro*, por lo que está orientado a aplicaciones consumidoras que conocen identificadores internos de Pincel de las entidades que representan los parámetros.
+Este endpoint proporciona todos los nombramientos docentes para un curso escolar o los de un determinado docente en un centro educativo según la opción y parámetros escogidos.
 
 **Observaciones**: Aparte de los parámetros optativos de caracter general de paginación (_posicionInicial_ y _tamanyoBloque_), el campo *idCursoCentro* es obligatorio.
 
