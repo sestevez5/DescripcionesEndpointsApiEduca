@@ -22,8 +22,8 @@ Este endpoint proporciona todos los nombramientos docentes para un curso escolar
 * **fechaReferencia**: Devuelve solo los nombramientos vigentes en esa fecha (Ej. 2024-10-10). Si no se indica, suministra todos los nombramientos en el curso especificado.
 
 ### Opción 2.
-* **nifnie**: NIF o NIE del docente.
-* **pasaporte**: Pasaporte del docente.
+* **nifNie**: Obligatorio si no se indica pasaporte.
+* **pasaporte**: Obligatorio si no se indica nifNie.
 
 **Observaciones**: Debe cumplimentarse solamente uno de ellos. El parámetro *fechaReferencia* no está permitido en esta opción.
 
