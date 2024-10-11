@@ -34,12 +34,11 @@ Este endpoint proporciona todos los nombramientos docentes para un curso escolar
 ### B) Solicitud de todos los docentes con nombramiento en el curso 2022 del centro con código "35008381".
 * /gestionacadcentros/docentes-servicios?opcion=1 & cursoEscolar=2022 & codigoCentro=35008381
 
+### C) Solicitud de todos los nombramientos del docente con pasaporte "ABC000123".
+* /gestionacadcentros/docentes-servicios?opcion=2 & pasaporte=ABC000123
 
-
-
-
-
-
+### D) Solicitud de todos los nombramientos del docente con NIF "ABC000123".
+* /gestionacadcentros/docentes-servicios?opcion=2 & nIFNIE=00000001R
 
 
 
