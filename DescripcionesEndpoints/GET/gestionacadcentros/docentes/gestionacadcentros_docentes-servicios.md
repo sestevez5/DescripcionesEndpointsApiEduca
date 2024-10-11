@@ -1,6 +1,3 @@
-# Modificar 
-# Modificar 
-# Modificar 
 
 # Descripción general.
 
