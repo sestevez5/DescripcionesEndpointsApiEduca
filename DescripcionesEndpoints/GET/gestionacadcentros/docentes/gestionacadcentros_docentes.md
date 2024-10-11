@@ -14,8 +14,8 @@ Este endpoint devuelve los datos de los docentes a partir del código del centro
 ## Parámetros específicos.
 
 ### Opción 1.
-* **nifnie**: NIF o NIE del docente.
-* **pasaporte**: Pasaporte del docente.
+* **nifNie**: Obligatorio si no se indica pasaporte.
+* **pasaporte**: Obligatorio si no se indica nifNie.
 
 **Observaciones**: Debe cumplimentarse solamente uno de ellos.
 
