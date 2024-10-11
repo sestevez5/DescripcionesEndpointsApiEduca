@@ -31,11 +31,8 @@ Este endpoint proporciona todos los nombramientos docentes para un curso escolar
 ### A) Solicitud de todos los docentes con nombramiento vigente a fecha 01/12/2023 del centro con código "35010488" en el curso 2024.
 * /gestionacadcentros/docentes-servicios?opcion=1 & cursoEscolar=2024 & codigoCentro=35010488 & fechaReferencia=2023-12-01
 
-### B) Solicitud de datos reducidos de todos los docentes del centro con código "35010488".
-* /gestionacadcentros/docentes?opcion=2 & codigoCentro=35010488
-
-### C) Solicitud de datos con nivel de detalle medio de los docentes del centro con código "35010488" y servicio en el curso 2023. 
-* /gestionacadcentros/docentes?opcion=2 & codigoCentro=35010488 & tieneServicioEnElCentro=true & tieneServicioEnElCurso=2023 & nivelDetalle=m
+### B) Solicitud de todos los docentes con nombramiento en el curso 2022 del centro con código "35008381".
+* /gestionacadcentros/docentes-servicios?opcion=1 & cursoEscolar=2022 & codigoCentro=35008381
 
 
 
@@ -43,14 +40,6 @@ Este endpoint proporciona todos los nombramientos docentes para un curso escolar
 
 
 
-## Parámetros específicos.
 
-* **idCursoCentro**: Obligatorio (Ej. E480D237EC8C4AFFA87001C277A3D712)
-* **fechaReferencia**: Devuelve solo los docentes con nombramiento vigente en esa fecha (Ej. 2024-10-10). Si no se indica, suministra todos los docentes con servicio en el centro y curso especificado.
 
-# Ejemplo.
-### A) Solicitud de datos de los docentes con nombramiento vigente a fecha "07/03/2024" para el idCursoCentro "E480D237EC8C4AFFA87001C277A3D712".
-* /gestionacadcentros/cursos-centros/E480D237EC8C4AFFA87001C277A3D712/docentes-servicios?fechaReferencia=2024-03-07
 
-### B) Solicitud de datos de todos los docentes para el idCursoCentro "5C08325B4B744F328977628385331092".
-* /gestionacadcentros/cursos-centros/5C08325B4B744F328977628385331092/docentes-servicios
