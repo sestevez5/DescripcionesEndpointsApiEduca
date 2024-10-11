@@ -1,14 +1,14 @@
 
 # Descripción general.
 
-Este endpoint proporciona todos los nombramientos docentes para un curso escolar o los de un determinado docente en un centro educativo según la opción y parámetros escogidos.
+Este endpoint proporciona todos los nombramientos docentes en un centro educativo para un determinado curso escolar o todos los nombramientos existentes de un determinado docente según la opción y parámetros escogidos.
 
 ## Parámetros comunes.
 * **opcion**: 1, 2. Se deberá escoger uno obligatoriamente.
 
 **Observaciones**:
 * Opción 1: Además del *cursoEscolar*, es necesario indicar el *codigoCentro*.
-* Opción 2: Solo debe cumplimentarse uno de los parámetros *nifNie* o *pasaporte*.
+* Opción 2: Se debe cumplimentarse al menos uno de los parámetros *nifNie* o *pasaporte*.
 
 ## Parámetros específicos.
 
