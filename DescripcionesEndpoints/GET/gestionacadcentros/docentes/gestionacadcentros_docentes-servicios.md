@@ -8,7 +8,7 @@ Este endpoint proporciona todos los nombramientos docentes en un centro educativ
 
 **Observaciones**:
 * Opción 1: Además del *cursoEscolar*, es necesario indicar el *codigoCentro*.
-* Opción 2: Se debe cumplimentarse al menos uno de los parámetros *nifNie* o *pasaporte*.
+* Opción 2: Se debe cumplimentar al menos uno de los parámetros *nifNie* o *pasaporte*.
 
 ## Parámetros específicos.
 
