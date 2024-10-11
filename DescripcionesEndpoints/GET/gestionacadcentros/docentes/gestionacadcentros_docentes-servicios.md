@@ -28,8 +28,8 @@ Este endpoint proporciona todos los nombramientos docentes para un curso escolar
 **Observaciones**: El parámetro *fechaReferencia* no está permitido en esta opción.
 
 # Ejemplos.
-### A) Solicitud de datos extendidos del docente con nif = 00000001R en el centro con código "35010488".
-* /gestionacadcentros/docentes?opcion=1 & codigoCentro=35010488 & nifnie=00000001R & nivelDetalle=e
+### A) Solicitud de todos los docentes con nombramiento vigente a fecha 01/12/2023 del centro con código "35010488" en el curso 2024.
+* /gestionacadcentros/docentes-servicios?opcion=1 & cursoEscolar=2024 & codigoCentro=35010488 & fechaReferencia=2023-12-01
 
 ### B) Solicitud de datos reducidos de todos los docentes del centro con código "35010488".
 * /gestionacadcentros/docentes?opcion=2 & codigoCentro=35010488
