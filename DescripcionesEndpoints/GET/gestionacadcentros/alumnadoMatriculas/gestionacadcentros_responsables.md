@@ -27,11 +27,11 @@ Este endpoint proporciona datos personales de los responsables del alumnado regi
 **Observaciones**: Los campos nifNie y pasaporte no están permitidos en esta opción.
 
 # Ejemplos.
-### A) Solicitud de datos con nivelDetalle medio del responsable con dni = "12345678Z" del centro con código "35010488".
+### A) Solicitud de datos con nivelDetalle *medio* del responsable con dni = "12345678Z" del centro con código "35010488".
 * /gestionacadcentros/responsables?opcion=1 & codigoCentro=35010488 & nifNie=12345678Z & nivelDetalle=m
  
-### B) Solicitud de datos con nivelDetalle extendido de todos  los responsables del centro con código "35010488".
+### B) Solicitud de datos con nivelDetalle *extendido* de todos  los responsables del centro con código "35010488".
 * /gestionacadcentros/responsables?opcion=2 & codigoCentro=35010488 & nivelDetalle=e
 
-### C) Solicitud de datos con nivelDetalle reducido de los responsables con alumnado tutelado que esté matriculado en el curso 2022 en el centro con código "35010488". 
+### C) Solicitud de datos con nivelDetalle *reducido* de los responsables con alumnado tutelado que esté matriculado en el curso 2022 en el centro con código "35010488". 
 * /gestionacadcentros/responsables?opcion=2 & codigoCentro=35010488 & tieneTuteladoMatriculaEnElCentro=true & tieneTuteladoMatriculaEnElCurso=2022
