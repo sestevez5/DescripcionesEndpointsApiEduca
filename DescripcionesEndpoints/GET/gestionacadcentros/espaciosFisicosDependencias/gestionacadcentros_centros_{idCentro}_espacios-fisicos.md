@@ -9,5 +9,5 @@ Este endpoint proporciona los diferentes espacios físicos (Aulas, salas, taller
 * **idCentro**: Obligatorio (Ej. 33283FBB18B1419593B1179785FAC806)
 
 # Ejemplo.
-### A) Solicitud de los espacios físicos del centro con idCentro "C372B7FE132A4806BA55B6BD259F33D6".
+### A) Solicitud de los espacios físicos del centro con idCentro = "C372B7FE132A4806BA55B6BD259F33D6".
 * /gestionacadcentros/centros/C372B7FE132A4806BA55B6BD259F33D6/espacios-fisicos
