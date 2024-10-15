@@ -4,14 +4,9 @@ Este endpoint devuelve las evaluaciones de un centro educativo a partir del par�
 
 ## Parámetros específicos.
 
-* **idEvaluacion**: Obligatorio (Ej. 2023).
+* **idEvaluacion**: Obligatorio (Ej. 12aa7a73cd6a4ebf9ac0c3afd0100cb4).
 
 # Ejemplos.
-### A) Solicitud de las evaluaciones del curso 2019 para una enseñanza concreta del centro con código "35010488".
-* /gestionacadcentros/evaluaciones?opcion=1 & cursoEscolar=2019 & codigoCentro=35010488 & idEnsenyanza=C3E9383D03D94CD183CE15DAF8BF3E1D
+### A) Solicitud de datos de la evaluación con idEvaluacion "12aa7a73cd6a4ebf9ac0c3afd0100cb4".
+* /gestionacadcentros/evaluaciones/12aa7a73cd6a4ebf9ac0c3afd0100cb4
 
-### B) Solicitud de todas las evaluaciones para el idCursoCentro especificado .
-* /gestionacadcentros/evaluaciones?opcion=2 & idCursoCentro=E480D237EC8C4AFFA87001C277A3D712
-
-### C) Solicitud de las evaluaciones de una enseñanza concreta para un idCursoCentro determinado.
-* /gestionacadcentros/evaluaciones?opcion=2 & idCursoCentro=E480D237EC8C4AFFA87001C277A3D712 & idEnsenyanza=FF31EB108792412187C73076537F5822
