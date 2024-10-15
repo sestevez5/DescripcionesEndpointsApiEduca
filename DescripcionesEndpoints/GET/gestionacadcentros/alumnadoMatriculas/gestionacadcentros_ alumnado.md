@@ -2,6 +2,8 @@
 
 Este endpoint proporciona datos personales del alumnado registrado en los centros educativos así como de sus responsables.
 
+**Observaciones**: Aparte de los parámetros optativos de caracter general de paginación (_posicionInicial_ y _tamanyoBloque_), existen otros, también opcionales, que modulan la respuesta.
+
 ## Parámetros comunes.
 
 * **opcion**: 1, 2, 3. Se deberá escoger uno obligatoriamente.
