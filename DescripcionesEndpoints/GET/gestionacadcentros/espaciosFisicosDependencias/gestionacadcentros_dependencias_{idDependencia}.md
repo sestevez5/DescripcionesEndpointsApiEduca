@@ -7,7 +7,7 @@ Este endpoint proporciona los datos con nivelDetalle *medio* (Espacio físico, e
 * **idDependencia**: Obligatorio (Ej. 4570f70af5934d06b80eb6c3e949ccc2)
 
 # Ejemplo.
-### A) Solicitud de datos de la dependencia con idDependencia "4570f70af5934d06b80eb6c3e949ccc2".
+### A) Solicitud de datos de la dependencia con idDependencia = "4570f70af5934d06b80eb6c3e949ccc2".
 * /gestionacadcentros/dependencias/4570f70af5934d06b80eb6c3e949ccc2
 
 
