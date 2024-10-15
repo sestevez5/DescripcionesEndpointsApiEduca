@@ -1,6 +1,6 @@
 # Descripción general.
 
-Este endpoint devuelve las evaluaciones de un centro educativo a partir del parámetro _idEvaluacion_, por lo que está orientado a aplicaciones consumidoras que conocen identificadores internos de Pincel de las entidades que representan los parámetros.
+Este endpoint devuelve los datos de una evaluación concreta a partir del parámetro _idEvaluacion_, por lo que está orientado a aplicaciones consumidoras que conocen identificadores internos de Pincel de las entidades que representan los parámetros.
 
 ## Parámetros específicos.
 
