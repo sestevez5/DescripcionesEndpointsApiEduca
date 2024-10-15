@@ -15,10 +15,10 @@ Este endpoint devuelve los datos de los docentes de un centro educativo a partir
 * Si se escoge el valor "No" en el campo _tieneServicioEnElCentro_, no es posible especificar el campo _tieneServicioEnElCurso_, devolviéndose un mensaje de error en este caso.
 
 # Ejemplos.
-### A) Solicitud de datos con nivel de detalle reducido de todos los docentes del centro para un idCentro concreto.
+### A) Solicitud de datos con nivelDetalle *reducido* de todos los docentes del centro con idCentro = "561EBA4551E54E3FBA6BC4CBB8363079".
 * /gestionacadcentros/centros/561EBA4551E54E3FBA6BC4CBB8363079/docentes
 
-### B) Solicitud de datos con nivel de detalle medio de los docentes con servicio en el curso 2024 para un idCentro concreto.
+### B) Solicitud de datos con nivelDetalle *medio* de los docentes con servicio en el curso 2024 para el idCentro = "561EBA4551E54E3FBA6BC4CBB8363079".
 * /gestionacadcentros/centros/561EBA4551E54E3FBA6BC4CBB8363079/docentes?tieneServicioEnElCentro=true & tieneServicioEnElCurso=2024 & nivelDetalle=m
 
 
