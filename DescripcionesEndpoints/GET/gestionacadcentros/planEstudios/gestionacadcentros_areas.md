@@ -29,11 +29,11 @@ Este endpoint proporciona las áreas (Ej. *Ciencias de la Naturaleza*, *Literatu
 **Observaciones**: Los campos cursoEscolar y codigoCentro no están permitidos en esta opción.
 
 # Ejemplos.
-### A) Solicitud de datos con nivelDetalle medio para los estudios de una enseñanza concreta y un idCursoCentro determinado.
+### A) Solicitud de datos con nivelDetalle *medio* para los estudios de una enseñanza concreta y un idCursoCentro determinado.
 * /gestionacadcentros/areas?opcion=2 & idCursoCentro=561BD9BCE68049DAABE90F3BA098D444 & idEnsenyanza=0B2E6A87262D4502B8EB834F44F60488 & nivelDetalle=m
 
-### B) Solicitud de datos con nivelDetalle reducido de todos los estudios y enseñanzas del centro con código "35010488" en el curso 2022.
+### B) Solicitud de datos con nivelDetalle *reducido* de todos los estudios y enseñanzas del centro con código "35010488" en el curso 2022.
 * /gestionacadcentros/areas?opcion=1 & cursoEscolar=2022 & codigoCentro=35010488 & nivelDetalle=r
 
-### C) Solicitud de datos con niveDetalle medio de los estudios de una enseñanza concreta del centro con código "35010488" en el curso 2023. 
+### C) Solicitud de datos con niveDetalle *medio* de los estudios de una enseñanza concreta del centro con código "35010488" en el curso 2023. 
 * /gestionacadcentros/areas?opcion=1 & cursoEscolar=2023 & codigoCentro=35010488 & idEnsenyanza=737B55ABE9C84EF0A92321B7E63C6F6B & idEstudio=016FE1562D8044BCAA1100652E182F90 & nivelDetalle=m
