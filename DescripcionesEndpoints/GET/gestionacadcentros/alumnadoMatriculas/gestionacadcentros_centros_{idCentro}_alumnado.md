@@ -15,8 +15,8 @@ Este endpoint proporciona los datos personales de todo el alumnado de un centro 
 * **tieneMatriculaEnCurso**: selecciona al alumnado que está matriculado en el curso escolar indicado (Ej. 2023). Cuando se indica, no es posible elegir la opción "No" del parámetro _tieneMatriculaCentro_.
 
 # Ejemplos.
-### A) Solicitud de datos reducidos de todo el alumnado con matrícula en un centro con idCentro = "561EBA4551E54E3FBA6BC4CBB8363079".
+### A) Solicitud de datos reducidos de todo el alumnado con matrícula en el centro con idCentro = "561EBA4551E54E3FBA6BC4CBB8363079".
 * /gestionacadcentros/centros/561EBA4551E54E3FBA6BC4CBB8363079/alumnado?tieneMatriculaCentro=true
    
-### B) Solicitud de datos extendidos del alumnado con matrícula en el curso 2023 para un centro con idCentro = "561EBA4551E54E3FBA6BC4CBB8363079".
+### B) Solicitud de datos extendidos del alumnado con matrícula en el curso 2023 para el centro con idCentro = "561EBA4551E54E3FBA6BC4CBB8363079".
 * /gestionacadcentros/centros/561EBA4551E54E3FBA6BC4CBB8363079/alumnado?tieneMatriculaCentro=true & tieneMatriculaEnCurso=2023 & nivelDetalle=e
