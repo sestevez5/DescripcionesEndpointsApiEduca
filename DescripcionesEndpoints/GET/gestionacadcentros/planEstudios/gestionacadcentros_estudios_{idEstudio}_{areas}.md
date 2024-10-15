@@ -9,7 +9,7 @@ Este endpoint proporciona las áreas (Ej. *Ciencias de la Naturaleza*, *Literatu
 
 ## Parámetros específicos.
 
-* **idEEstudio**: Obligatorio (Ej. 136b08ac56f74175b01324f7f5ddaaf9).
+* **idEstudio**: Obligatorio (Ej. 136b08ac56f74175b01324f7f5ddaaf9).
 
 # Ejemplos.
 ### A) Solicitud de las áreas (incluidas las no vigentes) con nivelDetalle medio del estudio con idEstudio = "136b08ac56f74175b01324f7f5ddaaf9".
