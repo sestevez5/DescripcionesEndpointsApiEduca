@@ -15,8 +15,8 @@ Este endpoint proporciona los datos personales de los responsables del alumnado 
 * **tieneTuteladoMatriculaEnElCurso**: selecciona a los responsables del alumnado que tiene matrícula en el curso escolar indicado (Ej. 2023). 
 
 # Ejemplos.
-### A) Solicitud de datos extendidos de todos los responsables del alumnado en un centro para un idCentro concreto.
+### A) Solicitud de datos extendidos de todos los responsables del alumnado en el centro con idCentro = "561EBA4551E54E3FBA6BC4CBB8363079".
 * /gestionacadcentros/centros/561EBA4551E54E3FBA6BC4CBB8363079/responsables?nivelDetalle=e
    
-### **B**) Solicitud de datos medios de los responsables del alumnado con matrícula en el curso 2024 para un idCentro concreto.
+### **B**) Solicitud de datos medios de los responsables del alumnado con matrícula en el curso 2024 para el centro con idCentro = "561EBA4551E54E3FBA6BC4CBB8363079".
 * /gestionacadcentros/centros/561EBA4551E54E3FBA6BC4CBB8363079/responsables?tieneTuteladoMatriculaEnElCentro=true & tieneTuteladoMatriculaEnElCurso=2024 & nivelDetalle=m
