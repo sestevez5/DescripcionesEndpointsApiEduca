@@ -12,9 +12,9 @@ Este endpoint proporciona las áreas (Ej. *Ciencias de la Naturaleza*, *Literatu
 * **idEstudio**: Obligatorio (Ej. e3a3a508746942ab86a719ed52797063).
 
 # Ejemplos.
-### A) Solicitud de las áreas (incluidas las no vigentes) con nivelDetalle medio del estudio con idEstudio = "136b08ac56f74175b01324f7f5ddaaf9".
+### A) Solicitud de las áreas (incluidas las no vigentes) con nivelDetalle *medio* del estudio con idEstudio = "136b08ac56f74175b01324f7f5ddaaf9".
 * /gestionacadcentros/estudios/136b08ac56f74175b01324f7f5ddaaf9/areas?incluirNoVigentes=true & nivelDetalle=m
 
-### B) Solicitud de las áreas vigentes con nivelDetalle reducido del estudio con idEstudio = "8c584333c4074a64b82db54f74defee4".
+### B) Solicitud de las áreas vigentes con nivelDetalle *reducido* del estudio con idEstudio = "8c584333c4074a64b82db54f74defee4".
 * /gestionacadcentros/estudios/8c584333c4074a64b82db54f74defee4/areas?nivelDetalle=r
 
