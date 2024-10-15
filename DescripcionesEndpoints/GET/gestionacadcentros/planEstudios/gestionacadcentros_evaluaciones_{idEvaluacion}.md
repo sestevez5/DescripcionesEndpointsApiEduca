@@ -7,6 +7,6 @@ Este endpoint devuelve los datos de una evaluación concreta a partir del parám
 * **idEvaluacion**: Obligatorio (Ej. 12aa7a73cd6a4ebf9ac0c3afd0100cb4).
 
 # Ejemplos.
-### A) Solicitud de datos de la evaluación con idEvaluacion "12aa7a73cd6a4ebf9ac0c3afd0100cb4".
+### A) Solicitud de datos de la evaluación con idEvaluacion = "12aa7a73cd6a4ebf9ac0c3afd0100cb4".
 * /gestionacadcentros/evaluaciones/12aa7a73cd6a4ebf9ac0c3afd0100cb4
 
