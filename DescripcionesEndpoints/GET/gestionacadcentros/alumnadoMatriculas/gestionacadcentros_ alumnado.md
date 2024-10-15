@@ -36,15 +36,15 @@ Este endpoint proporciona datos personales del alumnado registrado en los centro
 **Observaciones**: Sólo es necesario indicar uno de los datos identificativos del responsable. Los campos cial, nifNie y pasaporte no están permitidos en esta opción.
 
 # Ejemplos.
-### A) Solicitud de datos con nivelDetalle extendido del alumno con cial B00P08015J.
+### A) Solicitud de datos con nivelDetalle *extendido* del alumno con cial B00P08015J.
 * /gestionacadcentros/alumnado?opcion=2 & cial=B00P08015J & nivelDetalle=e
 
-### B) Solicitud de datos con nivelDetalle reducido de todo el alumnado del centro con código "35010488".
+### B) Solicitud de datos con nivelDetalle *reducido* de todo el alumnado del centro con código "35010488".
 * /gestionacadcentros/alumnado?opcion=1 & codigoCentro=35010488
 
-### C) Solicitud de datos con nivelDetalle medio del alumnado del centro con código "35010488" y matrícula en el curso 2023.
+### C) Solicitud de datos con nivelDetalle *medio* del alumnado del centro con código "35010488" y matrícula en el curso 2023.
 * /gestionacadcentros/alumnado?opcion=1 & codigoCentro=35010488 & conMatriculaEnElCurso=2023 & nivelDetalle=m
 
-### D) Solicitud de datos con nivelDetalle extendido del alumnado tutelado por el responsable con pasaporte "DWM669980P".
+### D) Solicitud de datos con nivelDetalle *extendido* del alumnado tutelado por el responsable con pasaporte "DWM669980P".
 * /gestionacadcentros/alumnado?opcion=3 & tieneMatriculaActiva=true & pasaporteResponsable=DWM669980P & nivelDetalle=e
 
