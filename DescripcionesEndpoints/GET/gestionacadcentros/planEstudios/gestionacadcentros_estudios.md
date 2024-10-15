@@ -25,7 +25,7 @@ Este endpoint devuelve los estudios impartidos en los centros educativos (Ej. *2
 **Observaciones**: Los campos cursoEscolar y codigoCentro no están permitidos en esta opción.
 
 # Ejemplos.
-### A) Solicitud de los estudios, incluidos los no ofertados, para el idCursoCentro especificado .
+### A) Solicitud de los estudios, incluidos los no ofertados, para el idCursoCentro = "0D95CCCEE3904190B1F810A90A4B7477".
 * /gestionacadcentros/estudios?opcion=2 & incluirNoOfertados=true & idCursoCentro=0D95CCCEE3904190B1F810A90A4B7477
 
 ### B) Solicitud de todos los estudios del centro con código "38016519" en el curso 2022.
