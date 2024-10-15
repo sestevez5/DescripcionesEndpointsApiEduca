@@ -7,6 +7,6 @@ Este endpoint proporciona los datos del edificio (denominacion, distanciaAlEdifi
 * **idEdificio**: Obligatorio (Ej. 6a533ff58d10426eb6af196695ad3d22)
 
 # Ejemplo.
-### A) Solicitud de datos del edificio del centro con idEdificio "6a533ff58d10426eb6af196695ad3d22".
+### A) Solicitud de datos del edificio del centro con idEdificio = "6a533ff58d10426eb6af196695ad3d22".
 * /gestionacadcentros/edificios/6a533ff58d10426eb6af196695ad3d22
 
