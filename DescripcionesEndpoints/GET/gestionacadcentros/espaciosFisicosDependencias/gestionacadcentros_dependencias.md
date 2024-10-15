@@ -16,5 +16,5 @@ Este endpoint devuelve las _dependencias_ de un centro educativo a partir de los
 * **cursoEscolar**: Obligatorio (Ej. 2023).
 
 # Ejemplos.
-### A) Solicitud con nivelDetalle "medio" de las dependencias del centro con codigoCentro "35010488" para el cursoEscolar = "2022".
+### A) Solicitud con nivelDetalle *medio* de las dependencias del centro con codigoCentro "35010488" para el cursoEscolar 2022.
 * /gestionacadcentros/dependencias?codigoCentro=35010488 & cursoEscolar=2022 & nivelDetalle=m
