@@ -5,7 +5,7 @@ Este endpoint devuelve información relativa a los cargos y funciones (direcció
 ## Parámetros comunes.
 * **codigoCentro**: Obligatorio (Ej. 38010773)
 * **cursoEscolar**: Obligatorio (Ej. 2021)
-* **esCargoDirectivo**: Si se selecciona "Sí", solo se muestran los cargos directivos.
+* **esCargoDirectivo**: Si se selecciona *Sí*, solo se muestran los cargos directivos.
 * **fechaReferencia**: Si no se especifica, se mostrarán todos los cargos y funciones para el curso escolar indicado.
 * **nivelDetalle**: r, m (reducido, medio). Si no se indica, su valor por defecto será r.
 
