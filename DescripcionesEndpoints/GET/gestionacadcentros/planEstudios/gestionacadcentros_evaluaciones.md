@@ -8,7 +8,7 @@ Este endpoint devuelve las evaluaciones de un centro educativo.
 
 **Observaciones**:
 * Opción 1: Los campos obligatorios son el cursoEscolar y el codigoCentro.
-* Opción 2: El campo idCursoCentro es obligatorio.
+* Opción 2: El campo *idCursoCentro* es obligatorio.
 
 ## Parámetros específicos.
 
@@ -18,7 +18,7 @@ Este endpoint devuelve las evaluaciones de un centro educativo.
 * **idCursoCentro**: Si no se indica, se muestran todas las evaluaciones para el curso y centro especificado (Ej. E480D237EC8C4AFFA87001C277A3D712).
 * **idEnsenyanza**: Si no se indica, se muestran las evaluaciones de todas las enseñanzas del curso y centro especificado (Ej. FF31EB108792412187C73076537F5822).
 
-**Observaciones**: El campo idCursoCentro no se tienen en cuenta en esta opción, ya que queda determinado por los campos cursoEscolar y codigoCentro.
+**Observaciones**: El campo *idCursoCentro* no se tienen en cuenta en esta opción, ya que queda determinado por los campos *cursoEscolar* y *codigoCentro*.
 
 ### Opción 2.
 * **idCursoCentro**: Obligatorio (Ej. E480D237EC8C4AFFA87001C277A3D712).
