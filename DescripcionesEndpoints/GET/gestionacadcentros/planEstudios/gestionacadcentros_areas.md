@@ -11,9 +11,9 @@ Este endpoint proporciona las áreas (Ej. *Ciencias de la Naturaleza*, *Literatu
 * **incluirNoVigentes**: Si se selecciona, incluye los estudios no vigentes. Si se escoge "No" o "No establecido", devuelve solo los estudios vigentes.
 
 **Observaciones**:
-* En las dos opciones el nivelDetalle es obligatorio.
-* Opción 1: Los campos obligatorios son el cursoEscolar y el codigoCentro.
-* Opción 2: El campo idCursoCentro es obligatorio.
+* En las dos opciones el *nivelDetalle* es obligatorio.
+* Opción 1: Los campos obligatorios son el *cursoEscolar* y el *codigoCentro*.
+* Opción 2: El campo *idCursoCentro* es obligatorio.
 
 ## Parámetros específicos.
 
@@ -21,12 +21,12 @@ Este endpoint proporciona las áreas (Ej. *Ciencias de la Naturaleza*, *Literatu
 * **cursoEscolar**: Obligatorio (Ej. 2023).
 * **codigoCentro**: Obligatorio (Ej. 38010773).
 
-**Observaciones**: El campo idCursoCentro no está permitido en esta opción.
+**Observaciones**: El campo *idCursoCentro* no está permitido en esta opción.
 
 ### Opción 2.
 * **idCursoCentro**: Obligatorio (Ej. E480D237EC8C4AFFA87001C277A3D712).
 
-**Observaciones**: Los campos cursoEscolar y codigoCentro no están permitidos en esta opción.
+**Observaciones**: Los campos *cursoEscolar* y *codigoCentro* no están permitidos en esta opción.
 
 # Ejemplos.
 ### A) Solicitud de datos con nivelDetalle *medio* para los estudios de la enseñanza con idEnsenyanza = "0B2E6A87262D4502B8EB834F44F60488" e idCursoCentro = "561BD9BCE68049DAABE90F3BA098D444".
