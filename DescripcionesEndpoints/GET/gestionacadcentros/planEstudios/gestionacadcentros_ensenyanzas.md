@@ -7,8 +7,8 @@ Este endpoint devuelve las enseñanzas impartidas en los centros educativos (Ej.
 * **incluirNoVigentes**: Si se selecciona, incluye las enseñanzas no vigentes. Si se escoge "No" o "No establecido", devuelve solo las enseñanzas vigentes.
 
 **Observaciones**:
-* Opción 1: Los campos obligatorios son el cursoEscolar y el codigoCentro.
-* Opción 2: El campo idCursoCentro es obligatorio.
+* Opción 1: Los campos obligatorios son el *cursoEscolar* y el *codigoCentro*.
+* Opción 2: El campo *idCursoCentro* es obligatorio.
 
 ## Parámetros específicos.
 
@@ -16,12 +16,12 @@ Este endpoint devuelve las enseñanzas impartidas en los centros educativos (Ej.
 * **cursoEscolar**: Obligatorio (Ej. 2023).
 * **codigoCentro**: Obligatorio (Ej. 38010773).
 
-**Observaciones**: El campo idCursoCentro no está permitido en esta opción.
+**Observaciones**: El campo *idCursoCentro* no está permitido en esta opción.
 
 ### Opción 2.
 * **idCursoCentro**: Obligatorio (Ej. E480D237EC8C4AFFA87001C277A3D712).
 
-**Observaciones**: Los campos cursoEscolar y codigoCentro no están permitidos en esta opción.
+**Observaciones**: Los campos *cursoEscolar* y *codigoCentro* no están permitidos en esta opción.
 
 # Ejemplos.
 ### A) Solicitud de todas las enseñanzas para el idCursoCentro = "E480D237EC8C4AFFA87001C277A3D712".
