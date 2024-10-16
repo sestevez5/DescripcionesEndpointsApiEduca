@@ -8,8 +8,8 @@ Este endpoint devuelve los datos de los docentes a partir del código del centro
 * **nivelDetalle**: r, m, e (reducido, medio, extendido). Si no se indica, su valor por defecto será r.
 
 **Observaciones**:
-* Opción 1: Además del codigoCentro, será necesario indicar nifnie o pasaporte.
-* Opción 2: Además del codigoCentro, opcionalmente se podrá seleccionar tieneServicioEnElCentro y/o tieneServicioEnElCurso.
+* Opción 1: Además del *codigoCentro*, será necesario indicar *nifnie* o *pasaporte*.
+* Opción 2: Además del *codigoCentro*, opcionalmente se podrá seleccionar *tieneServicioEnElCentro* y/o *tieneServicioEnElCurso*.
 
 ## Parámetros específicos.
 
