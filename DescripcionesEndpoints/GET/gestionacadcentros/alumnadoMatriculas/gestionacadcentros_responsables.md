@@ -8,8 +8,8 @@ Este endpoint proporciona datos personales de los responsables del alumnado regi
 * **nivelDetalle**: r, m, e (reducido, medio, extendido). Si no se indica, su valor por defecto será r.
 
 **Observaciones**:
-* Opción 1: El codigoCentro es obligatorio, además de uno solo de los campos nifNie o pasaporte.
-* Opción 2: Sólo es obligatorio el campo codigoCentro.
+* Opción 1: El *codigoCentro* es obligatorio, además de uno solo de los campos *nifNie* o *pasaporte*.
+* Opción 2: Sólo es obligatorio el campo *codigoCentro*.
 
 ## Parámetros específicos.
 
@@ -24,7 +24,7 @@ Este endpoint proporciona datos personales de los responsables del alumnado regi
 * **tieneTuteladoMatriculaEnElCentro**: si no se selecciona, proporciona todos los responsables del alumnado del centro.
 * **tieneTuteladoMatriculaEnElCurso**: selecciona los responsables del alumnado que está matriculado en el curso escolar indicado (Ej. 2024).
 
-**Observaciones**: Los campos nifNie y pasaporte no están permitidos en esta opción.
+**Observaciones**: Los campos *nifNie* y *pasaporte* no están permitidos en esta opción.
 
 # Ejemplos.
 ### A) Solicitud de datos con nivelDetalle *medio* del responsable con dni = "12345678Z" del centro con código "35010488".
