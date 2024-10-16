@@ -10,7 +10,7 @@ Este endpoint proporciona las áreas (Ej. *Ámbito de Comunicación y Representa
 ## Parámetros específicos.
 
 * **idEnsenyanza**: Obligatorio (Ej. 9bba0d433be74d0cb8ba14b13ab63ad4).
-* **idEstudio**: Si se indica, se muestran solo las áreas del estudio indicado (Ej. c7200149ef644b799522af86214669dc).
+* **idEstudio**: Si se especifica, se muestran solo las áreas del estudio indicado (Ej. c7200149ef644b799522af86214669dc).
 
 # Ejemplos.
 ### A) Solicitud con nivel de detalle *medio* de las áreas correspondientes al estudio con idEstudio = "c7200149ef644b799522af86214669dc" de la enseñanza con idEnsenyanza = "70d15bce1e77481db9582f3215f1071a".
