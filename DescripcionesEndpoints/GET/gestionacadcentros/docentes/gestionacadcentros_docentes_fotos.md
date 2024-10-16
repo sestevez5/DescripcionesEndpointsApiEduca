@@ -6,7 +6,7 @@ Este endpoint proporciona las fotos del personal docente.
 ## Parámetros comunes.
 
 * **opcion**: 1, 2. Se deberá escoger uno obligatoriamente.
-* **todasLasFotos**: Opcional. Si se selecciona "Sí", se muestran todas las fotos del docente. La opciones "No" y "No establecido" devuelven la más reciente (**idFoto** en *XPE_FotosPersonal* = **idFotoReciente** en *XPE_IdentificacionCentros*).
+* **todasLasFotos**: Opcional. Si se selecciona *Sí*, se muestran todas las fotos del docente. La opciones *No* y *No establecido* devuelven la más reciente (**idFoto** en *XPE_FotosPersonal* = **idFotoReciente** en *XPE_IdentificacionCentros*).
 
 **Observaciones**:
 * Opción 1: El *codigoCentro* es obligatorio, además de uno solo de los campos *nifNie* o *pasaporte*.
