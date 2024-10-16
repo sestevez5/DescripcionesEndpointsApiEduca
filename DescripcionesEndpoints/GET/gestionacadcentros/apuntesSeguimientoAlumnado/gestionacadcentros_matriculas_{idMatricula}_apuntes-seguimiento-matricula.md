@@ -6,8 +6,8 @@ Este endpoint proporciona información detallada de todos los apuntes de seguimi
 
 * **idMatricula**: Obligatorio (Ej. ef1e4d24f7284c699b9591668ba2c4fd)
 * **soloFaltas**:
-  * Si se no se establece valor o se elige "No", se devolverán los apuntes de seguimiento de cualquier tipo (Ej. Anotación positiva, Salida anticipada justificada, etc.).
-  * Si se escoge el valor "Sí", solo devolverá los apuntes con el atributo "EsFalta = 1" (Ej. Falta justificada, Retraso sin justificar, etc.).
+  * Si se no se establece valor o se elige *No*, se devolverán los apuntes de seguimiento de cualquier tipo (Ej. Anotación positiva, Salida anticipada justificada, etc.).
+  * Si se escoge el valor *Sí*, solo devolverá los apuntes con el atributo "EsFalta = 1" (Ej. Falta justificada, Retraso sin justificar, etc.).
 * **fechaHoraDesde**: Si se indica, solamente se devolverán los apuntes cuya fecha y horaFin sea igual o posterior a la especificada (Ej. 2024-03-06T13:00:00)
 * **fechaHoraHasta**: Si se indica, solamente se devolverán los apuntes cuya fecha y horaInicio sea igual o anterior a la especificada (Ej. 2024-05-06T10:45:00)
 * **codigoArea**: Si se establece, devolverá únicamente los apuntes asociados a la matrícula correspondientes al área con el código especificado (Ej. FCT).
