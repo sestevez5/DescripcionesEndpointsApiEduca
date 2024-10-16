@@ -16,7 +16,7 @@ Este endpoint proporciona la colección de áreas (Ej. *Ámbito de Comunicación
 
 * **idCursoCentro**: Obligatorio (Ej. E480D237EC8C4AFFA87001C277A3D712).
 * **idEnsenyanza**: Si se indica, se muestran solo las áreas de la enseñanza especificada (Ej. 9bba0d433be74d0cb8ba14b13ab63ad4).
-* **idEstudio**: Si se indica, se muestran solo las áreas del estudio especificado (Ej. c7200149ef644b799522af86214669dc).
+* **idEstudio**: Si se indica, se muestran solo las áreas del estudio especificado (Ej. 380c4b19e1f6408aad67141c869f69ff).
 
 # Ejemplos.
 ### A) Solicitud con nivel de detalle *medio* de las áreas correspondientes al estudio con idEstudio = "c7200149ef644b799522af86214669dc" de la enseñanza con idEnsenyanza = "70d15bce1e77481db9582f3215f1071a".
