@@ -9,12 +9,12 @@ Este endpoint proporciona la colección de áreas (Ej. *Ámbito de Comunicación
 
 ## Parámetros comunes.
 
-* **idCursoCentro**: Obligatorio (Ej. E480D237EC8C4AFFA87001C277A3D712).
 * **incluirNoVigentes**: Si se selecciona, permite incluir áreas pertenecientes a estudios no vigentes ofertados por el centro. Si se escoge "No" o "No establecido", devuelve solo áreas de estudios vigentes.
 * **nivelDetalle**: Se deberá escoger uno obligatoriamente r, m (reducido, medio).
 
 ## Parámetros específicos.
 
+* **idCursoCentro**: Obligatorio (Ej. E480D237EC8C4AFFA87001C277A3D712).
 * **idEnsenyanza**: Obligatorio (Ej. 9bba0d433be74d0cb8ba14b13ab63ad4).
 * **idEstudio**: Si se indica, se muestran solo las áreas del estudio indicado (Ej. c7200149ef644b799522af86214669dc).
 
