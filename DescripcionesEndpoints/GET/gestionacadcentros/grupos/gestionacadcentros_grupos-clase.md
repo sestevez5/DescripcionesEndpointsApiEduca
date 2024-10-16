@@ -7,8 +7,8 @@ Este endpoint devuelve información de los grupos clase de un centro educativo.
 * **nivelDetalle**: r, m (reducido, medio). Si no se indica, su valor por defecto será r.
 
 **Observaciones**:
-* Opción 1: Los campos obligatorios son el cursoEscolar y el codigoCentro.
-* Opción 2: El campo idCursoCentro es obligatorio.
+* Opción 1: Los campos obligatorios son el *cursoEscolar* y el *codigoCentro*.
+* Opción 2: El campo *idCursoCentro* es obligatorio.
 
 ## Parámetros específicos.
 
@@ -18,14 +18,14 @@ Este endpoint devuelve información de los grupos clase de un centro educativo.
 * **idEstudioSC**: Optativo. No se puede especificar simultáneamente con el campo *idEnsenyanzaSC* (Ej. 232)
 * **idEnsenyanzaSC**: Optativo. No se puede especificar simultáneamente con el campo *idEstudioSC* (Ej. 26)
 
-**Observaciones**: Los campos idCursoCentro, IdEstudio, IdEnsenyanza no están permitidos en esta opción.
+**Observaciones**: Los campos *idCursoCentro*, *IdEstudio*, *IdEnsenyanza* no están permitidos en esta opción.
 
 ### Opción 2.
 * **idCursoCentro**: Obligatorio (Ej. E480D237EC8C4AFFA87001C277A3D712).
 * **idEstudio**: Optativo. No se puede especificar simultáneamente con el campo *idEnsenyanza* (Ej. FB122AE637F445AFBED5F401C0AB6E87)
 * **idEnsenyanza**: Optativo. No se puede especificar simultáneamente con el campo *idEstudio* (Ej. 5FF2F0FD02AD44F08D39EF37774F9569)
 
-**Observaciones**: Los campos cursoEscolar, codigoCentro, idEstudioSC, idEnsenyanzaSC no están permitidos en esta opción.
+**Observaciones**: Los campos *cursoEscolar*, *codigoCentro*, *idEstudioSC*, *idEnsenyanzaSC* no están permitidos en esta opción.
 
 # Ejemplos.
 ### A) Solicitud de todos los grupos clase con nivelDetalle *medio* del centro con código = "38011327" en el curso 2022.
