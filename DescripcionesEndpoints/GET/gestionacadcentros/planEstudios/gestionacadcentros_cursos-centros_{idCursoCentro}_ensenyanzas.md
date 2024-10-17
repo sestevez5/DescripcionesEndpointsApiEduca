@@ -3,6 +3,7 @@
 Este endpoint devuelve las enseñanzas impartidas en los centros educativos (Ej. *Educación Primaria*, *Ciclos Formativos de Grado Básico*, *Bachillerato*, etc.) a partir del parámetro *idCursoCentro*, por lo que está orientado a aplicaciones consumidoras que conocen identificadores internos de Pincel de las entidades que representan los parámetros..
 
 ## Parámetros comunes.
+
 * **incluirNoVigentes**: Si se selecciona, incluye las enseñanzas no vigentes. Si se escoge "No" o "No establecido", devuelve solo las enseñanzas vigentes.
 
 ## Parámetros específicos.
