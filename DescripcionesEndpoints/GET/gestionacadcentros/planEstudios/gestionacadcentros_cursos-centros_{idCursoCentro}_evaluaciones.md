@@ -6,7 +6,7 @@ Este endpoint devuelve todas las evaluaciones correspondientes a un curso escola
 ## Parámetros específicos.
 
 * **idCursoCentro**: Obligatorio (Ej. 9854621FA899438C8818780A9C364044).
-* **idEnsenyanza**: Si no se indica, se muestran todas las evaluaciones del curso especificado.
+* **idEnsenyanza**: Si se indica, se muestran solo las evaluaciones correspondientes a la enseñanza especificada.
 
 # Ejemplos.
 ### A) Solicitud de datos de las evaluaciones para el curso escolar con idCursoCentro = "9854621FA899438C8818780A9C364044".
