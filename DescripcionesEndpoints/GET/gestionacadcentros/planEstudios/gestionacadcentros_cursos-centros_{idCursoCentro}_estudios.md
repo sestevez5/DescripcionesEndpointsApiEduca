@@ -12,8 +12,8 @@ Este endpoint proporciona los estudios impartidos en un centro educativo (Ej. *3
 * **idCursoCentro**: Obligatorio (Ej. 3BCA095B8AEC4939BAB14E9FDAFA4A41).
 
 # Ejemplos.
-### A) Solicitud de los estudios vigentes y ofertados correspondientes a la enseñanza con idEnsenyanza = "9bba0d433be74d0cb8ba14b13ab63ad4".
-* /gestionacadcentros/ensenyanzas/9bba0d433be74d0cb8ba14b13ab63ad4/estudios
+### A) Solicitud de los estudios vigentes y ofertados en el curso con idCursoEscolar = "3BCA095B8AEC4939BAB14E9FDAFA4A41".
+* /gestionacadcentros/cursos-centros/3BCA095B8AEC4939BAB14E9FDAFA4A41/estudios
 
-### B) Solicitud de los estudios, incluyendo los no vigentes y no ofertados, correspondientes a la enseñanza con idEnsenyanza = "a0361e9f3fc6434ba16def492101d8f1".
-/gestionacadcentros/ensenyanzas/a0361e9f3fc6434ba16def492101d8f1/estudios?incluirNoVigentes=true & incluirNoOfertados=true
+### B) Solicitud de los estudios, incluyendo los no ofertados, correspondientes al curso con idCursoEscolar = "5C08325B4B744F328977628385331092".
+* /gestionacadcentros/cursos-centros/5C08325B4B744F328977628385331092/estudios?incluirNoOfertados=true
