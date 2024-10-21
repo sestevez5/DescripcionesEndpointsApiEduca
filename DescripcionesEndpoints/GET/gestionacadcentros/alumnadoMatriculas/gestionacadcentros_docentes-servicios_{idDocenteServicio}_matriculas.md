@@ -11,6 +11,6 @@ Este endpoint devuelve las matrículas asociadas a un nombramiento docente a par
 
 # Ejemplos.
 
-### A) Solicitud de todos las matriculas del docente con idDocenteServicio = "bf51a3a7dbae431ba9fea4cf48cc7c00".
-* /gestionacadcentros/docentes-servicios/bf51a3a7dbae431ba9fea4cf48cc7c00
+### A) Solicitud de todos las matriculas asociadas al docente con idDocenteServicio = "bf51a3a7dbae431ba9fea4cf48cc7c00".
+* /gestionacadcentros/docentes-servicios/bf51a3a7dbae431ba9fea4cf48cc7c00/matriculas
 
