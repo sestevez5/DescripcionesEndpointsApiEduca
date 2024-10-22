@@ -1,7 +1,7 @@
 
 # Descripción general.
 
-Este endpoint devuelve las matrículas asociadas a un nombramiento docente a partir del parámetro _idDocenteServicio_, por lo que está orientado a aplicaciones consumidoras que conocen identificadores internos de Pincel de las entidades que representan los parámetros.
+Este endpoint devuelve las matrículas asociadas a un nombramiento docente, es decir, el alumnado de un docente a partir del parámetro _idDocenteServicio_, por lo que está orientado a aplicaciones consumidoras que conocen identificadores internos de Pincel de las entidades que representan los parámetros.
 
 ## Parámetros específicos.
 
