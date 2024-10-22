@@ -1,7 +1,7 @@
 
 # Descripción general.
 
-Este endpoint devuelve la relación de matrículas-áreas vinculadas a un docente servicio a partir del parámetro _idDocenteServicio_, por lo que está orientado a aplicaciones consumidoras que conocen identificadores internos de Pincel de las entidades que representan los parámetros.
+Este endpoint devuelve la relación de matrículas-áreas vinculadas a un nombramiento docente a partir del parámetro _idDocenteServicio_, por lo que está orientado a aplicaciones consumidoras que conocen identificadores internos de Pincel de las entidades que representan los parámetros.
 
 ## Parámetros comunes.
 
