@@ -4,7 +4,7 @@
 
 # Descripción general.
 
-Este endpoint proporciona la colección de áreas (Ej. *Ciencias de la Naturaleza*, *Literatura Universal*, *Formación en Centros de Trabajo*, etc.) de las diferentes enseñanzas y estudios del Plan de Estudios de Canarias.
+Este endpoint proporciona la colección de áreas (Ej. *Ciencias de la Naturaleza*, *Literatura Universal*, *Formación en Centros de Trabajo*, etc.) de las diferentes enseñanzas y estudios del Plan de Estudios de Canarias para un determinado curso escolar.
 
 ## Parámetros comunes.
 
