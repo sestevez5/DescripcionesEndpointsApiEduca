@@ -5,7 +5,7 @@ Este endpoint devuelve las diferentes enseñanzas (Ej. *Educación Primaria*, *C
 ## Parámetros específicos.
 
 * **cursoEscolar**: Obligatorio (Ej. 2024).
-* **incluirNoVigentes**: Si se selecciona, incluye las enseñanzas no vigentes. Si se escoge "No" o "No establecido", devuelve solo las enseñanzas vigentes.
+* **incluirNovigentes**: Si se selecciona, incluye las enseñanzas no vigentes. Si se escoge "No" o "No establecido", devuelve solo las enseñanzas vigentes.
 
 # Ejemplos.
 ### A) Solicitud de todas las enseñanzas vigentes en el curso 2024.
