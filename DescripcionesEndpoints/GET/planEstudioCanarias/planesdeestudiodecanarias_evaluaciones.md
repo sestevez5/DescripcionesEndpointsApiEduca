@@ -1,7 +1,7 @@
 
 # Descripción general.
 
-Este endpoint devuelve las evaluaciones definidas en el Plan de Estudio de Canarias para un determinado curso escolar.
+Este endpoint devuelve las evaluaciones definidas en el Plan de Estudios de Canarias para un determinado curso escolar.
 
 ## Parámetros específicos.
 
