@@ -1,6 +1,6 @@
 # Descripción general.
 
-Este endpoint devuelve información de los estudios de una enseñanza concreta (Ej. *Educación Primaria*, *Ciclos Formativos de Grado Básico*, *Bachillerato*, etc.) del Plan de Estudios de Canarias  para un determinado curso escolar.
+Este endpoint devuelve información de los estudios de una enseñanza concreta (Ej. *Educación Primaria*, *Ciclos Formativos de Grado Básico*, *Bachillerato*, etc.) del Plan de Estudios de Canarias a partir del parámetro *idEnsenyanzaSC* para un determinado curso escolar.
 
 ## Parámetros específicos.
 
