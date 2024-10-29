@@ -6,11 +6,8 @@ Este endpoint devuelve información de los resultados de todas las matrículas-�
 ## Parámetros específicos.
 
 * **idSesionEvaluacion**: Obligatorio (Ej. 9EB0219DBB1D4AA6BE66DDAE9DDDE577).
-
 * **idArea**: Si se indica, solo devolverá información de la evaluación las matrículas-áreas correspondientes al área especificada, es decir, los resultados obtenidos por el alumnado de una determinada materia (Ej. 977b2e3c9eff4dbbb71f0ac4f6554699).
-
 * **idDocenteServicio**: Si se indica, solo devolverá información de los resultados de la evaluación de las matrículas-áreas impartidas por el docente al grupo clase en la sesión de evaluación especificada, es decir, los resultados de las materias impartidas por el docente (Ej. E3363F92B2AF478CAAF25B5BA1BF50FA).
-
 * **idGrupo**: Obligatorio (Ej. A2E61D953ECA49A283FB456D144800E8).
 
 # Ejemplos.
