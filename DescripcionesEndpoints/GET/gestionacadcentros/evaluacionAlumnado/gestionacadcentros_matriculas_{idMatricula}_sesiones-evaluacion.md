@@ -1,6 +1,3 @@
-# MODIFICAR
-# MODIFICAR
-# MODIFICAR
 
 # Descripción general.
 
@@ -8,8 +5,8 @@ Este endpoint proporciona los datos de todas las sesiones de evaluación para un
 
 ## Parámetros específicos.
 
-* **idMatricula**: Obligatorio (Ej. )
+* **idMatricula**: Obligatorio (Ej. F0624792913E4CBBAA26225B9AC29BFC)
 
 # Ejemplos.
-### A) Solicitud de datos de todas las sesiones de evaluación para la matrícula con idMatricula = "".
-* 
+### A) Solicitud de datos de todas las sesiones de evaluación para la matrícula con idMatricula = "F0624792913E4CBBAA26225B9AC29BFC".
+* /gestionacadcentros/matriculas/F0624792913E4CBBAA26225B9AC29BFC/sesiones-evaluacion
