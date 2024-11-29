@@ -1,3 +1,4 @@
+
 # Descripción general.
 
 Este endpoint devuelve una colección de áreas matrículas y sus correspondientes docentes servicios a partir del parámetro *idMatricula*, por lo que está orientado a aplicaciones consumidoras que conocen identificadores internos de Pincel de las entidades que representan los parámetros.
