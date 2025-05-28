@@ -1,12 +1,12 @@
 # Descripción.
-ApiEduca es un API REST que expone las entidades que se gestionan en la Herramienta para la Gestión Académica y Administrativa de los centros educativos (Pincel Ekade). No obstante, de forma temporal, también se han incluido entidades externas como, por ejemplo, algunas de las gestionadas en el Directorio de Centros o el Plan de Estudios de Canarias.
+ApiEduca es un API REST que expone las entidades que se gestionan en la herramienta para la Gestión Académica y Administrativa de los centros educativos (Pincel Ekade). No obstante, de forma temporal, también se han incluido entidades externas como, por ejemplo, algunas de las gestionadas en el Directorio de Centros o el Plan de Estudios de Canarias.
 
 # Seguridad.
 Esta ApiRest tiene carácter interno y su consumo solo puede realizarse a través de la Intranet Corporativa. 
 
-Hemos seguido el estándar propuesto para este tipo de herramientas que es "Bearer". Es un formato ampliamente asumido que nos permite la autorización en conjunto con la autenticación de usuario. Básicamente, se requiere que en todas las peticiones se añada un token en cabecera que identifica al consumidor y, opcionalmente, contendrá información adicional requerida para el proceso de autenticación/autorización.
+Hemos seguido el modelo de autenticación más extendido en este tipo de APIs y que está basado en tokens. En concreto, autenticación "Bearer". Es un formato ampliamente asumido que nos permite la autorización en conjunto con la autenticación de usuario. Básicamente, se requiere que en todas las peticiones se añada un token en cabecera que identifica al consumidor y, opcionalmente, contendrá información adicional requerida para el proceso de autenticación/autorización.
 
-Para la obtención de un token se requiere pasar por un proceso de autorización que, como mínimo, requerirá una "apikey" que, en la actualidad es gestionada por el equipo de desarrollo del SI04.
+Para la obtención de un token se requiere pasar por un proceso de autenticación que, como mínimo, requerirá una "apikey" que, en la actualidad, es gestionada por el equipo de desarrollo del SI04.
 
 Existen varios endpoints orientados a la obtención de un token de acceso. Ver [Anexo I](#AnexoI). El más sencillo solo requerirá aportar la apikey suministrada que, básicamente, representa a la aplicación consumidora. Existen otros endpoints que requerirán más información como, por ejemplo, credenciales de usuarios. Como podemos imaginar, estos últimos aportarán un mayor nivel de privilegios a la hora del consumo de endpoints.
 
@@ -20,19 +20,18 @@ Podemos distinguir tres unidades de información en el _path_ que representa a l
 
 Veamos algunos ejemplos:
 
-Ejemplo 1: https://www.gobiernodecanarias.org/educacion/bussed/apieduca/centros/zonas-inspeccion: endpoint que devuelve las diferentes zonas de inspección que se han establecidos en materia de educación en la Comunidad Canaria. Es una gestión correspondiente al Directorio de Centros y, por tanto, el "sistema de información" es "centros". En este caso, atendiendo al comienzo de la uri, podemos ver que se trata de un endpoint del entorno de producción.
+Ejemplo 1: https://www.gobiernodecanarias.org/educacion/bussed/apieduca/directorio-centros/zonas-inspeccion: endpoint que devuelve las diferentes zonas de inspección que se han establecido en materia de educación en la Comunidad Canaria. Es una gestión correspondiente al Directorio de Centros y, por tanto, el "sistema de información" es "directorio-centros". En este caso, atendiendo al comienzo de la uri, podemos ver que se trata de un endpoint del entorno de producción.
 Ejemplo 2: https://wwwpre.educacion.org/educacion/bussed/apieduca/gestionacadcentros/matriculas: endpoint de que devuelve una colección de matrículas del entorno de preproducción. Se trata de información proveniente de Pincel Ekade. La sección del endpoint "sistema de información" que representa a todas las entidades provenientes de Pincel Ekade es  "gestionacadcentros" (Gestión académica y administrativa de centros).
-
 
 ## Estructura de las respuestas.
 Las respuestas a las peticiones a cualquier petición de ApiEduca siempre tiene la misma estructrura JSON. Se trata de un objeto que actúa como envoltura (wrap) ante cualquier petición. Este objeto unificado de respuesta tiene 3 campos: datos, mensajes y metadatos.
 
 ### Datos.
 Este campo devuelve los datos solicitados (generalmente, ante peticiones GET). Distinguiremos entre colecciones (devolución de un array) y entregas simples (devolución de un objeto). En el desarrollo de ApiEduca hemos creado un catálogo de DTO's (Data Tranfer Object) que representa la interfaz al exterior de las entidades que gestionamos y cuyo objetivo es dar legibilidad, desacoplar las respuestas a las estructuras internas y ocultar aspectos irrelevantes a los consumidores.
-En el apartado "colecciones" veremos cómo, en ocasiones, disponemos de representaciones polimórficas de estas entidades a través de la definición de múltiples DTO's, permitiéndonos equilibrar la necesidad de información con el rendimiento de las respuestas y también con niveles de seguridad en base al contenido expuesto.
+En el apartado "colecciones" veremos como, en ocasiones, disponemos de representaciones polimórficas de estas entidades a través de la definición de múltiples DTO's, permitiéndonos equilibrar la necesidad de información con el rendimiento de las respuestas y también con niveles de seguridad en base al contenido expuesto.
 
 ### Mensajes.
-Este campo devuelve una colección de mensajes (potencialmente vacío). En muchas ocasiones es necesario acompañar las respuestas con mensajes que aporten información adicional a los consumidores, los cuales pueden ir desde meros avisos hasta notificaciones de errores. Por ejemplo, el sistema, ante una petición incorrectamente formada, notificará de este hecho al peticionario. También es el mecanismo habitual cuando se realiza una petición que incumple reglas de negocio establecidas (Ej. "La fecha de finalización de una matrícula no puede ser anterior a la fecha de matrícula").
+Este campo devuelve una colección de mensajes (potencialmente vacío). En muchas ocasiones es necesario acompañar las respuestas con mensajes que aporten información adicional a los consumidores, los cuales pueden ir desde meros avisos hasta notificaciones de errores. Por ejemplo, el sistema, ante una petición incorrectamente formada, notificará este hecho al peticionario como un mensaje dentro de esta colección. También es el mecanismo habitual cuando se realiza una petición que incumple reglas de negocio establecidas (Ej. "La fecha de finalización de una matrícula no puede ser anterior a la fecha de matrícula").
 
 ### Metadatos.
 Este campo es, precisamente, el que nos ha llevado a optar por el uso de envolvente a las respuestas. Se trata de un objeto que nos permite aportar información sobre la propia petición. A nivel básico, aporta, entre otros datos, la fecha/hora de la petición, usuario autenticado, url de la solicitud, etc. En determinadas ocaciones estos medadatos se enriquecen con informacióin adicional. Tal es el caso de las respuestas de peticiones que devuelven colecciones. En estos casos se aporta información adicional como, por ejemplo, datos de paginación, filtro y orden.
@@ -93,7 +92,6 @@ Para la obtención del token disponemos de varias opciones (endpoints). Estos en
 * /seguridad/autenticacion-por-usuario
 
 Los tres endpoints tienen en común que requieren como parámetro la ApiKey que representa a la aplicación consumidora.  El primero de ellos (por aplicación) no requiere ningún otro parámetro y, por tanto, no se le traslada información relativa a ningún usuario. Obviamente, haciendo uso de este endpoint para generar el token de autenticación vamos a tener restricciones en el consumo de determinados endpoints: aquellos que requieren de un usuario para su consumo.
-
 
 Los otros dos endpoint ( por guidsesion y usuario ) requerirán información de un usuario. 
 
