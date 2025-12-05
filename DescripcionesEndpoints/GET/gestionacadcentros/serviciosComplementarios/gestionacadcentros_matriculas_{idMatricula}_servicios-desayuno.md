@@ -1,7 +1,7 @@
 
 # Descripción general.
 
-Este endpoint proporciona información detallada de las solicitudes del servicio complementario de comedor escolar para una matrícula concreta a partir del parámetro *idMatricula*, por lo que está orientado a aplicaciones consumidoras que conocen identificadores internos de Pincel de las entidades que representan los parámetros.
+Este endpoint proporciona información detallada de las solicitudes del servicio complementario de desayuno para una matrícula concreta a partir del parámetro *idMatricula*, por lo que está orientado a aplicaciones consumidoras que conocen identificadores internos de Pincel de las entidades que representan los parámetros.
 
 ## Parámetros específicos.
 
@@ -9,8 +9,8 @@ Este endpoint proporciona información detallada de las solicitudes del servicio
 * **nivelDetalle**: r, m, e (reducido, medio, extendido). Si no se indica, su valor por defecto será r.
 
 # Ejemplos.
-### A) Solicitud de datos con nivelDetalle *extendido* de las solicitudes de comedor escolar de la matrícula con idMatricula = "77BFC14B73F14CF7A6A9200285DD19D5".
-* /gestionacadcentros/matriculas/77BFC14B73F14CF7A6A9200285DD19D5/servicios-comedor-escolar?nivelDetalle=e
+### A) Solicitud de datos con nivelDetalle *extendido* de las solicitudes de comedor escolar de la matrícula con idMatricula = "D15755D7E45F4E3E9C262EE73FAD46BB".
+* /gestionacadcentros/matriculas/D15755D7E45F4E3E9C262EE73FAD46BB/servicios-desayuno?nivelDetalle=e
 
 
 
