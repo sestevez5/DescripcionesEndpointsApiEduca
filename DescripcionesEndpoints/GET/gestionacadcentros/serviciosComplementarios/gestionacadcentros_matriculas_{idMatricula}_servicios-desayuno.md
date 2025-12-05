@@ -9,7 +9,7 @@ Este endpoint proporciona información detallada de las solicitudes del servicio
 * **nivelDetalle**: r, m, e (reducido, medio, extendido). Si no se indica, su valor por defecto será r.
 
 # Ejemplos.
-### A) Solicitud de datos con nivelDetalle *extendido* de las solicitudes de comedor escolar de la matrícula con idMatricula = "D15755D7E45F4E3E9C262EE73FAD46BB".
+### A) Solicitud de datos con nivelDetalle *extendido* de las solicitudes de desayuno de la matrícula con idMatricula = "D15755D7E45F4E3E9C262EE73FAD46BB".
 * /gestionacadcentros/matriculas/D15755D7E45F4E3E9C262EE73FAD46BB/servicios-desayuno?nivelDetalle=e
 
 
